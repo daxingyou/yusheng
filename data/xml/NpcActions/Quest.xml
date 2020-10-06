@@ -1,0 +1,730 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<NpcActionList>
+<!--王族 / 王族的自知（15）-->
+	<!--给予搜索状 / 杰罗 / 肯特村庄-->
+	<MakeItem Name="request cloak of red" Class="P" AmountInputable="false" QuestId="Level15" QuestStep="0">
+		<Item Amount="1" ItemId="20065"/>		<!--红色斗篷-->
+		<Material Amount="1" ItemId="40565"/>		<!--搜索状-->
+		<Succeed>
+			<!--甘特的试炼未完成-->
+			<SetQuest Id="Level15" Step="1" QuestId="Level15" QuestStep="0"/>
+			<!--甘特的试炼完成-->
+			<SetQuest Id="Level15" Step="End" QuestId="Level15" QuestStep="2"/>
+		</Succeed>
+	</MakeItem>
+
+	<!--学习精准目标魔法 / 甘特 / 甘特洞穴-->
+	<MakeItem Name="request spellbook112" Class="P" AmountInputable="false" QuestId="Level15" QuestStep="1">
+		<Item Amount="1" ItemId="40226"/>		<!--魔法书(精准目标)-->
+		<Material Amount="1" ItemId="40564"/>		<!--生命的卷轴-->
+		<Succeed>
+			<!--杰罗的试炼未完成-->
+			<SetQuest Id="Level15" Step="2" QuestId="Level15" QuestStep="0"/>
+			<!--杰罗的试炼完成-->
+			<SetQuest Id="Level15" Step="End" QuestId="Level15" QuestStep="1"/>
+		</Succeed>
+	</MakeItem>
+
+<!--王族 / 艾莉亚的请求（30）-->
+	<!--愿意协助村民 / 艾莉亚 / 风木村庄-->
+	<Action Name="quest 13 aria2" Class="P">
+		<SetQuest Id="Level30" Step="1"/>
+		<ShowHtml HtmlId="aria2"/>
+	</Action>
+
+	<!--交出村庄居民的遗物 / 艾莉亚 / 风木村庄-->
+	<MakeItem Name="request questitem" Class="P" AmountInputable="false" QuestId="Level30" QuestStep="1">
+		<Item Amount="1" ItemId="40570"/>		<!--艾莉亚的回报-->
+		<Material Amount="1" ItemId="40547"/>		<!--村民的遗物-->
+		<Succeed>
+			<SetQuest Id="Level30" Step="End"/>
+			<ShowHtml HtmlId="aria3"/>
+		</Succeed>
+	</MakeItem>
+
+<!--王族 / 王族的信念（45）-->
+	<!--接受马沙的试练 / 马沙 / 威顿村庄-->
+	<Action Name="quest 15 masha2" Class="P">
+		<SetQuest Id="Level45" Step="1"/>
+		<ShowHtml HtmlId="masha3"/>
+	</Action>
+
+	<!--被夺的灵魂 / 麦 / 风木村庄-->
+	<Action Name="quest 17 meg2" Class="P">
+		<SetQuest Id="Level45" Step="2"/>
+		<ShowHtml HtmlId="meg2"/>
+	</Action>
+
+	<!--递给灵魂之证 / 麦 / 风木村庄-->
+	<MakeItem Name="request royal family piece b" Class="P" AmountInputable="false">
+		<Item Amount="1" ItemId="40587"/>		<!--王族徽章的碎片-->
+		<Material Amount="1" ItemId="40573"/>		<!--灵魂之证-->
+		<Material Amount="1" ItemId="40574"/>		<!--灵魂之证-->
+		<Material Amount="1" ItemId="40575"/>		<!--灵魂之证-->
+		<Succeed>
+			<SetQuest Id="Level45" Step="3"/>
+			<ShowHtml HtmlId="meg3"/>
+		</Succeed>
+	</MakeItem>
+
+	<!--递给王族徽章片块 / 马沙 / 威顿村庄-->
+	<MakeItem Name="request ring of guardian" Class="P" AmountInputable="false" QuestId="Level45" QuestStep="3">
+		<Item Amount="1" ItemId="20287"/>		<!--守护者的戒指-->
+		<Material Amount="1" ItemId="40586"/>		<!--王族徽章的碎片-->
+		<Material Amount="1" ItemId="40587"/>		<!--王族徽章的碎片-->
+		<Succeed>
+			<SetQuest Id="Level45" Step="End"/>
+			<ShowHtml HtmlId="masha4"/>
+		</Succeed>
+	</MakeItem>
+
+
+
+
+<!--骑士 / 瑞奇的抵抗（15）-->
+	<!--交给黑骑士的誓约 / 瑞奇 / 银骑士村庄-->
+	<MakeItem Name="request hood of knight" Class="K" AmountInputable="false">
+		<Item Amount="1" ItemId="20005"/>		<!--骑士头巾-->
+		<Material Amount="1" ItemId="40608"/>		<!--黑骑士的誓约-->
+		<Succeed>
+			<SetQuest Id="Level15" Step="1"/>
+			<ShowHtml HtmlId="riky5"/>
+		</Succeed>
+	</MakeItem>
+
+	<!--交换红骑士头巾 / 亚南 / 银骑士之村-->
+	<MakeItem Name="request hood of red knight" Class="K" AmountInputable="false" QuestId="Level15" QuestStep="1">
+		<Item Amount="1" ItemId="20027"/>		<!--红骑士头巾-->
+		<Material Amount="1" ItemId="20005"/>		<!--骑士头巾-->
+		<Material Amount="1" ItemId="40540"/>		<!--古老的交易文件-->
+		<Material Amount="1" ItemId="40601"/>		<!--龙龟甲-->
+		<Succeed>
+			<SetQuest Id="Level15" Step="End"/>
+			<ShowHtml HtmlId="aanon7"/>
+		</Succeed>
+	</MakeItem>
+
+<!--骑士 / 拯救被幽禁的吉姆（30）-->
+	<!--关于吉姆 / 马克 / 沙漠-->
+	<Action Name="quest 13 mark2" Class="K">
+		<SetQuest Id="Level30" Step="1"/>
+		<ShowHtml HtmlId="mark2"/>
+	</Action>
+
+	<!--接受甘特的试练 / 甘特 / 甘特洞穴-->
+	<Action Name="quest 14 gunterkE2" Class="K">
+		<SetQuest Id="Level30" Step="2"/>
+		<ShowHtml HtmlId="gunterkE2"/>
+	</Action>
+
+	<!--递给杨果里恩的爪子 / 甘特 / 甘特洞穴-->
+	<MakeItem Name="request sword of red knights" Class="K" AmountInputable="false" QuestId="Level30" QuestStep="2">
+		<Item Amount="1" ItemId="30"/>		<!--红骑士之剑-->
+		<Material Amount="1" ItemId="40590"/>		<!--杨果里恩之爪-->
+		<Succeed>
+			<SetQuest Id="Level30" Step="3"/>
+			<ShowHtml HtmlId="gunterkE3"/>
+		</Succeed>
+	</MakeItem>
+
+	<!--接受杰瑞德的试炼 / 杰瑞德 / 银骑士之村-->
+	<Action Name="quest 16 gerardkE2" Class="K">
+		<SetQuest Id="Level30" Step="4"/>
+		<ShowHtml HtmlId="gerardkE2"/>
+	</Action>
+
+	<!--交给蛇女之鳞 / 杰瑞德 / 银骑士之村-->
+	<MakeItem Name="request potion of rebirth" Class="K">
+		<Item Amount="1" ItemId="40607"/>		<!--返生药水-->
+		<Material Amount="1" ItemId="40544"/>		<!--蛇女之鳞-->
+		<Succeed>
+			<SetQuest Id="Level30" Step="5"/>
+			<ShowHtml HtmlId="gerardkE3"/>
+		</Succeed>
+	</MakeItem>
+
+	<!--递给返生药水 / 吉姆 / 地下监狱密室-->
+	<MakeItem Name="request letter of gratitude" Class="K" AmountInputable="false">
+		<Item Amount="1" ItemId="40529"/>		<!--感谢信-->
+		<Material Amount="1" ItemId="40607"/>		<!--返生药水-->
+		<Succeed>
+			<SetQuest Id="Level30" Step="7"/>
+		</Succeed>
+	</MakeItem>
+
+	<!--返生药水的真实 / 杰瑞德 / 银骑士之村-->
+	<Action Name="quest 18 gerardkE4" Class="K">
+		<SetQuest Id="Level30" Step="6"/>
+		<ShowHtml HtmlId="gerardkE4"/>
+	</Action>
+	<MakeItem Name="request shield of red knights" Class="K" AmountInputable="false" QuestId="Level30" QuestStep="7">
+		<Item Amount="1" ItemId="20230"/>		<!--红骑士盾牌-->
+		<Material Amount="1" ItemId="40529"/>		<!--感谢信-->
+		<Succeed>
+			<SetQuest Id="Level30" Step="End"/>
+			<ShowHtml HtmlId="gerardkE5"/>
+		</Succeed>
+	</MakeItem>
+
+<!--骑士 / 骑士的证明（45）-->
+	<!--关于邪恶势力 / 马沙 / 威顿村庄-->
+	<Action Name="quest 20 mashak2" Class="K">
+		<SetQuest Id="Level45" Step="1"/>
+		<ShowHtml HtmlId="mashak2"/>
+	</Action>
+
+	<!--看到巨人守护神的方法 / 志武 / 黄昏山脉-->
+	<Action Name="quest 21 jimuk2" Class="K">
+		<SetQuest Id="Level45" Step="2"/>
+		<ShowHtml HtmlId="jimuk2"/>
+	</Action>
+
+	<!--寻找调查员 / 巨人长老 / 黄昏山脉-->
+	<Action Name="quest 23 giantk2" Class="K">
+		<SetQuest Id="Level45" Step="3"/>
+		<ShowHtml HtmlId="giantk2"/>
+	</Action>
+
+	<!--递给古代的遗物 / 巨人长老 / 黄昏山脉-->
+	<MakeItem Name="request head part of ancient key" Class="K" AmountInputable="false">
+		<Item Amount="1" ItemId="40534"/>		<!--古代钥匙(上半部)-->
+		<Material Amount="1" ItemId="40537"/>		<!--古代的遗物-->
+		<Succeed>
+			<SetQuest Id="Level45" Step="4"/>
+			<ShowHtml HtmlId="giantk3"/>
+		</Succeed>
+	</MakeItem>
+
+	<!--给予寻找调查员的结果 / 马沙 / 威顿村庄-->
+	<MakeItem Name="request belt of bravery" Class="K" AmountInputable="false" QuestId="Level45" QuestStep="4">
+		<Item Amount="1" ItemId="20318"/>		<!--勇敢皮带-->
+		<Material Amount="1" ItemId="20026"/>		<!--夜之视野-->
+		<Material Amount="1" ItemId="40593"/>		<!--调查簿的缺页-->
+		<Material Amount="1" ItemId="40597"/>		<!--破损的调查簿-->
+		<Succeed>
+			<SetQuest Id="Level45" Step="End"/>
+			<ShowHtml HtmlId="mashak3"/>
+		</Succeed>
+	</MakeItem>
+
+
+
+
+<!--妖精 / 欧斯的先见之明（15）-->
+	<!--选择精灵敏捷头盔 / 欧斯 / 燃柳村庄-->
+	<MakeItem Name="request dex helmet of elven" Class="E" AmountInputable="false" QuestId="Level15" QuestStep="0">
+		<Item Amount="1" ItemId="20021"/>		<!--精灵敏捷头盔-->
+		<Material Amount="1" ItemId="40609"/>		<!--甘地妖魔魔法书-->
+		<Material Amount="1" ItemId="40610"/>		<!--那鲁加妖魔魔法书-->
+		<Material Amount="1" ItemId="40611"/>		<!--都达玛拉妖魔魔法书-->
+		<Material Amount="1" ItemId="40612"/>		<!--阿吐巴妖魔魔法书-->
+		<Succeed>
+			<SetQuest Id="Level15" Step="End"/>
+		</Succeed>
+	</MakeItem>
+
+	<!--选择精灵体质头盔 / 欧斯 / 燃柳村庄-->
+	<MakeItem Name="request con helmet of elven" Class="E" AmountInputable="false" QuestId="Level15" QuestStep="0">
+		<Item Amount="1" ItemId="20039"/>		<!--精灵体质头盔-->
+		<Material Amount="1" ItemId="40609"/>		<!--甘地妖魔魔法书-->
+		<Material Amount="1" ItemId="40610"/>		<!--那鲁加妖魔魔法书-->
+		<Material Amount="1" ItemId="40611"/>		<!--都达玛拉妖魔魔法书-->
+		<Material Amount="1" ItemId="40612"/>		<!--阿吐巴妖魔魔法书-->
+		<Succeed>
+			<SetQuest Id="Level15" Step="End"/>
+		</Succeed>
+	</MakeItem>
+
+<!--妖精 / 达克马勒的威胁（30）-->
+	<!--进行成人仪式 / 迷幻森林之母 / 妖精森林-->
+	<Action Name="quest 12 motherEE2" Class="E">
+		<SetQuest Id="Level30" Step="1"/>
+		<ShowHtml HtmlId="motherEE2"/>
+	</Action>
+
+	<!--递给受诅咒的精灵书 / 迷幻森林之母 / 妖精森林-->
+	<MakeItem Name="request questitem2" Class="E" AmountInputable="false" QuestId="Level30" QuestStep="1">
+		<Item Amount="1" ItemId="40588"/>		<!--妖精族宝物-->
+		<Material Amount="1" ItemId="40592"/>		<!--受诅咒的精灵书-->
+		<Succeed>
+			<SetQuest Id="Level30" Step="End"/>
+		</Succeed>
+	</MakeItem>
+
+<!--妖精 / 妖精的任务（45）-->
+	<!--关于邪恶势力 / 马沙 / 威顿村庄-->
+	<Action Name="quest 14 mashae2" Class="E">
+		<SetQuest Id="Level45" Step="1"/>
+		<ShowHtml HtmlId="mashae2"/>
+	</Action>
+
+	<!--询问需要帮助的事情 / 希托 / 吉普赛村-->
+	<Action Name="quest 15 heit2" Class="E">
+		<SetQuest Id="Level45" Step="2"/>
+		<ShowHtml HtmlId="heit2"/>
+	</Action>
+
+	<!--递给蓝色长笛 / 希托 / 吉普赛村-->
+	<MakeItem Name="request mystery shell" Class="E" AmountInputable="false">
+		<Item Amount="1" ItemId="40566"/>		<!--神秘贝壳-->
+		<Material Amount="1" ItemId="40602"/>		<!--蓝色长笛-->
+		<Succeed>
+			<SetQuest Id="Level45" Step="3"/>
+			<ShowHtml HtmlId="heit3"/>
+		</Succeed>
+	</MakeItem>
+
+	<!--关于水之竖琴 / 希托 / 吉普赛村-->
+	<Action Name="quest 17 heit5" Class="E">
+		<SetQuest Id="Level45" Step="4"/>
+		<ShowHtml HtmlId="heit5"/>
+	</Action>
+
+	<!--给予调查的结果 / 马沙 / 威顿村庄-->
+	<MakeItem Name="request bag of masha" Class="E" AmountInputable="false" QuestId="Level45" QuestStep="4">
+		<Item Amount="1" ItemId="40546"/>		<!--马沙之袋-->
+		<Material Amount="1" ItemId="192"/>		<!--水精灵之弓-->
+		<Succeed>
+			<SetQuest Id="Level45" Step="End"/>
+			<ShowHtml HtmlId="mashae3"/>
+		</Succeed>
+	</MakeItem>
+
+
+
+
+<!--法师 / 詹姆的请求（15）-->
+	<!--交给食尸鬼的牙齿与指甲 / 詹姆 / 说话之岛村庄-->
+	<MakeItem Name="request cursed spellbook" Class="W" AmountInputable="false">
+		<Item Amount="1" ItemId="40591"/>		<!--受诅咒的魔法书-->
+		<Material Amount="1" ItemId="40538"/>		<!--食尸鬼的指甲-->
+		<Material Amount="1" ItemId="40539"/>		<!--食尸鬼的牙齿-->
+	</MakeItem>
+
+	<!--交给骷髅头及受诅咒的魔法书 / 詹姆 / 说话之岛村庄-->
+	<MakeItem Name="request book of magical powers" Class="W" AmountInputable="false" QuestId="Level15" QuestStep="0">
+		<Item Amount="1" ItemId="20226"/>		<!--魔法能量之书-->
+		<Material Amount="1" ItemId="40591"/>		<!--受诅咒的魔法书-->
+		<Material Amount="1" ItemId="40605"/>		<!--骷髅头-->
+		<Succeed>
+			<SetQuest Id="Level15" Step="End"/>
+		</Succeed>
+	</MakeItem>
+
+<!--法师 / 不死族的叛徒（30）-->
+	<!--接受吉伦的建议 / 吉伦 / 说话之岛-->
+	<Action Name="quest 12 gerengT2" Class="W">
+		<SetQuest Id="Level30" Step="1"/>
+		<ShowHtml HtmlId="gerengT2"/>
+	</Action>
+
+	<!--交出不死族的骨头 / 吉伦 / 说话之岛-->
+	<MakeItem Name="request bone piece of undead" Class="W" AmountInputable="false">
+		<Item Amount="1" ItemId="40580"/>		<!--不死族的骨头碎片-->
+		<Material Amount="1" ItemId="40579"/>		<!--不死族的骨头-->
+		<Succeed>
+			<SetQuest Id="Level30" Step="2"/>
+			<ShowHtml HtmlId="gerengT3"/>
+		</Succeed>
+	</MakeItem>
+
+	<!--取得魔法师必须的物品 / 吉伦 / 说话之岛-->
+	<Action Name="quest 14 gerengT4" Class="W">
+		<SetQuest Id="Level30" Step="3"/>
+		<ShowHtml HtmlId="gerengT4"/>
+	</Action>
+
+	<!--交给神秘水晶球 / 吉伦 / 说话之岛-->
+	<MakeItem Name="request mystery staff" Class="W" AmountInputable="false">
+		<Item Amount="1" ItemId="40569"/>		<!--神秘魔杖-->
+		<Material Amount="1" ItemId="40567"/>		<!--神秘水晶球-->
+		<Succeed>
+			<SetQuest Id="Level30" Step="4"/>
+		</Succeed>
+	</MakeItem>
+
+	<!--关于不死族的骨头碎片 / 塔拉斯 / 象牙塔3楼-->
+	<Action Name="quest 16 talassE2" Class="W">
+		<SetQuest Id="Level30" Step="5"/>
+		<ShowHtml HtmlId="talassE2"/>
+	</Action>
+
+	<!--递给不死族的骨头碎片 / 塔拉斯 / 象牙塔3楼-->
+	<MakeItem Name="request crystal staff" Class="W" AmountInputable="false" QuestId="Level30" QuestStep="5">
+		<Item Amount="1" ItemId="115"/>		<!--水晶魔杖-->
+		<Material Amount="1" ItemId="40569"/>		<!--神秘魔杖-->
+		<Material Amount="1" ItemId="40580"/>		<!--不死族的骨头碎片-->
+		<Succeed>
+			<SetQuest Id="Level30" Step="End"/>
+		</Succeed>
+	</MakeItem>
+
+<!--法师 / 法师的考验（45）-->
+	<!--关于神奇的生命体 / 塔拉斯 / 象牙塔3楼-->
+	<Action Name="quest 18 talassmq2" Class="W">
+		<SetQuest Id="Level45" Step="1"/>
+		<ShowHtml HtmlId="talassmq2"/>
+	</Action>
+
+	<!--神秘岩石的要求 / 神秘的岩石 / 镜子森林-->
+	<Action Name="quest 19 stoenm2" Class="W">
+		<SetQuest Id="Level45" Step="2"/>
+		<ShowHtml HtmlId="stoenm2"/>
+	</Action>
+
+	<!--递给所要求的物品 / 神秘的岩石 / 镜子森林-->
+	<MakeItem Name="request scroll about ancient evil" Class="W" AmountInputable="false">
+		<Item Amount="1" ItemId="40536"/>		<!--古代恶魔的记载-->
+		<Material Amount="1" ItemId="40189"/>		<!--魔法书(魔法相消术)-->
+		<Material Amount="1" ItemId="40542"/>		<!--变形怪的血-->
+		<Succeed>
+			<SetQuest Id="Level45" Step="3"/>
+			<ShowHtml HtmlId="stoenm3"/>
+		</Succeed>
+	</MakeItem>
+
+	<!--给予调查的结果 / 塔拉斯 / 象牙塔3楼-->
+	<MakeItem Name="request magic bag of talass" Class="W" AmountInputable="false" QuestId="Level45" QuestStep="3">
+		<Item Amount="1" ItemId="40599"/>		<!--塔拉斯的魔法袋-->
+		<Material Amount="1" ItemId="40536"/>		<!--古代恶魔的记载-->
+		<Succeed>
+			<SetQuest Id="Level45" Step="End"/>
+		</Succeed>
+	</MakeItem>
+
+
+
+
+<!--黑暗妖精 / 妖魔的侵入（15）-->
+	<!--接受简单的任务 / 康 / 沉默洞穴-->
+	<Action Name="quest 11 kanguard2" Class="D">
+		<SetQuest Id="Level15" Step="1"/>
+		<ShowHtml HtmlId="kanguard2"/>
+	</Action>
+
+	<!--递给妖魔长老首级 / 康 / 沉默洞穴-->
+	<MakeItem Name="request kanbag" Class="D" AmountInputable="false" QuestId="Level15" QuestStep="1">
+		<Item Amount="1" ItemId="40598"/>		<!--康之袋-->
+		<Material Amount="1" ItemId="40585"/>		<!--妖魔长老首级-->
+		<Succeed>
+			<SetQuest Id="Level15" Step="End"/>
+			<ShowHtml HtmlId="kanguard3"/>
+		</Succeed>
+	</MakeItem>
+
+<!--黑暗妖精 / 同族的背叛（30）-->
+	<!--接受伦得的建议 / 伦得 / 沉默洞穴-->
+	<Action Name="quest 13 ronde2" Class="D">
+		<SetQuest Id="Level30" Step="1"/>
+		<ShowHtml HtmlId="ronde2"/>
+	</Action>
+
+	<!--交出秘密名单 / 伦得 / 沉默洞穴-->
+	<MakeItem Name="request close list of assassination" Class="D" AmountInputable="false">
+		<Item Amount="1" ItemId="40556"/>		<!--暗杀名单之袋-->
+		<Material Amount="1" ItemId="40554"/>		<!--秘密名单-->
+		<Succeed>
+			<SetQuest Id="Level30" Step="2"/>
+			<ShowHtml HtmlId="ronde3"/>
+		</Succeed>
+	</MakeItem>
+
+	<!--接受古代刺客咒术 / 伦得 / 沉默洞穴-->
+	<Action Name="quest 15 ronde4" Class="D">
+		<SetQuest Id="Level30" Step="3"/>
+		<ShowHtml HtmlId="ronde4"/>
+	</Action>
+
+        <!--黑妖30級試煉任務 / 倫得-獲得倫得之袋(修正兌換的物品)-->
+	<MakeItem Name="request rondebag" Class="D" AmountInputable="false">
+		<Item Amount="1" ItemId="40545"/>
+		<Material Amount="1" ItemId="40557"/>
+		<Material Amount="1" ItemId="40558"/>
+		<Material Amount="1" ItemId="40559"/>
+		<Material Amount="1" ItemId="40560"/>
+		<Material Amount="1" ItemId="40561"/>
+		<Material Amount="1" ItemId="40562"/>
+		<Material Amount="1" ItemId="40563"/>
+		<Material Amount="1" ItemId="40596"/>
+		<Succeed>
+			<SetQuest Id="Level30" Step="End"/>
+			<ShowHtml HtmlId="ronde5"/>
+		</Succeed>
+	</MakeItem>
+
+<!--黑暗妖精 / 纠正错误的观念（45）-->
+	<!--关于纠正错误观念 / 布鲁迪卡 / 布鲁迪卡洞穴-->
+	<Action Name="quest 17 bluedikaq2" Class="D">
+		<SetQuest Id="Level45" Step="1"/>
+		<ShowHtml HtmlId="bluedikaq2"/>
+	</Action>
+
+	<!--如何才能见到刺客首领 / 刺客首领护卫 / 眠龙洞穴外围-->
+	<Action Name="quest 18 assassin2" Class="D">
+		<SetQuest Id="Level45" Step="2"/>
+		<ShowHtml HtmlId="assassin2"/>
+	</Action>
+
+	<!--我要证明你是错的 / 罗吉 / 欧瑞村庄-->
+	<Action Name="quest 19 roje12" Class="D">
+		<SetQuest Id="Level45" Step="3"/>
+		<ShowHtml HtmlId="roje12"/>
+	</Action>
+
+	<!--给予雪怪首级 / 罗吉 / 欧瑞村庄-->
+	<MakeItem Name="request mark of assassin" Class="D" AmountInputable="false">
+		<Item Amount="1" ItemId="40572"/>		<!--刺客之证-->
+		<Material Amount="1" ItemId="40584"/>		<!--雪怪首级-->
+		<Succeed>
+			<SetQuest Id="Level45" Step="4"/>
+			<ShowHtml HtmlId="roje13"/>
+		</Succeed>
+	</MakeItem>
+
+	<!--关于生锈的刺客之剑 / 罗吉 / 欧瑞村庄-->
+	<Action Name="quest 21 roje14" Class="D">
+		<SetQuest Id="Level45" Step="5"/>
+		<ShowHtml HtmlId="roje14"/>
+	</Action>
+
+	<!--给予死亡之证及刺客之证 / 布鲁迪卡 / 布鲁迪卡洞穴-->
+	<MakeItem Name="request bluedikabag" Class="D" AmountInputable="false" QuestId="Level45" QuestStep="5">
+		<Item Amount="1" ItemId="40553"/>		<!--布鲁迪卡之袋-->
+		<Material Amount="1" ItemId="40572"/>		<!--刺客之证-->
+		<Material Amount="1" ItemId="40595"/>		<!--死亡之证-->
+		<Succeed>
+			<SetQuest Id="Level45" Step="End"/>
+			<ShowHtml HtmlId="bluedikaq3"/>
+		</Succeed>
+	</MakeItem>
+
+<!--黑暗妖精 / 寻找黑暗之星（50）-->
+	<!--执行任务 / 布鲁迪卡 / 布鲁迪卡洞穴-->
+	<Action Name="quest 24 bluedikaq7" Class="D">
+		<SetQuest Id="Level50" Step="1"/>
+		<ShowHtml HtmlId="bluedikaq7"/>
+	</Action>
+
+	<!--递给调查结果物 / 奇马 / 沉默洞穴-->
+	<MakeItem Name="request mask of true" Class="D" AmountInputable="false">
+		<Item Amount="1" ItemId="20037"/>       <!--真实的面具-->
+		<Material Amount="1" ItemId="40583"/>   <!--安迪亚之信-->
+		<Succeed>
+			<SetQuest Id="Level50" Step="3"/>
+			<ShowHtml HtmlId="kimaq3"/>
+		</Succeed>
+	</MakeItem>
+
+	<!--关于灵魂枯竭的土地 / 奇马 / 沉默洞穴-->
+	<Action Name="quest 26 kimaq4" Class="D">
+		<SetQuest Id="Level50" Step="4"/>
+		<ShowHtml HtmlId="kimaq4"/>
+	</Action>
+
+	<!--递给黑暗之星 / 布鲁迪卡 / 布鲁迪卡洞穴-->
+	<MakeItem Name="request finger of death" Class="D" AmountInputable="false">
+		<Item Amount="1" ItemId="13"/>          <!--死亡之指-->
+		<Material Amount="1" ItemId="20037"/>   <!--真实的面具-->
+		<Material Amount="1" ItemId="40541"/>   <!--黑暗之星-->
+		<Material Amount="1" ItemId="40603"/>   <!--蘑菇毒液-->
+		<Material Amount="1" ItemId="40648"/>   <!--生锈的刺客之剑-->
+		<Succeed>
+			<SetQuest Id="Level50" Step="End"/>
+			<ShowHtml HtmlId="bluedikaq8"/>
+		</Succeed>
+	</MakeItem>
+
+
+
+
+<!--50级全职任务-->
+	<!--君主-->
+	<Action Name="quest 29 dicardingp2" Class="P">
+		<SetQuest Id="Level50" Step="1"/>
+		<ShowHtml HtmlId="dicardingp2"/>
+	</Action>
+	<MakeItem Name="request gold stick" Class="P" AmountInputable="false">
+		<Item Amount="1" ItemId="51"/>
+		<Material Amount="1" ItemId="40552"/>
+		<Succeed>
+			<SetQuest Id="Level50" Step="End"/>
+		</Succeed>
+	</MakeItem>
+	<!--骑士-->
+	<Action Name="quest 29 dicardingk2" Class="K">
+		<SetQuest Id="Level50" Step="1"/>
+		<ShowHtml HtmlId="dicardingk2"/>
+	</Action>
+	<MakeItem Name="request death blade" Class="K" AmountInputable="false">
+		<Item Amount="1" ItemId="56"/>
+		<Material Amount="1" ItemId="65"/>
+		<Material Amount="1" ItemId="40549"/>
+		<Succeed>
+			<SetQuest Id="Level50" Step="End"/>
+		</Succeed>
+	</MakeItem>
+	<!--妖精-->
+	<Action Name="quest 29 dicardinge2" Class="E">
+		<SetQuest Id="Level50" Step="1"/>
+		<ShowHtml HtmlId="dicardinge2"/>
+	</Action>
+	<MakeItem Name="request flame bow" Class="E" AmountInputable="false">
+		<Item Amount="1" ItemId="184"/>
+		<Material Amount="1" ItemId="192"/>
+		<Material Amount="1" ItemId="40551"/>
+		<Succeed>
+			<SetQuest Id="Level50" Step="End"/>
+		</Succeed>
+	</MakeItem>
+	<MakeItem Name="request flame sword" Class="E" AmountInputable="false">
+		<Item Amount="1" ItemId="50"/>
+		<Material Amount="1" ItemId="192"/>
+		<Material Amount="1" ItemId="40551"/>
+		<Succeed>
+			<SetQuest Id="Level50" Step="End"/>
+		</Succeed>
+	</MakeItem>
+	<!--法师-->
+	<Action Name="quest 29 dicardingw2" Class="W">
+		<SetQuest Id="Level50" Step="1"/>
+		<ShowHtml HtmlId="dicardingw2"/>
+	</Action>
+	<MakeItem Name="request mana crystal" Class="W" AmountInputable="false">
+		<Item Amount="1" ItemId="20225"/>
+		<Material Amount="1" ItemId="133"/>
+		<Material Amount="1" ItemId="40550"/>
+		<Succeed>
+			<SetQuest Id="Level50" Step="End"/>
+		</Succeed>
+	</MakeItem>
+
+
+
+
+<!--爷爷的宝物（15↑）-->
+	<!--捡起宝石 / 第三个藏宝图地点 / 海贼岛-->
+	<MakeItem Name="0" Class="PWEKD" NpcId="71067,71068,71069,71070,71071,71072" AmountInputable="false">
+		<Item Amount="1" ItemId="40716"/>		<!--爷爷的宝物-->
+		<Material Amount="1" ItemId="40701"/>		<!--小藏宝图-->
+		<Succeed>
+			<ShowHtml HtmlId="maptbox2"/>
+			<SetQuest Id="lukein" Step="11"/>
+			<SetQuest Id="tbox3" Step="End"/>
+		</Succeed>
+	</MakeItem>
+
+	<!--接受项链 / 路卡音 / 海贼岛村庄-->
+	<MakeItem Name="1" Class="PWEKD" NpcId="71055" AmountInputable="false">
+		<Item Amount="1" ItemId="20269"/>		<!--骷髅项链-->
+		<Material Amount="1" ItemId="40716"/>		<!--爷爷的宝物-->
+		<Succeed>
+			<ShowHtml HtmlId="lukein0"/>
+			<SetQuest Id="lukein" Step="End"/>
+		</Succeed>
+	</MakeItem>
+
+
+
+
+<!--德雷克的宝藏前置任务 / 隐藏的事实（18↑）-->
+	<!--还给戒指 / 莱斯塔 / 海贼岛村庄-->
+	<MakeItem Name="D" Class="PWEKD" NpcId="71060" AmountInputable="false">
+		<Item Amount="1" ItemId="40647"/>		<!--藏宝图碎片-->
+		<Material Amount="1" ItemId="40631"/>		<!--莱斯塔的戒指-->
+		<Succeed>
+			<ShowHtml HtmlId="resta15"/>
+			<SetQuest Id="resta" Step="End"/>
+		</Succeed>
+	</MakeItem>
+
+
+
+	
+<!--德雷克的宝藏前置任务 / 完整的藏宝图（18↑）-->
+	<!--接受完成的藏宝图 / 卡得穆斯 / 海贼岛村庄-->
+	<MakeItem Name="B" Class="PWEKD" NpcId="71061" AmountInputable="false">
+		<Item Amount="1" ItemId="40692"/>		<!--完成的藏宝图-->
+		<Material Amount="1" ItemId="40711"/>		<!--卡得穆斯项练-->
+		<Succeed>
+			<ShowHtml HtmlId=""/>
+			<SetQuest Id="cadmus" Step="End"/>
+		</Succeed>
+	</MakeItem>
+
+
+
+
+<!--德雷克的宝藏 / 德雷克的真实（40↑）-->
+	<!--选择荣耀之剑 / 卡蜜拉的灵魂 / 卡蜜拉的房间-->
+	<MakeItem Name="g" Class="PWEKD" NpcId="71036" AmountInputable="false" QuestId="kamyla" QuestStep="4">
+		<Item Amount="1" ItemId="33"/>		<!--荣耀之剑-->
+		<Material Amount="1" ItemId="40717"/>		<!--弄绉的情书-->
+		<Succeed>
+			<ShowHtml HtmlId="kamyla25"/>
+			<SetQuest Id="kamyla" Step="End"/>
+		</Succeed>
+	</MakeItem>
+
+	<!--选择深渊双刀 / 卡蜜拉的灵魂 / 卡蜜拉的房间-->
+	<MakeItem Name="h" Class="PWEKD" NpcId="71036" AmountInputable="false" QuestId="kamyla" QuestStep="4">
+		<Item Amount="1" ItemId="79"/>		<!--深渊双刀-->
+		<Material Amount="1" ItemId="40717"/>		<!--弄绉的情书-->
+		<Succeed>
+			<ShowHtml HtmlId="kamyla25"/>
+			<SetQuest Id="kamyla" Step="End"/>
+		</Succeed>
+	</MakeItem>
+
+	<!--选择寂静十字弓 / 卡蜜拉的灵魂 / 卡蜜拉的房间-->
+	<MakeItem Name="i" Class="PWEKD" NpcId="71036" AmountInputable="false" QuestId="kamyla" QuestStep="4">
+		<Item Amount="1" ItemId="178"/>		<!--寂静十字弓-->
+		<Material Amount="1" ItemId="40717"/>		<!--弄绉的情书-->
+		<Succeed>
+			<ShowHtml HtmlId="kamyla25"/>
+			<SetQuest Id="kamyla" Step="End"/>
+		</Succeed>
+	</MakeItem>
+
+	<!--选择漆黑水晶球 / 卡蜜拉的灵魂 / 卡蜜拉的房间-->
+	<MakeItem Name="j" Class="PWEKD" NpcId="71036" AmountInputable="false" QuestId="kamyla" QuestStep="4">
+		<Item Amount="1" ItemId="118"/>		<!--漆黑水晶球-->
+		<Material Amount="1" ItemId="40717"/>		<!--弄绉的情书-->
+		<Succeed>
+			<ShowHtml HtmlId="kamyla25"/>
+			<SetQuest Id="kamyla" Step="End"/>
+		</Succeed>
+	</MakeItem>
+
+	<!--选择信念之盾 / 卡蜜拉的灵魂 / 卡蜜拉的房间-->
+	<MakeItem Name="k" Class="PWEKD" NpcId="71036" AmountInputable="false" QuestId="kamyla" QuestStep="4">
+		<Item Amount="1" ItemId="20234"/>		<!--信念之盾-->
+		<Material Amount="1" ItemId="40717"/>		<!--弄绉的情书-->
+		<Succeed>
+			<ShowHtml HtmlId="kamyla25"/>
+			<SetQuest Id="kamyla" Step="End"/>
+		</Succeed>
+	</MakeItem>
+
+
+
+	
+<!--蜥蜴人的宝物（40↑）-->
+	<!--请你收下这个 / 蜥蜴人长老 / 蜥蜴人村庄-->
+	<MakeItem Name="C" Class="PWEKD" NpcId="71074" AmountInputable="false" QuestId="lizard" QuestStep="3">
+		<Item Amount="1" ItemId="20167"/>		<!--蜥蜴王手套-->
+		<Material Amount="1" ItemId="40634"/>		<!--蜥蜴人的宝物-->
+		<Succeed>
+			<ShowHtml HtmlId="lelder13"/>
+			<SetQuest Id="lizard" Step="End"/>
+		</Succeed>
+	</MakeItem>
+
+	<!--隱藏之谷 / 提奧-->
+	<Action Name="request amulet of valley" NpcId="70518">
+		<MakeItem AmountInputable="false">
+			<Material Amount="1" ItemId="40653"/>
+			<Item Amount="1" ItemId="20243"/>
+		</MakeItem>
+	</Action>
+
+</NpcActionList>

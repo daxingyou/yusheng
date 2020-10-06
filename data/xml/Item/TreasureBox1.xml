@@ -1,0 +1,1151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TreasureBoxList>
+
+<!--日本活动物品-->
+	<!--王族袋子-->
+	<TreasureBox Type="SPECIFIC" ItemId="41217">
+		<Item ItemId="20384" Count="1" />	<!--王族头盔-->
+		<Item ItemId="20391" Count="1" />	<!--王族盔甲-->
+		<Item ItemId="20397" Count="1" />	<!--王族盾牌-->
+	</TreasureBox>
+
+	<!--炼金术之石-->
+	<TreasureBox Type="SPECIFIC" ItemId="10054">
+		<Item ItemId="10055" Count="100" />	<!--炼金治愈药水-->
+		<Item ItemId="10019" Count="5" />	<!--宣传币-->
+		<Item ItemId="66663" Count="5" />	<!--死亡骑士绑定-->
+		<Item ItemId="66663" Count="5" />	<!--黑暗精灵绑定-->
+		<Item ItemId="99998" Count="1" />	<!--经验保护卷(怪物)-->
+		<Item ItemId="10024" Count="1" />	<!--经验保护卷（PK）-->
+		<Item ItemId="10009" Count="5" />	<!--穿云箭-->
+	</TreasureBox>
+
+	<!--潘多拉的魔盒(II)-->
+	<TreasureBox Type="RANDOM" ItemId="10044" DelItemId="40308" DelItemCount="500000">
+		<Item ItemId="140074" Count="1" Chance="5" />		<!--祝防-->
+		<Item ItemId="140087" Count="1" Chance="5" />		<!--祝武-->
+		<Item ItemId="240074" Count="1" Chance="5" />		<!--红防-->
+		<Item ItemId="240087" Count="1" Chance="5" />		<!--红武-->
+		<Item ItemId="114" Count="1" Chance="4" />		<!--威严权杖-->
+		<Item ItemId="181" Count="1" Chance="4" />		<!--尤米弓-->
+		<Item ItemId="162" Count="1" Chance="4" />		<!--幽暗 钢爪-->
+		<Item ItemId="81" Count="1" Chance="4" />		<!--幽暗双刀-->
+		<Item ItemId="20020" Count="1" Chance="4" />		<!--武官头盔-->
+		<Item ItemId="20030" Count="1" Chance="4" />		<!--神官头饰-->
+		<Item ItemId="20058" Count="1" Chance="4" />		<!--武官斗篷-->
+		<Item ItemId="20067" Count="1" Chance="4" />		<!--神官斗篷-->
+		<Item ItemId="20113" Count="1" Chance="4" />		<!--武官护铠-->
+		<Item ItemId="20129" Count="1" Chance="4" />		<!--神官法袍-->
+		<Item ItemId="20167" Count="1" Chance="4" />		<!--蜥蜴王手套-->
+		<Item ItemId="20168" Count="1" Chance="4" />		<!--武官手套-->
+		<Item ItemId="20176" Count="1" Chance="4" />		<!--神官手套-->
+		<Item ItemId="20187" Count="1" Chance="5" />		<!--力量手套-->
+		<Item ItemId="20196" Count="1" Chance="4" />		<!--黑暗栖林者长靴-->
+		<Item ItemId="20201" Count="1" Chance="4" />		<!--武官长靴-->
+		<Item ItemId="9" Count="1" Chance="3" />		<!--奥里哈鲁根短剑-->
+		<Item ItemId="10036" Count="3" Chance="4" />		<!--祝福装备卷轴30%-->
+		<Item ItemId="62" Count="1" Chance="4" />		<!--武官双手剑-->
+		<Item ItemId="126" Count="1" Chance="2" />		<!--玛那魔杖-->
+		<Item ItemId="10045" Count="1" Chance="2" />		<!--潘多拉的魔盒(III)-->
+	</TreasureBox>
+
+	<!--潘多拉的魔盒(I)-->
+	<TreasureBox Type="RANDOM" ItemId="10043" DelItemId="40308" DelItemCount="50000">
+		<Item ItemId="40087" Count="1" Chance="5" />		<!--白武-->
+		<Item ItemId="25063" Count="1" Chance="1" />		<!--万圣节臂甲-->
+		<Item ItemId="25064" Count="1" Chance="1" />		<!--万圣节水晶球-->
+		<Item ItemId="25072" Count="1" Chance="1" />		<!--庆典项链-->
+		<Item ItemId="10020" Count="2" Chance="16" />		<!--通畅药水-->
+		<Item ItemId="10021" Count="2" Chance="15" />		<!--体魄药水-->
+		<Item ItemId="10022" Count="2" Chance="15" />		<!--祝福武器药水-->
+		<Item ItemId="10023" Count="1" Chance="1.5" />		<!--初级状态-->
+		<Item ItemId="10025" Count="1" Chance="0.3" />		<!--余生神力状态-->
+		<Item ItemId="10087" Count="1" Chance="5" />		<!--余生百天庆典-->
+		<Item ItemId="10093" Count="1" Chance="4" />		<!--庆典项链强化卷-->
+		<Item ItemId="10094" Count="1" Chance="3" />		<!--余生项链强化卷-->
+		<Item ItemId="10051" Count="1" Chance="2" />		<!--戒指强化卷-->
+		<Item ItemId="10066" Count="1" Chance="3" />		<!--力量+1状态-->
+		<Item ItemId="10067" Count="1" Chance="3" />		<!--敏捷+1状态-->
+		<Item ItemId="40074" Count="1" Chance="5" />		<!--白防-->
+		<Item ItemId="10009" Count="3" Chance="4" />		<!--穿云箭-->
+		<Item ItemId="10069" Count="1" Chance="3" />		<!--智力+1状态-->
+		<Item ItemId="10070" Count="1" Chance="3" />		<!--力量+1状态-->
+		<Item ItemId="10071" Count="1" Chance="3" />		<!--力量+1状态-->
+		<Item ItemId="10075" Count="1" Chance="3" />		<!--力量+1状态-->
+		<Item ItemId="10076" Count="1" Chance="3" />		<!--力量+1状态-->
+		<Item ItemId="9" Count="1" Chance="0.1" />		<!--奥里哈鲁根短剑-->
+		<Item ItemId="126" Count="1" Chance="0.1" />		<!--玛那魔杖-->
+	</TreasureBox>
+
+	<!--潘多拉的魔盒(II)-->
+	<TreasureBox Type="RANDOM" ItemId="10045" DelItemId="40308" DelItemCount="5000000">
+		<Item ItemId="20133" Count="1" Chance="6" />		<!--黑暗执行者 金属盔甲-->
+		<Item ItemId="20204" Count="1" Chance="6" />		<!--巴列斯长靴-->
+		<Item ItemId="20218" Count="1" Chance="2" />		<!--黑长者凉鞋-->
+		<Item ItemId="20257" Count="1" Chance="2" />		<!--黑法师项链-->
+		<Item ItemId="20314" Count="1" Chance="6" />		<!--古代巨人戒指-->
+		<Item ItemId="20320" Count="1" Chance="2" />		<!--泰坦皮带-->
+		<Item ItemId="20018" Count="1" Chance="4" />		<!--马库尔之帽-->
+		<Item ItemId="20025" Count="1" Chance="4" />		<!--巴土瑟之帽-->
+		<Item ItemId="20029" Count="1" Chance="4" />		<!--西玛之帽-->
+		<Item ItemId="20040" Count="1" Chance="4" />		<!--卡士伯之帽-->
+		<Item ItemId="20108" Count="1" Chance="4" />		<!--古代风龙鳞盔甲-->
+		<Item ItemId="20119" Count="1" Chance="4" />		<!--古代火龙鳞盔甲-->
+		<Item ItemId="20130" Count="1" Chance="4" />		<!--古代地龙鳞盔甲-->
+		<Item ItemId="20153" Count="1" Chance="4" />		<!--古代水龙鳞盔甲-->
+                <Item ItemId="9" Count="1" Chance="6" />		<!--奥里哈鲁根短剑-->
+		<Item ItemId="49" Count="1" Chance="6" />		<!--武官之刃-->
+		<Item ItemId="62" Count="1" Chance="6" />		<!--武官双手剑-->
+		<Item ItemId="126" Count="1" Chance="8" />		<!--玛那魔杖-->
+		<Item ItemId="84" Count="1" Chance="2" />		<!--暗黑双刀-->
+		<Item ItemId="55" Count="1" Chance="4" />		<!--黑暗之剑-->
+		<Item ItemId="123" Count="1" Chance="2" />		<!--巴列斯魔杖-->
+		<Item ItemId="164" Count="1" Chance="2" />		<!--暗黑钢爪-->
+		<Item ItemId="189" Count="1" Chance="2" />		<!--暗黑十字弓-->
+		<Item ItemId="190" Count="1" Chance="2" />		<!--沙哈之弓-->
+		<Item ItemId="10033" Count="5" Chance="4" />		<!--祝福装备卷轴40%-->
+	</TreasureBox>
+
+	<!--骑士袋子-->
+	<TreasureBox Type="SPECIFIC" ItemId="41218">
+		<Item ItemId="20385" Count="1" />	<!--骑士头盔-->
+		<Item ItemId="20394" Count="1" />	<!--骑士盔甲-->
+		<Item ItemId="20398" Count="1" />	<!--骑士盾牌-->
+	</TreasureBox>
+
+	<!--妖精袋子-->
+	<TreasureBox Type="SPECIFIC" ItemId="10046">
+		<Item ItemId="10044" Count="1" />	<!--精灵皮头盔-->
+	</TreasureBox>
+
+	<!--妖精袋子-->
+	<TreasureBox Type="SPECIFIC" ItemId="10047">
+		<Item ItemId="10045" Count="1" />	<!--精灵皮头盔-->
+	</TreasureBox>
+
+	<!--妖精袋子-->
+	<TreasureBox Type="SPECIFIC" ItemId="41219">
+		<Item ItemId="20386" Count="1" />	<!--精灵皮头盔-->
+		<Item ItemId="20392" Count="1" />	<!--精灵皮盔甲-->
+		<Item ItemId="20403" Count="1" />	<!--精灵皮长靴-->
+	</TreasureBox>
+
+	<!--法师袋子-->
+	<TreasureBox Type="SPECIFIC" ItemId="41220">
+		<Item ItemId="20387" Count="1" />	<!--法师头盔-->
+		<Item ItemId="20399" Count="1" />	<!--法师斗蓬-->
+		<Item ItemId="20404" Count="1" />	<!--法师长靴-->
+	</TreasureBox>
+
+	<!--黑暗妖精袋子-->
+	<TreasureBox Type="SPECIFIC" ItemId="41221">
+		<Item ItemId="20388" Count="1" />	<!--黑暗妖精头盔-->
+		<Item ItemId="20400" Count="1" />	<!--黑暗妖精斗篷-->
+		<Item ItemId="20405" Count="1" />	<!--黑暗妖精长靴-->
+	</TreasureBox>
+
+	<!--ジョンの届け物-->
+	<TreasureBox Type="SPECIFIC" ItemId="41232">
+		<Item ItemId="41233" Count="1" />
+		<Item ItemId="41234" Count="1" />
+	</TreasureBox>
+
+	<!--ケーイの届け物-->
+	<TreasureBox Type="SPECIFIC" ItemId="41238">
+		<Item ItemId="41239" Count="1" />
+		<Item ItemId="41240" Count="1" />
+	</TreasureBox>
+
+	<!--骨头加工师的袋子-->
+	<TreasureBox Type="SPECIFIC" ItemId="41241">
+		<Item ItemId="20045" Count="1" />
+		<Item ItemId="20221" Count="1" />
+	</TreasureBox>
+
+
+<!--王族任务-->
+	<!--艾莉亚的回报-->
+	<TreasureBox Type="SPECIFIC" ItemId="40570">
+		<Item ItemId="20051" Count="1" />	<!--君主的威严-->
+		<Item ItemId="40228" Count="1" />	<!--魔法书(呼唤盟友)-->
+	</TreasureBox>
+
+	<!--神秘的袋子-->
+	<TreasureBox Type="SPECIFIC" ItemId="40568">
+		<Item ItemId="40576" Count="1" />	<!--灵魂水晶(白)-->
+		<Item ItemId="40577" Count="1" />	<!--灵魂水晶(黑)-->
+		<Item ItemId="40578" Count="1" />	<!--灵魂水晶(红)-->
+	</TreasureBox>
+
+	<!--灵魂水晶(白)-->
+	<TreasureBox Type="SPECIFIC" ItemId="40576">
+		<Item ItemId="40573" Count="1" />	<!--灵魂之证-->
+	</TreasureBox>
+
+	<!--灵魂水晶(黑)-->
+	<TreasureBox Type="SPECIFIC" ItemId="40577">
+		<Item ItemId="40574" Count="1" />	<!--灵魂之证-->
+	</TreasureBox>
+
+	<!--灵魂水晶(红)-->
+	<TreasureBox Type="SPECIFIC" ItemId="40578">
+		<Item ItemId="40575" Count="1" />	<!--灵魂之证-->
+	</TreasureBox>
+
+
+<!--骑士任务-->
+	<!--守护神之袋-->
+	<TreasureBox Type="SPECIFIC" ItemId="40528">
+		<Item ItemId="65" Count="1" />		<!--天空之剑-->
+		<Item ItemId="40597" Count="1" />	<!--破损的调查簿-->
+		<Item ItemId="40537" Count="1" />	<!--古代的遗物-->
+	</TreasureBox>
+
+
+<!--妖精任务-->
+	<!--妖精族宝物-->
+	<TreasureBox Type="SPECIFIC" ItemId="40588">
+		<Item ItemId="40243" Count="1" />	<!--精灵水晶(召唤属性精灵)-->
+		<Item ItemId="20084" Count="1" />	<!--精灵T恤-->
+	</TreasureBox>
+
+	<!--古代亡灵之袋-->
+	<TreasureBox Type="SPECIFIC" ItemId="40548">
+		<Item ItemId="40533" Count="1" />	<!--古代钥匙(下半部)-->
+		<Item ItemId="192" Count="1" />		<!--水精灵之弓-->
+	</TreasureBox>
+
+	<!--马沙之袋-->
+	<TreasureBox Type="SPECIFIC" ItemId="40546">
+		<Item ItemId="192" Count="1" />		<!--水精灵之弓-->
+		<Item ItemId="20171" Count="1" />	<!--保护者手套-->
+		<Item ItemId="40245" Count="1" />	<!--精灵水晶(召唤强力属性精灵)-->
+	</TreasureBox>
+
+
+<!--法师任务-->
+	<!--塔拉斯的魔法袋-->
+	<TreasureBox Type="SPECIFIC" ItemId="40599">
+		<Item ItemId="133" Count="1" />		<!--古代人的智慧-->
+		<Item ItemId="20055" Count="1" />	<!--玛那斗篷-->
+	</TreasureBox>
+
+
+<!--黑暗妖精任务-->
+	<!--康之袋-->
+	<TreasureBox Type="SPECIFIC" ItemId="40598">
+		<Item ItemId="20004" Count="1" />	<!--影子面具-->
+		<Item ItemId="40268" Count="1" />	<!--黑暗精灵水晶(提炼魔石)-->
+	</TreasureBox>
+
+	<!--暗杀名单之袋-->
+	<TreasureBox Type="SPECIFIC" ItemId="40556">
+		<Item ItemId="40596" Count="1" />	<!--死亡誓约-->
+	</TreasureBox>
+
+	<!--暗杀名单之袋-->
+	<TreasureBox Type="SPECIFIC" ItemId="40556">
+		<Item ItemId="40557" Count="1" />	<!--暗杀名单(古鲁丁村)-->
+		<Item ItemId="40558" Count="1" />	<!--暗杀名单(奇岩村)-->
+		<Item ItemId="40559" Count="1" />	<!--暗杀名单(亚丁城镇)-->
+		<Item ItemId="40560" Count="1" />	<!--暗杀名单(风木村)-->
+		<Item ItemId="40561" Count="1" />	<!--暗杀名单(肯特村)-->
+		<Item ItemId="40562" Count="1" />	<!--暗杀名单(海音村)-->
+		<Item ItemId="40563" Count="1" />	<!--暗杀名单(燃柳村)-->
+	</TreasureBox>
+
+	<!--伦得之袋-->
+	<TreasureBox Type="SPECIFIC" ItemId="40545">
+		<Item ItemId="20164" Count="1" />	<!--影子手套-->
+		<Item ItemId="40270" Count="1" />	<!--黑暗精灵水晶(行走加速)-->
+	</TreasureBox>
+
+	<!--刺客首领的箱子-->
+	<TreasureBox Type="SPECIFIC" ItemId="40571">
+		<Item ItemId="40648" Count="1" />	<!--生锈的刺客之剑-->
+		<Item ItemId="40595" Count="1" />	<!--死亡之证-->
+	</TreasureBox>
+
+	<!--布鲁迪卡之袋-->
+	<TreasureBox Type="SPECIFIC" ItemId="40553">
+		<Item ItemId="20195" Count="1" />	<!--影子长靴-->
+		<Item ItemId="40276" Count="1" />	<!--黑暗精灵水晶(暗影闪避)-->
+	</TreasureBox>
+
+
+<!--威顿村庄-->
+	<!--卡立普的袋子(钻石)-->
+	<TreasureBox Type="RANDOM" ItemId="49005">
+		<Item ItemId="40010" Count="2" Chance="21" />		<!--治愈药水-->
+		<Item ItemId="40408" Count="2" Chance="16" />		<!--金属块-->
+		<Item ItemId="40013" Count="1" Chance="12" />		<!--自我加速药水-->
+		<Item ItemId="40021" Count="1" Chance="11" />		<!--浓缩终极体力恢复剂-->
+		<Item ItemId="40018" Count="1" Chance="10" />		<!--强化绿色药水-->
+		<Item ItemId="40494" Count="5" Chance="9" />		<!--纯粹的米索莉块-->
+		<Item ItemId="40014" Count="1" Chance="5" />		<!--勇敢药水-->
+		<Item ItemId="40400" Count="1" Chance="5" />		<!--奇美拉之皮(蛇)-->
+		<Item ItemId="40779" Count="1" Chance="5" />		<!--钢铁块-->
+		<Item ItemId="40317" Count="1" Chance="3" />		<!--磨刀石-->
+		<Item ItemId="40304" Count="1" Chance="1" />		<!--马普勒之石-->
+		<Item ItemId="40428" Count="1" Chance="1" />		<!--月光之泪-->
+		<Item ItemId="40489" Count="1" Chance="1" />		<!--黄金原石-->
+	</TreasureBox>
+
+	<!--卡立普的袋子(红宝石)-->
+	<TreasureBox Type="RANDOM" ItemId="49006">
+		<Item ItemId="40011" Count="2" Chance="17" />		<!--强力治愈药水-->
+		<Item ItemId="40013" Count="1" Chance="14" />		<!--自我加速药水-->
+		<Item ItemId="40408" Count="2" Chance="12" />		<!--金属块-->
+		<Item ItemId="40018" Count="1" Chance="10" />		<!--强化绿色药水-->
+		<Item ItemId="40320" Count="3" Chance="10" />		<!--一级黑魔石-->
+		<Item ItemId="40406" Count="4" Chance="8" />		<!--高级皮革-->
+		<Item ItemId="40014" Count="1" Chance="5" />		<!--勇敢药水-->
+		<Item ItemId="40020" Count="1" Chance="5" />		<!--浓缩强力体力恢复剂-->
+		<Item ItemId="40399" Count="1" Chance="5" />		<!--奇美拉之皮(狮子)-->
+		<Item ItemId="40458" Count="1" Chance="5" />		<!--光明的鳞片-->
+		<Item ItemId="40496" Count="2" Chance="6" />		<!--粗糙的米索莉块-->
+		<Item ItemId="40441" Count="1" Chance="1" />		<!--白金原石-->
+		<Item ItemId="40305" Count="1" Chance="1" />		<!--帕格里奥之石-->
+		<Item ItemId="40468" Count="1" Chance="1" />		<!--银原石-->
+	</TreasureBox>
+
+	<!--卡立普的袋子(蓝宝石)-->
+	<TreasureBox Type="RANDOM" ItemId="49007">
+		<Item ItemId="40010" Count="5" Chance="19" />		<!--治愈药水-->
+		<Item ItemId="40013" Count="2" Chance="15" />		<!--自我加速药水-->
+		<Item ItemId="40408" Count="2" Chance="15" />		<!--金属块-->
+		<Item ItemId="40015" Count="2" Chance="12" />		<!--蓝色药水-->
+		<Item ItemId="40016" Count="1" Chance="10" />		<!--慎重药水-->
+		<Item ItemId="40318" Count="1" Chance="10" />		<!--魔法宝石-->
+		<Item ItemId="40494" Count="5" Chance="6" />		<!--纯粹的米索莉块-->
+		<Item ItemId="40398" Count="1" Chance="5" />		<!--奇美拉之皮(山羊)-->
+		<Item ItemId="40521" Count="1" Chance="3" />		<!--精灵羽翼-->
+		<Item ItemId="40068" Count="1" Chance="1" />		<!--精灵饼干-->
+		<Item ItemId="40307" Count="1" Chance="1" />		<!--沙哈之石-->
+		<Item ItemId="40441" Count="1" Chance="1" />		<!--白金原石-->
+		<Item ItemId="40444" Count="1" Chance="1" />		<!--黑色米索莉原石-->
+		<Item ItemId="40489" Count="1" Chance="1" />		<!--黄金原石-->
+	</TreasureBox>
+
+	<!--卡立普的袋子(绿宝石)-->
+	<TreasureBox Type="RANDOM" ItemId="49008">
+		<Item ItemId="40010" Count="3" Chance="20" />		<!--治愈药水-->
+		<Item ItemId="40408" Count="3" Chance="17" />		<!--奥里哈鲁根-->
+		<Item ItemId="40012" Count="1" Chance="8" />		<!--终极治愈药水-->
+		<Item ItemId="40013" Count="1" Chance="12" />		<!--自我加速药水-->
+		<Item ItemId="40015" Count="1" Chance="8" />		<!--蓝色药水-->
+		<Item ItemId="40508" Count="4" Chance="8" />		<!--沙哈之石-->
+		<Item ItemId="40458" Count="1" Chance="7" />		<!--光明的鳞片-->
+		<Item ItemId="40397" Count="1" Chance="5" />		<!--奇美拉之皮(龙)-->
+		<Item ItemId="40468" Count="1" Chance="1" />		<!--银原石-->
+		<Item ItemId="40515" Count="1" Chance="5" />		<!--元素石-->
+		<Item ItemId="40779" Count="1" Chance="5" />		<!--钢铁块-->
+		<Item ItemId="40068" Count="1" Chance="2" />		<!--精灵饼干-->
+		<Item ItemId="40306" Count="1" Chance="1" />		<!--伊娃之石-->
+		<Item ItemId="40444" Count="1" Chance="1" />		<!--黑色米索莉原石-->
+	</TreasureBox>
+
+
+	<!--卡立普的高级袋子(品质钻石)-->
+	<TreasureBox Type="RANDOM" ItemId="49009">
+		<Item ItemId="40010" Count="20" Chance="15" />		<!--治愈药水-->
+		<Item ItemId="40014" Count="2" Chance="9" />		<!--勇敢药水-->
+		<Item ItemId="40018" Count="3" Chance="9" />		<!--强化绿色药水-->
+		<Item ItemId="40021" Count="2" Chance="9" />		<!--浓缩终极体力恢复剂-->
+		<Item ItemId="40317" Count="1" Chance="9" />		<!--磨刀石-->
+		<Item ItemId="40318" Count="3" Chance="9" />		<!--魔法宝石-->
+		<Item ItemId="40400" Count="2" Chance="9" />		<!--奇美拉之皮(蛇)-->
+		<Item ItemId="40408" Count="3" Chance="9" />		<!--金属块-->
+		<Item ItemId="40494" Count="30" Chance="9" />		<!--纯粹的米索莉块-->
+		<Item ItemId="40779" Count="2" Chance="9" />		<!--钢铁块-->
+		<Item ItemId="40304" Count="1" Chance="1" />		<!--马普勒之石-->
+		<Item ItemId="40396" Count="1" Chance="0.5" />		<!--地龙鳞-->
+		<Item ItemId="40428" Count="1" Chance="1.5" />		<!--月光之泪-->
+		<Item ItemId="40489" Count="1" Chance="1" />		<!--黄金原石-->
+	</TreasureBox>
+
+	<!--卡立普的高级袋子(品质红宝石)-->
+	<TreasureBox Type="RANDOM" ItemId="49011">
+		<Item ItemId="40011" Count="5" Chance="15" />		<!--强力治愈药水-->
+		<Item ItemId="40013" Count="5" Chance="8" />		<!--自我加速药水-->
+		<Item ItemId="40014" Count="2" Chance="8" />		<!--勇敢药水-->
+		<Item ItemId="40018" Count="2" Chance="8" />		<!--强化绿色药水-->
+		<Item ItemId="40020" Count="5" Chance="8" />		<!--浓缩强力体力恢复剂-->
+		<Item ItemId="40021" Count="2" Chance="8" />		<!--浓缩终极体力恢复剂-->
+		<Item ItemId="40320" Count="5" Chance="8" />		<!--一级黑魔石-->
+		<Item ItemId="40399" Count="1" Chance="8" />		<!--奇美拉之皮(狮子)-->
+		<Item ItemId="40408" Count="4" Chance="8" />		<!--金属块-->
+		<Item ItemId="40458" Count="2" Chance="8" />		<!--光明的鳞片-->
+		<Item ItemId="40496" Count="3" Chance="8.5" />		<!--粗糙的米索莉块-->
+		<Item ItemId="40305" Count="1" Chance="1.5" />		<!--帕格里奥之石-->
+		<Item ItemId="40393" Count="1" Chance="0.5" />		<!--火龙鳞-->
+		<Item ItemId="40441" Count="1" Chance="1" />		<!--白金原石-->
+		<Item ItemId="40489" Count="1" Chance="1" />		<!--黄金原石-->
+		<Item ItemId="40513" Count="1" Chance="0.5" />		<!--食人巨魔的血-->
+	</TreasureBox>
+
+	<!--卡立普的高级袋子(品质蓝宝石)-->
+	<TreasureBox Type="RANDOM" ItemId="49012">
+		<Item ItemId="40010" Count="20" Chance="15" />		<!--治愈药水-->
+		<Item ItemId="40015" Count="2" Chance="8" />		<!--蓝色药水-->
+		<Item ItemId="40016" Count="2" Chance="8" />		<!--慎重药水-->
+		<Item ItemId="40018" Count="2" Chance="8" />		<!--强化绿色药水-->
+		<Item ItemId="40068" Count="2" Chance="8" />		<!--精灵饼干-->
+		<Item ItemId="40318" Count="4" Chance="8" />		<!--魔法宝石-->
+		<Item ItemId="40398" Count="1" Chance="8" />		<!--奇美拉之皮(山羊)-->
+		<Item ItemId="40408" Count="5" Chance="8" />		<!--金属块-->
+		<Item ItemId="40458" Count="1" Chance="8" />		<!--光明的鳞片-->
+		<Item ItemId="40494" Count="40" Chance="8" />		<!--纯粹的米索莉块-->
+		<Item ItemId="40521" Count="2" Chance="8" />		<!--精灵羽翼-->
+		<Item ItemId="40307" Count="1" Chance="1" />		<!--沙哈之石-->
+		<Item ItemId="40394" Count="1" Chance="0.5" />		<!--风龙鳞-->
+		<Item ItemId="40441" Count="1" Chance="1" />		<!--白金原石-->
+		<Item ItemId="40444" Count="1" Chance="1.5" />		<!--黑色米索莉原石-->
+		<Item ItemId="40489" Count="2" Chance="1" />		<!--黄金原石-->
+	</TreasureBox>
+
+	<!--卡立普的高级袋子(品质绿宝石)-->
+	<TreasureBox Type="RANDOM" ItemId="49010">
+		<Item ItemId="40011" Count="8" Chance="14" />		<!--强力治愈药水-->
+		<Item ItemId="40012" Count="5" Chance="9" />		<!--终极治愈药水-->
+		<Item ItemId="40014" Count="1" Chance="9" />		<!--勇敢药水-->
+		<Item ItemId="40015" Count="3" Chance="9" />		<!--蓝色药水-->
+		<Item ItemId="40016" Count="2" Chance="9" />		<!--慎重药水-->
+		<Item ItemId="40397" Count="1" Chance="9" />		<!--奇美拉之皮(龙)-->
+		<Item ItemId="40408" Count="5" Chance="9" />		<!--金属块-->
+		<Item ItemId="40458" Count="2" Chance="9" />		<!--光明的鳞片-->
+		<Item ItemId="40508" Count="8" Chance="9" />		<!--奥里哈鲁根-->
+		<Item ItemId="40779" Count="1" Chance="9" />		<!--钢铁块-->
+		<Item ItemId="40306" Count="1" Chance="1" />		<!--伊娃之石-->
+		<Item ItemId="40395" Count="1" Chance="0.5" />		<!--水龙鳞-->
+		<Item ItemId="40444" Count="1" Chance="1" />		<!--黑色米索莉原石-->
+		<Item ItemId="40468" Count="2" Chance="1.5" />		<!--银原石-->
+		<Item ItemId="40515" Count="1" Chance="1" />		<!--元素石-->
+	</TreasureBox>
+
+
+<!--火龙窟-->
+        <!--多鲁嘉1世传家之宝-->
+	<TreasureBox Type="RANDOM" ItemId="40623">
+		<Item ItemId="66" Count="1" Chance="5" />		<!--屠龙剑-->
+		<Item ItemId="59" Count="1" Chance="5" />		<!--骑士范德之剑-->
+		<Item ItemId="58" Count="1" Chance="5" />		<!--死亡骑士的烈炎之剑-->
+		<Item ItemId="54" Count="1" Chance="5" />		<!--克特之剑-->
+		<Item ItemId="189" Count="1" Chance="5" />		<!--暗黑十字弓-->
+		<Item ItemId="100189" Count="1" Chance="5" />		<!--暗黑十字弓-->
+		<Item ItemId="84" Count="1" Chance="5" />		<!--暗黑双刀-->
+		<Item ItemId="100084" Count="1" Chance="5" />		<!--暗黑双刀-->
+		<Item ItemId="164" Count="1" Chance="5" />		<!--暗黑钢爪-->
+		<Item ItemId="100164" Count="1" Chance="5" />		<!--暗黑钢爪-->
+		<Item ItemId="119" Count="1" Chance="5" />		<!--恶魔镰刀-->
+		<Item ItemId="190" Count="1" Chance="5" />		<!--沙哈之弓-->
+		<Item ItemId="20108" Count="1" Chance="5" />		<!--古代风龙鳞盔甲-->
+		<Item ItemId="20119" Count="1" Chance="5" />		<!--古代火龙鳞盔甲-->
+		<Item ItemId="20130" Count="1" Chance="5" />		<!--古代地龙鳞盔甲-->
+		<Item ItemId="20153" Count="1" Chance="5" />		<!--古代水龙鳞盔甲-->
+		<Item ItemId="20156" Count="1" Chance="5" />		<!--风龙鳞盔甲-->
+		<Item ItemId="20159" Count="1" Chance="5" />		<!--火龙鳞盔甲-->
+		<Item ItemId="20146" Count="1" Chance="5" />		<!--地龙鳞盔甲-->
+		<Item ItemId="20127" Count="1" Chance="5" />		<!--水龙鳞盔甲-->
+	</TreasureBox>
+
+	<!--多鲁嘉2世传家之宝-->
+	<TreasureBox Type="RANDOM" ItemId="40624">
+		<Item ItemId="66" Count="1" Chance="5" />		<!--屠龙剑-->
+		<Item ItemId="59" Count="1" Chance="5" />		<!--骑士范德之剑-->
+		<Item ItemId="58" Count="1" Chance="5" />		<!--死亡骑士的烈炎之剑-->
+		<Item ItemId="54" Count="1" Chance="5" />		<!--克特之剑-->
+		<Item ItemId="189" Count="1" Chance="5" />		<!--暗黑十字弓-->
+		<Item ItemId="100189" Count="1" Chance="5" />		<!--暗黑十字弓-->
+		<Item ItemId="84" Count="1" Chance="5" />		<!--暗黑双刀-->
+		<Item ItemId="100084" Count="1" Chance="5" />		<!--暗黑双刀-->
+		<Item ItemId="164" Count="1" Chance="5" />		<!--暗黑钢爪-->
+		<Item ItemId="100164" Count="1" Chance="5" />		<!--暗黑钢爪-->
+		<Item ItemId="119" Count="1" Chance="5" />		<!--恶魔镰刀-->
+		<Item ItemId="190" Count="1" Chance="5" />		<!--沙哈之弓-->
+		<Item ItemId="20108" Count="1" Chance="5" />		<!--古代风龙鳞盔甲-->
+		<Item ItemId="20119" Count="1" Chance="5" />		<!--古代火龙鳞盔甲-->
+		<Item ItemId="20130" Count="1" Chance="5" />		<!--古代地龙鳞盔甲-->
+		<Item ItemId="20153" Count="1" Chance="5" />		<!--古代水龙鳞盔甲-->
+		<Item ItemId="20156" Count="1" Chance="5" />		<!--风龙鳞盔甲-->
+		<Item ItemId="20159" Count="1" Chance="5" />		<!--火龙鳞盔甲-->
+		<Item ItemId="20146" Count="1" Chance="5" />		<!--地龙鳞盔甲-->
+		<Item ItemId="20127" Count="1" Chance="5" />		<!--水龙鳞盔甲-->
+	</TreasureBox>
+
+	<!--多鲁嘉3世传家之宝-->
+	<TreasureBox Type="RANDOM" ItemId="40625">
+		<Item ItemId="66" Count="1" Chance="5" />		<!--屠龙剑-->
+		<Item ItemId="59" Count="1" Chance="5" />		<!--骑士范德之剑-->
+		<Item ItemId="58" Count="1" Chance="5" />		<!--死亡骑士的烈炎之剑-->
+		<Item ItemId="54" Count="1" Chance="5" />		<!--克特之剑-->
+		<Item ItemId="189" Count="1" Chance="5" />		<!--暗黑十字弓-->
+		<Item ItemId="100189" Count="1" Chance="5" />		<!--暗黑十字弓-->
+		<Item ItemId="84" Count="1" Chance="5" />		<!--暗黑双刀-->
+		<Item ItemId="100084" Count="1" Chance="5" />		<!--暗黑双刀-->
+		<Item ItemId="164" Count="1" Chance="5" />		<!--暗黑钢爪-->
+		<Item ItemId="100164" Count="1" Chance="5" />		<!--暗黑钢爪-->
+		<Item ItemId="119" Count="1" Chance="5" />		<!--恶魔镰刀-->
+		<Item ItemId="190" Count="1" Chance="5" />		<!--沙哈之弓-->
+		<Item ItemId="20108" Count="1" Chance="5" />		<!--古代风龙鳞盔甲-->
+		<Item ItemId="20119" Count="1" Chance="5" />		<!--古代火龙鳞盔甲-->
+		<Item ItemId="20130" Count="1" Chance="5" />		<!--古代地龙鳞盔甲-->
+		<Item ItemId="20153" Count="1" Chance="5" />		<!--古代水龙鳞盔甲-->
+		<Item ItemId="20156" Count="1" Chance="5" />		<!--风龙鳞盔甲-->
+		<Item ItemId="20159" Count="1" Chance="5" />		<!--火龙鳞盔甲-->
+		<Item ItemId="20146" Count="1" Chance="5" />		<!--地龙鳞盔甲-->
+		<Item ItemId="20127" Count="1" Chance="5" />		<!--水龙鳞盔甲-->
+	</TreasureBox>
+
+	<!--多鲁嘉4世传家之宝-->
+	<TreasureBox Type="RANDOM" ItemId="40626">
+	        <Item ItemId="66" Count="1" Chance="5" />		<!--屠龙剑-->
+		<Item ItemId="59" Count="1" Chance="5" />		<!--骑士范德之剑-->
+		<Item ItemId="58" Count="1" Chance="5" />		<!--死亡骑士的烈炎之剑-->
+		<Item ItemId="54" Count="1" Chance="5" />		<!--克特之剑-->
+		<Item ItemId="189" Count="1" Chance="5" />		<!--暗黑十字弓-->
+		<Item ItemId="100189" Count="1" Chance="5" />		<!--暗黑十字弓-->
+		<Item ItemId="84" Count="1" Chance="5" />		<!--暗黑双刀-->
+		<Item ItemId="100084" Count="1" Chance="5" />		<!--暗黑双刀-->
+		<Item ItemId="164" Count="1" Chance="5" />		<!--暗黑钢爪-->
+		<Item ItemId="100164" Count="1" Chance="5" />		<!--暗黑钢爪-->
+		<Item ItemId="119" Count="1" Chance="5" />		<!--恶魔镰刀-->
+		<Item ItemId="190" Count="1" Chance="5" />		<!--沙哈之弓-->
+		<Item ItemId="20108" Count="1" Chance="5" />		<!--古代风龙鳞盔甲-->
+		<Item ItemId="20119" Count="1" Chance="5" />		<!--古代火龙鳞盔甲-->
+		<Item ItemId="20130" Count="1" Chance="5" />		<!--古代地龙鳞盔甲-->
+		<Item ItemId="20153" Count="1" Chance="5" />		<!--古代水龙鳞盔甲-->
+		<Item ItemId="20156" Count="1" Chance="5" />		<!--风龙鳞盔甲-->
+		<Item ItemId="20159" Count="1" Chance="5" />		<!--火龙鳞盔甲-->
+		<Item ItemId="20146" Count="1" Chance="5" />		<!--地龙鳞盔甲-->
+		<Item ItemId="20127" Count="1" Chance="5" />		<!--水龙鳞盔甲-->
+	</TreasureBox>
+
+	<!--多鲁嘉5世传家之宝-->
+	<TreasureBox Type="RANDOM" ItemId="40627">
+		<Item ItemId="66" Count="1" Chance="5" />		<!--屠龙剑-->
+		<Item ItemId="59" Count="1" Chance="5" />		<!--骑士范德之剑-->
+		<Item ItemId="58" Count="1" Chance="5" />		<!--死亡骑士的烈炎之剑-->
+		<Item ItemId="54" Count="1" Chance="5" />		<!--克特之剑-->
+		<Item ItemId="189" Count="1" Chance="5" />		<!--暗黑十字弓-->
+		<Item ItemId="100189" Count="1" Chance="5" />		<!--暗黑十字弓-->
+		<Item ItemId="84" Count="1" Chance="5" />		<!--暗黑双刀-->
+		<Item ItemId="100084" Count="1" Chance="5" />		<!--暗黑双刀-->
+		<Item ItemId="164" Count="1" Chance="5" />		<!--暗黑钢爪-->
+		<Item ItemId="100164" Count="1" Chance="5" />		<!--暗黑钢爪-->
+		<Item ItemId="119" Count="1" Chance="5" />		<!--恶魔镰刀-->
+		<Item ItemId="190" Count="1" Chance="5" />		<!--沙哈之弓-->
+		<Item ItemId="20108" Count="1" Chance="5" />		<!--古代风龙鳞盔甲-->
+		<Item ItemId="20119" Count="1" Chance="5" />		<!--古代火龙鳞盔甲-->
+		<Item ItemId="20130" Count="1" Chance="5" />		<!--古代地龙鳞盔甲-->
+		<Item ItemId="20153" Count="1" Chance="5" />		<!--古代水龙鳞盔甲-->
+		<Item ItemId="20156" Count="1" Chance="5" />		<!--风龙鳞盔甲-->
+		<Item ItemId="20159" Count="1" Chance="5" />		<!--火龙鳞盔甲-->
+		<Item ItemId="20146" Count="1" Chance="5" />		<!--地龙鳞盔甲-->
+		<Item ItemId="20127" Count="1" Chance="5" />		<!--水龙鳞盔甲-->
+	</TreasureBox>
+
+	<!--多鲁嘉6世传家之宝-->
+	<TreasureBox Type="RANDOM" ItemId="40628">
+		<Item ItemId="66" Count="1" Chance="5" />		<!--屠龙剑-->
+		<Item ItemId="59" Count="1" Chance="5" />		<!--骑士范德之剑-->
+		<Item ItemId="58" Count="1" Chance="5" />		<!--死亡骑士的烈炎之剑-->
+		<Item ItemId="54" Count="1" Chance="5" />		<!--克特之剑-->
+		<Item ItemId="189" Count="1" Chance="5" />		<!--暗黑十字弓-->
+		<Item ItemId="100189" Count="1" Chance="5" />		<!--暗黑十字弓-->
+		<Item ItemId="84" Count="1" Chance="5" />		<!--暗黑双刀-->
+		<Item ItemId="100084" Count="1" Chance="5" />		<!--暗黑双刀-->
+		<Item ItemId="164" Count="1" Chance="5" />		<!--暗黑钢爪-->
+		<Item ItemId="100164" Count="1" Chance="5" />		<!--暗黑钢爪-->
+		<Item ItemId="119" Count="1" Chance="5" />		<!--恶魔镰刀-->
+		<Item ItemId="190" Count="1" Chance="5" />		<!--沙哈之弓-->
+		<Item ItemId="20108" Count="1" Chance="5" />		<!--古代风龙鳞盔甲-->
+		<Item ItemId="20119" Count="1" Chance="5" />		<!--古代火龙鳞盔甲-->
+		<Item ItemId="20130" Count="1" Chance="5" />		<!--古代地龙鳞盔甲-->
+		<Item ItemId="20153" Count="1" Chance="5" />		<!--古代水龙鳞盔甲-->
+		<Item ItemId="20156" Count="1" Chance="5" />		<!--风龙鳞盔甲-->
+		<Item ItemId="20159" Count="1" Chance="5" />		<!--火龙鳞盔甲-->
+		<Item ItemId="20146" Count="1" Chance="5" />		<!--地龙鳞盔甲-->
+		<Item ItemId="20127" Count="1" Chance="5" />		<!--水龙鳞盔甲-->
+	</TreasureBox>
+
+	<!--多鲁嘉7世传家之宝-->
+	<TreasureBox Type="RANDOM" ItemId="40629">
+		<Item ItemId="66" Count="1" Chance="5" />		<!--屠龙剑-->
+		<Item ItemId="59" Count="1" Chance="5" />		<!--骑士范德之剑-->
+		<Item ItemId="58" Count="1" Chance="5" />		<!--死亡骑士的烈炎之剑-->
+		<Item ItemId="54" Count="1" Chance="5" />		<!--克特之剑-->
+		<Item ItemId="189" Count="1" Chance="5" />		<!--暗黑十字弓-->
+		<Item ItemId="100189" Count="1" Chance="5" />		<!--暗黑十字弓-->
+		<Item ItemId="84" Count="1" Chance="5" />		<!--暗黑双刀-->
+		<Item ItemId="100084" Count="1" Chance="5" />		<!--暗黑双刀-->
+		<Item ItemId="164" Count="1" Chance="5" />		<!--暗黑钢爪-->
+		<Item ItemId="100164" Count="1" Chance="5" />		<!--暗黑钢爪-->
+		<Item ItemId="119" Count="1" Chance="5" />		<!--恶魔镰刀-->
+		<Item ItemId="190" Count="1" Chance="5" />		<!--沙哈之弓-->
+		<Item ItemId="20108" Count="1" Chance="5" />		<!--古代风龙鳞盔甲-->
+		<Item ItemId="20119" Count="1" Chance="5" />		<!--古代火龙鳞盔甲-->
+		<Item ItemId="20130" Count="1" Chance="5" />		<!--古代地龙鳞盔甲-->
+		<Item ItemId="20153" Count="1" Chance="5" />		<!--古代水龙鳞盔甲-->
+		<Item ItemId="20156" Count="1" Chance="5" />		<!--风龙鳞盔甲-->
+		<Item ItemId="20159" Count="1" Chance="5" />		<!--火龙鳞盔甲-->
+		<Item ItemId="20146" Count="1" Chance="5" />		<!--地龙鳞盔甲-->
+		<Item ItemId="20127" Count="1" Chance="5" />		<!--水龙鳞盔甲-->
+	</TreasureBox>
+
+<!--沉默洞穴-->
+	<!--皮尔斯的礼物-->
+	<TreasureBox Type="RANDOM" ItemId="40715">
+		<Item ItemId="69" Count="1" Chance="6" />		<!--青铜双刀-->
+		<Item ItemId="152" Count="1" Chance="6" />		<!--青铜钢爪-->
+		<Item ItemId="40738" Count="1000" Chance="6" />		<!--银飞刀-->
+		<Item ItemId="40739" Count="1000" Chance="6" />		<!--飞刀-->
+		<Item ItemId="40740" Count="500" Chance="6" />		<!--重飞刀-->
+		<Item ItemId="71" Count="1" Chance="5" />		<!--钢铁双刀-->
+		<Item ItemId="72" Count="1" Chance="5" />		<!--暗影双刀-->
+		<Item ItemId="77" Count="1" Chance="5" />		<!--短双刀-->
+		<Item ItemId="80" Count="1" Chance="5" />		<!--大马士革双刀-->
+		<Item ItemId="153" Count="1" Chance="5" />		<!--钢铁钢爪-->
+		<Item ItemId="154" Count="1" Chance="5" />		<!--暗影钢爪-->
+		<Item ItemId="159" Count="1" Chance="5" />		<!--短钢爪-->
+		<Item ItemId="161" Count="1" Chance="5" />		<!--大马士革钢爪-->
+		<Item ItemId="75" Count="1" Chance="4" />		<!--黑暗双刀-->
+		<Item ItemId="158" Count="1" Chance="4" />		<!--黑暗钢爪-->
+		<Item ItemId="168" Count="1" Chance="4" />		<!--黑暗十字弓-->
+		<Item ItemId="20032" Count="1" Chance="3" />		<!--黑暗头饰-->
+		<Item ItemId="20070" Count="1" Chance="3" />		<!--黑暗斗篷-->
+		<Item ItemId="20132" Count="1" Chance="3" />		<!--黑暗披肩-->
+		<Item ItemId="20180" Count="1" Chance="3" />		<!--黑暗手套-->
+		<Item ItemId="20210" Count="1" Chance="3" />		<!--黑暗长靴-->
+		<Item ItemId="81" Count="1" Chance="1" />		<!--幽暗双刀-->
+		<Item ItemId="162" Count="1" Chance="1" />		<!--幽暗钢爪-->
+		<Item ItemId="177" Count="1" Chance="1" />		<!--幽暗十字弓-->
+	</TreasureBox>
+
+
+<!--肯特城地监-->
+	<!--古老皮袋-->
+	<TreasureBox Type="RANDOM" ItemId="40167">
+		<Item ItemId="40058" Count="2" Chance="25" />		<!--烟熏的面包屑-->
+		<Item ItemId="40071" Count="1" Chance="20" />		<!--烤焦的面包屑-->
+		<Item ItemId="40039" Count="2" Chance="15" />		<!--红酒-->
+		<Item ItemId="40040" Count="1" Chance="10" />		<!--威士忌-->
+		<Item ItemId="40331" Count="1" Chance="5" />		<!--肯特勇士之剑-->
+		<Item ItemId="40332" Count="1" Chance="5" />		<!--肯特射手之弓-->
+		<Item ItemId="40334" Count="1" Chance="5" />		<!--肯特刺客双刀-->
+		<Item ItemId="40335" Count="1" Chance="5" />		<!--肯特战士斧头-->
+		<Item ItemId="40336" Count="1" Chance="5" />		<!--肯特徽章长靴-->
+		<Item ItemId="40338" Count="1" Chance="5" />		<!--肯特徽章手套-->
+	</TreasureBox>
+
+	<!--古老丝袋-->
+	<TreasureBox Type="RANDOM" ItemId="40168">
+		<Item ItemId="40058" Count="3" Chance="23" />		<!--烟熏的面包屑-->
+		<Item ItemId="40071" Count="2" Chance="20" />		<!--烤焦的面包屑-->
+		<Item ItemId="40039" Count="3" Chance="15" />		<!--红酒-->
+		<Item ItemId="40040" Count="2" Chance="10" />		<!--威士忌-->
+		<Item ItemId="40331" Count="1" Chance="4" />		<!--肯特勇士之剑-->
+		<Item ItemId="40332" Count="1" Chance="4" />		<!--肯特射手之弓-->
+		<Item ItemId="40334" Count="1" Chance="4" />		<!--肯特刺客双刀-->
+		<Item ItemId="40335" Count="1" Chance="4" />		<!--肯特战士斧头-->
+		<Item ItemId="40336" Count="1" Chance="4" />		<!--肯特徽章长靴-->
+		<Item ItemId="40338" Count="1" Chance="4" />		<!--肯特徽章手套-->
+		<Item ItemId="40339" Count="1" Chance="4" />		<!--肯特徽章盾牌-->
+		<Item ItemId="40340" Count="1" Chance="4" />		<!--肯特徽章头盔-->
+	</TreasureBox>
+
+	<!--遗物袋子-->
+	<TreasureBox Type="RANDOM" ItemId="40415">
+		<Item ItemId="40058" Count="4" Chance="25" />		<!--烟熏的面包屑-->
+		<Item ItemId="40071" Count="3" Chance="20" />		<!--烤焦的面包屑-->
+		<Item ItemId="40039" Count="4" Chance="15" />		<!--红酒-->
+		<Item ItemId="40040" Count="3" Chance="10" />		<!--威士忌-->
+		<Item ItemId="40331" Count="1" Chance="3" />		<!--肯特勇士之剑-->
+		<Item ItemId="40332" Count="1" Chance="3" />		<!--肯特射手之弓-->
+		<Item ItemId="40333" Count="1" Chance="3" />		<!--肯特法师魔杖-->
+		<Item ItemId="40334" Count="1" Chance="3" />		<!--肯特刺客双刀-->
+		<Item ItemId="40335" Count="1" Chance="3" />		<!--肯特战士斧头-->
+		<Item ItemId="40336" Count="1" Chance="3" />		<!--肯特徽章长靴-->
+		<Item ItemId="40337" Count="1" Chance="3" />		<!--肯特徽章盔甲-->
+		<Item ItemId="40338" Count="1" Chance="3" />		<!--肯特徽章手套-->
+		<Item ItemId="40339" Count="1" Chance="3" />		<!--肯特徽章盾牌-->
+		<Item ItemId="40340" Count="1" Chance="3" />		<!--肯特徽章头盔-->
+	</TreasureBox>
+
+
+<!--污浊之地-->
+	<!--强盗的袋子-->
+	<TreasureBox Type="SPECIFIC" ItemId="41074">
+		<Item ItemId="40308" Count="500" />	<!--金币-->
+	</TreasureBox>
+
+	<!--妖魔宝物袋-->
+	<TreasureBox Type="SPECIFIC" ItemId="41242">
+		<Item ItemId="40930" Count="1" />	<!--烤肉-->
+		<Item ItemId="41081" Count="1" />	<!--妖魔尖牙-->
+		<Item ItemId="41082" Count="1" />	<!--妖魔尖牙项练-->
+		<Item ItemId="41085" Count="1" />	<!--预言家珍珠-->
+	</TreasureBox>
+
+
+<!--海贼岛-->
+	<!--小袋子-->
+	<TreasureBox Type="SPECIFIC" ItemId="40702">
+		<Item ItemId="40701" Count="1" />	<!--小藏宝图-->
+	</TreasureBox>
+
+
+<!--拉丝塔巴德地监-->
+        <!--法令军王印记盒-->
+	<TreasureBox Type="RANDOM" ItemId="40636">
+		<Item ItemId="40635" Count="3" Chance="80" />		<!--法令军团印记-->
+		<Item ItemId="40675" Count="1" Chance="8" />		<!--黑暗矿石-->
+		<Item ItemId="20030" Count="1" Chance="2" />		<!--神官头饰-->
+		<Item ItemId="20067" Count="1" Chance="2" />		<!--神官斗篷-->
+		<Item ItemId="20176" Count="1" Chance="2" />		<!--神官手套-->
+		<Item ItemId="20208" Count="1" Chance="2" />		<!--神官长靴-->
+		<Item ItemId="40703" Count="1" Chance="2" />		<!--心灵支配石-->
+		<Item ItemId="20109" Count="1" Chance="1" />		<!--法令军王长袍-->
+		<Item ItemId="20253" Count="1" Chance="1" />		<!--法令军王之炼-->
+	</TreasureBox>
+
+	<!--魔兽军王印记盒-->
+	<TreasureBox Type="RANDOM" ItemId="40639">
+		<Item ItemId="40638" Count="1" Chance="80" />		<!--魔兽军团印记-->
+		<Item ItemId="40675" Count="1" Chance="8" />		<!--黑暗矿石-->
+		<Item ItemId="20020" Count="1" Chance="2" />		<!--武官头盔-->
+		<Item ItemId="20058" Count="1" Chance="2" />		<!--武官斗篷-->
+		<Item ItemId="20168" Count="1" Chance="2" />		<!--武官手套-->
+		<Item ItemId="20201" Count="1" Chance="2" />		<!--武官长靴-->
+		<Item ItemId="40703" Count="1" Chance="2" />		<!--心灵支配石-->
+		<Item ItemId="155" Count="1" Chance="1" />		<!--魔兽军王之爪-->
+		<Item ItemId="20200" Count="1" Chance="1" />		<!--魔兽军王长靴-->
+	</TreasureBox>
+
+	<!--冥法军王印记盒-->
+	<TreasureBox Type="RANDOM" ItemId="40640">
+		<Item ItemId="40642" Count="1" Chance="80" />		<!--冥法军团印记-->
+		<Item ItemId="40675" Count="1" Chance="8" />		<!--黑暗矿石-->
+		<Item ItemId="20030" Count="1" Chance="2" />		<!--神官头饰-->
+		<Item ItemId="20067" Count="1" Chance="2" />		<!--神官斗篷-->
+		<Item ItemId="20176" Count="1" Chance="2" />		<!--神官手套-->
+		<Item ItemId="20208" Count="1" Chance="2" />		<!--神官长靴-->
+		<Item ItemId="40703" Count="1" Chance="2" />		<!--心灵支配石-->
+		<Item ItemId="20057" Count="1" Chance="2" />		<!--冥法军王斗篷-->
+	</TreasureBox>
+
+	<!--暗杀军王印记盒-->
+	<TreasureBox Type="RANDOM" ItemId="40668">
+		<Item ItemId="40667" Count="1" Chance="80" />		<!--暗杀军团印记-->
+		<Item ItemId="40675" Count="1" Chance="8" />		<!--黑暗矿石-->
+		<Item ItemId="20020" Count="1" Chance="2" />		<!--武官头盔-->
+		<Item ItemId="20058" Count="1" Chance="2" />		<!--武官斗篷-->
+		<Item ItemId="20168" Count="1" Chance="2" />		<!--武官手套-->
+		<Item ItemId="20201" Count="1" Chance="2" />		<!--武官长靴-->
+		<Item ItemId="40703" Count="1" Chance="2" />		<!--心灵支配石-->
+		<Item ItemId="78" Count="1" Chance="1" />		<!--暗杀军王之痕-->
+		<Item ItemId="20178" Count="1" Chance="1" />		<!--暗杀军王手套-->
+	</TreasureBox>
+
+	<!--拉斯塔巴德补给袋-->
+	<TreasureBox Type="RANDOM" ItemId="41243">
+		<Item ItemId="40308" Count="300" Chance="30" />		<!--金币-->
+		<Item ItemId="40308" Count="1000" Chance="10" />	<!--金币-->
+		<Item ItemId="40429" Count="1" Chance="10" />		<!--大洞穴卷轴碎片-->
+		<Item ItemId="40044" Count="1" Chance="5" />		<!--钻石-->
+		<Item ItemId="40045" Count="1" Chance="5" />		<!--红宝石-->
+		<Item ItemId="40046" Count="1" Chance="5" />		<!--蓝宝石-->
+		<Item ItemId="40047" Count="1" Chance="5" />		<!--绿宝石-->
+		<Item ItemId="40048" Count="1" Chance="3" />		<!--品质钻石-->
+		<Item ItemId="40049" Count="1" Chance="3" />		<!--品质红宝石-->
+		<Item ItemId="40050" Count="1" Chance="3" />		<!--品质蓝宝石-->
+		<Item ItemId="40051" Count="1" Chance="3" />		<!--品质绿宝石-->
+		<Item ItemId="140100" Count="3" Chance="3" />		<!--受祝福的瞬间移动卷轴-->
+		<Item ItemId="40008" Count="1" Chance="1" />		<!--枫木魔杖-->
+		<Item ItemId="40008" Count="1" Chance="1" />		<!--枫木魔杖-->
+		<Item ItemId="40052" Count="1" Chance="1" />		<!--高品质钻石-->
+		<Item ItemId="40053" Count="1" Chance="1" />		<!--高品质红宝石-->
+		<Item ItemId="40054" Count="1" Chance="1" />		<!--高品质蓝宝石-->
+		<Item ItemId="40055" Count="1" Chance="1" />		<!--高品质绿宝石-->
+		<Item ItemId="40308" Count="10000" Chance="1" />	<!--金币-->
+		<Item ItemId="40441" Count="1" Chance="1" />		<!--白金原石-->
+		<Item ItemId="40444" Count="1" Chance="1" />		<!--黑色米索莉原石-->
+		<Item ItemId="40468" Count="1" Chance="1" />		<!--银原石-->
+		<Item ItemId="40489" Count="1" Chance="1" />		<!--黄金原石-->
+		<Item ItemId="40508" Count="1" Chance="1" />		<!--奥里哈鲁根-->
+		<Item ItemId="40524" Count="1" Chance="1" />		<!--黑色血痕-->
+		<Item ItemId="140074" Count="1" Chance="1" />		<!--受祝福的对盔甲施法的卷轴-->
+		<Item ItemId="140087" Count="1" Chance="1" />		<!--受祝福的对武器施法的卷轴-->
+	</TreasureBox>
+
+	<!--拉斯塔巴德补给箱-->
+	<TreasureBox Type="RANDOM" ItemId="41244">
+		<Item ItemId="40675" Count="1" Chance="20" />		<!--黑暗矿石-->
+		<Item ItemId="40675" Count="2" Chance="20" />		<!--黑暗矿石-->
+		<Item ItemId="40675" Count="3" Chance="20" />		<!--黑暗矿石-->
+		<Item ItemId="40746" Count="10" Chance="4" />		<!--米索莉箭-->
+		<Item ItemId="40746" Count="15" Chance="4" />		<!--米索莉箭-->
+		<Item ItemId="40746" Count="20" Chance="4" />		<!--米索莉箭-->
+		<Item ItemId="40746" Count="25" Chance="3" />		<!--米索莉箭-->
+		<Item ItemId="40746" Count="30" Chance="3" />		<!--米索莉箭-->
+		<Item ItemId="40746" Count="35" Chance="2" />		<!--米索莉箭-->
+		<Item ItemId="40746" Count="40" Chance="2" />		<!--米索莉箭-->
+		<Item ItemId="6" Count="1" Chance="1" />		<!--拉斯塔巴德短剑-->
+		<Item ItemId="10" Count="1" Chance="1" />		<!--小武士刀-->
+		<Item ItemId="38" Count="1" Chance="1" />		<!--拉斯塔巴德长剑-->
+		<Item ItemId="82" Count="1" Chance="1" />		<!--拉斯塔巴德双刀-->
+		<Item ItemId="101" Count="1" Chance="1" />		<!--拉斯塔巴德矛-->
+		<Item ItemId="122" Count="1" Chance="1" />		<!--拉斯塔巴德魔杖-->
+		<Item ItemId="176" Count="1" Chance="1" />		<!--拉斯塔巴德弓-->
+		<Item ItemId="187" Count="1" Chance="1" />		<!--拉斯塔巴德十字弓-->
+		<Item ItemId="188" Count="1" Chance="1" />		<!--拉斯塔巴德重十字弓-->
+		<Item ItemId="20032" Count="1" Chance="1" />		<!--黑暗头饰-->
+		<Item ItemId="20102" Count="1" Chance="1" />		<!--拉斯塔巴德皮盔甲-->
+		<Item ItemId="20103" Count="1" Chance="1" />		<!--拉斯塔巴德长袍-->
+		<Item ItemId="20104" Count="1" Chance="1" />		<!--拉斯塔巴德银钉皮盔甲-->
+		<Item ItemId="20105" Count="1" Chance="1" />		<!--拉斯塔巴德链甲-->
+		<Item ItemId="20132" Count="1" Chance="1" />		<!--黑暗披肩-->
+		<Item ItemId="20199" Count="1" Chance="1" />		<!--拉斯塔巴德长靴-->
+		<Item ItemId="20224" Count="1" Chance="1" />		<!--拉斯塔巴德圆盾-->
+		<Item ItemId="40746" Count="50" Chance="1" />		<!--米索莉箭-->
+	</TreasureBox>
+
+
+<!--万圣节活动-->
+	<!--金南瓜-->
+	<TreasureBox Type="RANDOM" ItemId="40722">
+		<Item ItemId="40043" Count="10" Chance="15" />		<!--兔子的肝-->
+		<Item ItemId="40068" Count="30" Chance="15" />		<!--精灵饼干-->
+		<Item ItemId="40524" Count="10" Chance="18" />		<!--黑色血痕-->
+		<Item ItemId="20047" Count="1" Chance="5" />		<!--南瓜头套-->
+		<Item ItemId="20079" Count="1" Chance="10" />		<!--吸血鬼斗篷-->
+		<Item ItemId="20342" Count="1" Chance="10" />		<!--死神披肩-->
+		<Item ItemId="40031" Count="10" Chance="5" />		<!--恶魔之血-->
+		<Item ItemId="40039" Count="10" Chance="5" />		<!--红酒-->
+		<Item ItemId="40040" Count="10" Chance="5" />		<!--威士忌-->
+		<Item ItemId="100029" Count="1" Chance="1" />		<!--受祝福的银长剑-->
+		<Item ItemId="100037" Count="1" Chance="1" />		<!--受祝福的大马士革刀-->
+		<Item ItemId="100042" Count="1" Chance="1" />		<!--受祝福的细剑-->
+		<Item ItemId="100052" Count="1" Chance="1" />		<!--受祝福的双手剑-->
+		<Item ItemId="100074" Count="1" Chance="1" />		<!--受祝福的银光双刀-->
+		<Item ItemId="120280" Count="1" Chance="1" />		<!--受祝福的灭魔戒指-->
+		<Item ItemId="120309" Count="1" Chance="1" />		<!--受祝福的光明身体腰带-->
+		<Item ItemId="120310" Count="1" Chance="1" />		<!--受祝福的光明灵魂腰带-->
+		<Item ItemId="120311" Count="1" Chance="1" />		<!--受祝福的光明精神腰带-->
+		<Item ItemId="120317" Count="1" Chance="1" />		<!--受祝福的欧吉皮带-->
+		<Item ItemId="120320" Count="1" Chance="1" />		<!--受祝福的泰坦皮带-->
+		<Item ItemId="120321" Count="1" Chance="1" />		<!--受祝福的多罗皮带-->
+	</TreasureBox>
+
+	<!--银南瓜-->
+	<TreasureBox Type="RANDOM" ItemId="40723">
+		<Item ItemId="40021" Count="9" Chance="12" />		<!--浓缩终极体力恢复剂-->
+		<Item ItemId="20347" Count="1" Chance="5" />		<!--韩服-->
+		<Item ItemId="20348" Count="1" Chance="5" />		<!--和服-->
+		<Item ItemId="20350" Count="1" Chance="5" />		<!--雪人的项链-->
+		<Item ItemId="40015" Count="20" Chance="5" />		<!--蓝色药水-->
+		<Item ItemId="40024" Count="20" Chance="5" />		<!--古代终极体力恢复剂-->
+		<Item ItemId="40068" Count="5" Chance="5" />		<!--精灵饼干-->
+		<Item ItemId="40074" Count="1" Chance="5" />		<!--对盔甲施法的卷轴-->
+		<Item ItemId="40087" Count="1" Chance="5" />		<!--对武器施法的卷轴-->
+		<Item ItemId="40093" Count="8" Chance="5" />		<!--空的魔法卷轴(等级4)-->
+		<Item ItemId="40094" Count="8" Chance="5" />		<!--空的魔法卷轴(等级5)-->
+		<Item ItemId="40212" Count="1" Chance="5" />		<!--魔法书(变形术)-->
+		<Item ItemId="40218" Count="1" Chance="5" />		<!--魔法书(创造魔法武器)-->
+		<Item ItemId="40524" Count="1" Chance="5" />		<!--黑色血痕-->
+		<Item ItemId="140068" Count="1" Chance="5" />		<!--受祝福的精灵饼干-->
+		<Item ItemId="100004" Count="1" Chance="2" />		<!--受祝福的匕首-->
+		<Item ItemId="100025" Count="1" Chance="2" />		<!--受祝福的银剑-->
+		<Item ItemId="100052" Count="1" Chance="2" />		<!--受祝福的双手剑-->
+		<Item ItemId="100099" Count="1" Chance="2" />		<!--受祝福的精灵之矛-->
+		<Item ItemId="100057" Count="1" Chance="2" />		<!--受祝福的瑟鲁基之剑-->
+		<Item ItemId="100169" Count="1" Chance="2" />		<!--受祝福的猎人之弓-->
+		<Item ItemId="120011" Count="1" Chance="2" />		<!--受祝福的抗魔法头盔-->
+		<Item ItemId="120085" Count="1" Chance="2" />		<!--受祝福的T恤-->
+		<Item ItemId="120137" Count="1" Chance="2" />		<!--受祝福的精灵链甲-->
+	</TreasureBox>
+
+	<!--铜南瓜-->
+	<TreasureBox Type="RANDOM" ItemId="40724">
+		<Item ItemId="20345" Count="1" Chance="5" />		<!--柯利的项链-->
+		<Item ItemId="20346" Count="1" Chance="5" />		<!--浣熊的项链-->
+		<Item ItemId="20349" Count="1" Chance="5" />		<!--猎犬项链-->
+		<Item ItemId="40014" Count="10" Chance="5" />		<!--勇敢药水-->
+		<Item ItemId="40015" Count="5" Chance="5" />		<!--蓝色药水-->
+		<Item ItemId="40018" Count="1" Chance="5" />		<!--强化绿色药水-->
+		<Item ItemId="40028" Count="60" Chance="5" />		<!--苹果汁-->
+		<Item ItemId="40043" Count="1" Chance="5" />		<!--兔子的肝-->
+		<Item ItemId="40058" Count="3" Chance="5" />		<!--烟熏的面包屑-->
+		<Item ItemId="40068" Count="1" Chance="5" />		<!--精灵饼干-->
+		<Item ItemId="40071" Count="1" Chance="5" />		<!--烤焦的面包屑-->
+		<Item ItemId="40088" Count="3" Chance="5" />		<!--变形卷轴-->
+		<Item ItemId="40089" Count="10" Chance="5" />		<!--复活卷轴-->
+		<Item ItemId="40318" Count="20" Chance="5" />		<!--魔法宝石-->
+		<Item ItemId="140061" Count="1" Chance="5" />		<!--受祝福的柠檬-->
+		<Item ItemId="140062" Count="1" Chance="5" />		<!--受祝福的香蕉-->
+		<Item ItemId="140065" Count="1" Chance="5" />		<!--受祝福的情人礼物(糖果)-->
+		<Item ItemId="140069" Count="1" Chance="5" />		<!--受祝福的橘子-->
+		<Item ItemId="140072" Count="1" Chance="5" />		<!--受祝福的烤薄饼-->
+		<Item ItemId="140506" Count="1" Chance="5" />		<!--受祝福的安特的水果-->
+	</TreasureBox>
+
+<!--圣诞节活动-->
+	<!--红短袜-->
+	<TreasureBox Type="RANDOM" ItemId="40728" DelItemId="40308" DelItemCount="3000">
+
+		<Item ItemId="40729" Count="1" Chance="11" />		<!--古代终极体力恢复剂-->
+		<Item ItemId="40093" Count="1" Chance="9.5" />		<!--空的魔法卷轴(等级4)-->
+		<Item ItemId="40094" Count="1" Chance="9.5" />		<!--空的魔法卷轴(等级5)-->
+		<Item ItemId="41285" Count="1" Chance="10" />		<!--空的魔法卷轴(等级5)-->
+		<Item ItemId="41286" Count="1" Chance="10" />		<!--空的魔法卷轴(等级5)-->
+		<Item ItemId="41287" Count="1" Chance="10" />		<!--空的魔法卷轴(等级5)-->
+		<Item ItemId="41288" Count="1" Chance="10" />		<!--空的魔法卷轴(等级5)-->
+		<Item ItemId="41289" Count="1" Chance="10" />		<!--空的魔法卷轴(等级5)-->
+		<Item ItemId="41290" Count="1" Chance="10" />		<!--空的魔法卷轴(等级5)-->
+		<Item ItemId="41291" Count="1" Chance="10" />		<!--空的魔法卷轴(等级5)-->
+	</TreasureBox>
+
+<!--圣诞节活动-->
+	<!--金短袜-->
+	<TreasureBox Type="RANDOM" ItemId="40729" DelItemId="40308" DelItemCount="7000">
+
+		<Item ItemId="10023" Count="1" Chance="5.6" />		<!--力量+1状态-->
+		<Item ItemId="10066" Count="1" Chance="5.6" />		<!--力量+1状态-->
+		<Item ItemId="10067" Count="1" Chance="5.6" />		<!--力量+1状态-->
+		<Item ItemId="10068" Count="1" Chance="5.6" />		<!--力量+1状态-->
+		<Item ItemId="10069" Count="1" Chance="5.6" />		<!--力量+1状态-->
+		<Item ItemId="10070" Count="1" Chance="5.6" />		<!--力量+1状态-->
+		<Item ItemId="10071" Count="1" Chance="5.6" />		<!--力量+1状态-->
+		<Item ItemId="10072" Count="1" Chance="5.6" />		<!--力量+1状态-->
+		<Item ItemId="10073" Count="1" Chance="5.6" />		<!--力量+1状态-->
+		<Item ItemId="10074" Count="1" Chance="5.6" />		<!--力量+1状态-->
+		<Item ItemId="10075" Count="1" Chance="5.5" />		<!--力量+1状态-->
+		<Item ItemId="10076" Count="1" Chance="5.5" />		<!--力量+1状态-->
+		<Item ItemId="10077" Count="1" Chance="5.5" />		<!--力量+1状态-->
+		<Item ItemId="10078" Count="1" Chance="5.5" />		<!--力量+1状态-->
+		<Item ItemId="10079" Count="1" Chance="5.5" />		<!--力量+1状态-->
+		<Item ItemId="10080" Count="1" Chance="5.5" />		<!--力量+1状态-->
+		<Item ItemId="10081" Count="1" Chance="5.5" />		<!--力量+1状态-->
+		<Item ItemId="10082" Count="1" Chance="5.5" />		<!--力量+1状态-->
+
+	</TreasureBox>
+
+
+<!--特殊道具-->
+	<!--无限箭筒-->
+	<TreasureBox Type="RANDOM" ItemId="40330">
+		<Item ItemId="40744" Count="4000" Chance="80" />	<!--银箭-->
+		<Item ItemId="40746" Count="1000" Chance="10" />	<!--米索莉箭-->
+		<Item ItemId="40747" Count="1000" Chance="5" />		<!--黑色米索莉箭-->
+		<Item ItemId="40748" Count="1000" Chance="5" />		<!--奥里哈鲁根箭-->
+	</TreasureBox>
+
+	<!--诅咒之血-->
+	<TreasureBox Type="RANDOM" ItemId="40416">
+		<Item ItemId="40031" Count="1" Chance="24" />		<!--恶魔之血-->
+		<Item ItemId="40009" Count="1" Chance="16" />		<!--驱逐魔杖-->
+		<Item ItemId="40006" Count="1" Chance="15" />		<!--松木魔杖-->
+		<Item ItemId="40007" Count="1" Chance="15" />		<!--闪电魔杖-->
+		<Item ItemId="40008" Count="1" Chance="15" />		<!--枫木魔杖-->
+		<Item ItemId="40524" Count="1" Chance="15" />		<!--黑色血痕-->
+	</TreasureBox>
+
+	<!--炼金术之石-->
+	<TreasureBox Type="RANDOM" ItemId="40414">
+		<Item ItemId="40033" Count="1" Chance="10" />		<!--强力治愈药水-->
+		<Item ItemId="40034" Count="1" Chance="10" />		<!--强力治愈药水-->
+		<Item ItemId="40035" Count="1" Chance="10" />		<!--强力治愈药水-->
+		<Item ItemId="40036" Count="1" Chance="10" />		<!--强力治愈药水-->
+		<Item ItemId="40037" Count="1" Chance="10" />		<!--强力治愈药水-->
+		<Item ItemId="40038" Count="1" Chance="10" />		<!--强力治愈药水-->
+		<Item ItemId="40393" Count="1" Chance="10" />		<!--强力治愈药水-->
+		<Item ItemId="40394" Count="1" Chance="10" />		<!--强力治愈药水-->
+		<Item ItemId="40395" Count="1" Chance="10" />		<!--强力治愈药水-->
+		<Item ItemId="40396" Count="1" Chance="10" />		<!--强力治愈药水-->
+	</TreasureBox>
+
+<!--随机抽取(幸运礼盒)-->
+	<TreasureBox Type="RANDOM" ItemId="149012">
+		<Item ItemId="40496" Count="10" Chance="6" />		<!--粗糙的米索莉块-->
+                <Item ItemId="40496" Count="20" Chance="1.8" />		<!--粗糙的米索莉块-->
+		<Item ItemId="40408" Count="10" Chance="6" />		<!--金属块-->
+                <Item ItemId="40408" Count="20" Chance="1.5" />		<!--金属块-->
+		<Item ItemId="40524" Count="10" Chance="6" />		<!--黑色血痕-->
+                <Item ItemId="40524" Count="20" Chance="1.5" />		<!--黑色血痕-->
+		<Item ItemId="40458" Count="10" Chance="6" />		<!--光明的鳞片-->
+                <Item ItemId="40458" Count="20" Chance="1.5" />		<!--光明的鳞片-->
+		<Item ItemId="40052" Count="2" Chance="5" />		<!--高品质钻石-->
+                <Item ItemId="40052" Count="5" Chance="1.5" />		<!--高品质钻石-->
+		<Item ItemId="40053" Count="2" Chance="6" />		<!--高品质红宝石-->
+                <Item ItemId="40053" Count="5" Chance="1.5" />		<!--高品质红宝石-->
+		<Item ItemId="40054" Count="2" Chance="6" />		<!--高品质蓝宝石-->
+                <Item ItemId="40054" Count="5" Chance="1.5" />		<!--高品质蓝宝石-->
+		<Item ItemId="40055" Count="2" Chance="6" />		<!--高品质绿宝石-->
+                <Item ItemId="40055" Count="5" Chance="1.5" />		<!--高品质绿宝石-->
+		<Item ItemId="40491" Count="2" Chance="3" />		<!--格利芬羽毛-->
+                <Item ItemId="40491" Count="5" Chance="1" />		<!--格利芬羽毛-->
+		<Item ItemId="40498" Count="2" Chance="3" />		<!--风之泪-->
+                <Item ItemId="40498" Count="5" Chance="1" />		<!--风之泪-->
+		<Item ItemId="140074" Count="2" Chance="3" />		<!--对盔甲施法的卷轴-->
+                <Item ItemId="140074" Count="5" Chance="1" />		<!--对盔甲施法的卷轴-->
+		<Item ItemId="140087" Count="2" Chance="3" />		<!--对武器施法的卷轴-->
+                <Item ItemId="140087" Count="5" Chance="1" />		<!--对武器施法的卷轴-->
+		<Item ItemId="240074" Count="2" Chance="3" />		<!--对盔甲施法的卷轴-->
+                <Item ItemId="240074" Count="5" Chance="1" />		<!--对盔甲施法的卷轴-->
+		<Item ItemId="240087" Count="2" Chance="3" />		<!--对武器施法的卷轴-->
+                <Item ItemId="240087" Count="5" Chance="1" />		<!--对武器施法的卷轴-->
+		<Item ItemId="40324" Count="2" Chance="3" />		<!--五级黑魔石-->
+                <Item ItemId="40324" Count="5" Chance="1" />		<!--五级黑魔石-->
+		<Item ItemId="40393" Count="1" Chance="1" />		<!--火龙鳞-->
+                <Item ItemId="40393" Count="2" Chance="0.5" />		<!--火龙鳞-->
+                <Item ItemId="40394" Count="1" Chance="1" />		<!--风龙鳞-->
+                <Item ItemId="40394" Count="2" Chance="0.5" />		<!--风龙鳞-->
+                <Item ItemId="40395" Count="1" Chance="1" />		<!--水龙鳞-->
+                <Item ItemId="40395" Count="2" Chance="0.5" />		<!--水龙鳞-->
+                <Item ItemId="40396" Count="1" Chance="1" />		<!--地龙鳞-->
+                <Item ItemId="40396" Count="2" Chance="0.5" />		<!--地龙鳞-->
+                <Item ItemId="60209" Count="1" Chance="0.5" />		<!--回忆蜡烛-->
+                <Item ItemId="600006" Count="1" Chance="0.5" />		<!--更名卡-->
+                <Item ItemId="99998" Count="2" Chance="1" />		<!--经验保护卷-->
+                <Item ItemId="99998" Count="5" Chance="0.5" />		<!--经验保护卷-->
+                <Item ItemId="88889" Count="1" Chance="1" />		<!--地属性强化卷轴-->
+                <Item ItemId="88888" Count="1" Chance="0.5" />		<!--火属性强化卷轴-->
+                <Item ItemId="88887" Count="1" Chance="1" />		<!--水属性强化卷轴-->
+                <Item ItemId="88886" Count="1" Chance="0.5" />		<!--风属性强化卷轴-->
+                <Item ItemId="41249" Count="1" Chance="0.3" />		<!--魔法娃娃：小思克巴-->
+                <Item ItemId="41250" Count="1" Chance="0.3" />		<!--魔法娃娃：野狼宝宝-->
+                <Item ItemId="40466" Count="1" Chance="0.1" />		<!--龙之心--> 
+                <Item ItemId="40070" Count="1" Chance="0.5" />		<!--进化果实--> 
+	</TreasureBox>
+
+<!--情人节巧克力-->
+	<!--巧克力-->
+	<TreasureBox Type="RANDOM" ItemId="140063">
+		<Item ItemId="40043" Count="10" Chance="7.5" />		<!--兔子的肝-->
+		<Item ItemId="40068" Count="30" Chance="7.5" />		<!--精灵饼干-->
+		<Item ItemId="40524" Count="10" Chance="6.5" />		<!--黑色血痕-->
+		<Item ItemId="20047" Count="1" Chance="2.5" />		<!--南瓜头套-->
+		<Item ItemId="20079" Count="1" Chance="2.5" />		<!--吸血鬼斗篷-->
+		<Item ItemId="20086" Count="1" Chance="2.5" />		<!--上衣隆吉特-->
+		<Item ItemId="20087" Count="1" Chance="2.5" />		<!--上衣隆贝特-->
+		<Item ItemId="20088" Count="1" Chance="2.5" />		<!--上衣隆奇特-->
+		<Item ItemId="20342" Count="1" Chance="2.5" />		<!--死神披肩-->
+		<Item ItemId="40031" Count="10" Chance="2.5" />		<!--恶魔之血-->
+		<Item ItemId="40039" Count="10" Chance="2.5" />		<!--红酒-->
+		<Item ItemId="40040" Count="10" Chance="2.5" />		<!--威士忌-->
+		<Item ItemId="100029" Count="1" Chance="0.5" />		<!--受祝福的银长剑-->
+		<Item ItemId="100037" Count="1" Chance="0.5" />		<!--受祝福的大马士革刀-->
+		<Item ItemId="100042" Count="1" Chance="0.5" />		<!--受祝福的细剑-->
+		<Item ItemId="100049" Count="1" Chance="0.5" />		<!--受祝福的武官之刃-->
+		<Item ItemId="100074" Count="1" Chance="0.5" />		<!--受祝福的银光双刀-->
+		<Item ItemId="120280" Count="1" Chance="0.5" />		<!--受祝福的灭魔戒指-->
+		<Item ItemId="120309" Count="1" Chance="0.5" />		<!--受祝福的光明身体腰带-->
+		<Item ItemId="120310" Count="1" Chance="0.5" />		<!--受祝福的光明灵魂腰带-->
+		<Item ItemId="120311" Count="1" Chance="0.5" />		<!--受祝福的光明精神腰带-->
+		<Item ItemId="120317" Count="1" Chance="0.5" />		<!--受祝福的欧吉皮带-->
+		<Item ItemId="120320" Count="1" Chance="0.5" />		<!--受祝福的泰坦皮带-->
+		<Item ItemId="120321" Count="1" Chance="0.5" />		<!--受祝福的多罗皮带-->
+		<Item ItemId="40021" Count="9" Chance="6" />		<!--浓缩终极体力恢复剂-->
+		<Item ItemId="20347" Count="1" Chance="2.5" />		<!--韩服-->
+		<Item ItemId="20348" Count="1" Chance="2.5" />		<!--和服-->
+		<Item ItemId="20350" Count="1" Chance="2.5" />		<!--雪人的项链-->
+		<Item ItemId="40015" Count="20" Chance="2.5" />		<!--蓝色药水-->
+		<Item ItemId="40024" Count="20" Chance="2.5" />		<!--古代终极体力恢复剂-->
+		<Item ItemId="40068" Count="5" Chance="2.5" />		<!--精灵饼干-->
+		<Item ItemId="40074" Count="1" Chance="2.5" />		<!--对盔甲施法的卷轴-->
+		<Item ItemId="40087" Count="1" Chance="2.5" />		<!--对武器施法的卷轴-->
+		<Item ItemId="40093" Count="8" Chance="2.5" />		<!--空的魔法卷轴(等级4)-->
+		<Item ItemId="40094" Count="8" Chance="2.5" />		<!--空的魔法卷轴(等级5)-->
+		<Item ItemId="40212" Count="1" Chance="2.5" />		<!--魔法书(变形术)-->
+		<Item ItemId="40218" Count="1" Chance="2.5" />		<!--魔法书(创造魔法武器)-->
+		<Item ItemId="40524" Count="1" Chance="2.5" />		<!--黑色血痕-->
+		<Item ItemId="140068" Count="1" Chance="2.5" />		<!--受祝福的精灵饼干-->
+		<Item ItemId="100004" Count="1" Chance="1" />		<!--受祝福的匕首-->
+		<Item ItemId="100025" Count="1" Chance="1" />		<!--受祝福的银剑-->
+		<Item ItemId="100062" Count="1" Chance="1" />		<!--受祝福的武官双手剑-->
+		<Item ItemId="100099" Count="1" Chance="1" />		<!--受祝福的精灵之矛-->
+		<Item ItemId="100132" Count="1" Chance="1" />		<!--受祝福的神官魔杖-->
+		<Item ItemId="100169" Count="1" Chance="1" />		<!--受祝福的猎人之弓-->
+		<Item ItemId="120011" Count="1" Chance="1" />		<!--受祝福的抗魔法头盔-->
+		<Item ItemId="120085" Count="1" Chance="1" />		<!--受祝福的T恤-->
+		<Item ItemId="120137" Count="1" Chance="1" />		<!--受祝福的精灵链甲-->
+	</TreasureBox>
+
+<!--春节红包-->
+	<TreasureBox Type="RANDOM" ItemId="77771">
+		<Item ItemId="44070" Count="1" Chance="50" />		<!--元宝-->
+                <Item ItemId="44070" Count="2" Chance="30" />		<!--元宝-->
+		<Item ItemId="44070" Count="3" Chance="10" />		<!--元宝-->
+                <Item ItemId="44070" Count="5" Chance="7" />		<!--元宝-->
+		<Item ItemId="44070" Count="10" Chance="3" />		<!--元宝-->
+		
+	</TreasureBox>
+
+	<!--新春大礼包-->
+	<TreasureBox Type="SPECIFIC" ItemId="77773">
+		<Item ItemId="99998" Count="20" />	<!--经验保护卷-->
+		<Item ItemId="600006" Count="1" />	<!--更名卡-->
+		<Item ItemId="60209" Count="1" />	<!--回忆蜡烛-->
+		<Item ItemId="140039" Count="1" />	<!--经验胶囊-->
+		<Item ItemId="140039" Count="1" />	<!--经验胶囊-->
+	</TreasureBox>
+
+
+<!--新手礼包-->
+	<TreasureBox Type="SPECIFIC" ItemId="99994">
+		<Item ItemId="70001" Count="1" />	<!--冒险者头盔-->
+		<Item ItemId="70002" Count="1" />	<!--冒险者盔甲-->
+		<Item ItemId="70003" Count="1" />	<!--冒险者斗篷-->
+                <Item ItemId="70004" Count="1" />	<!--冒险者手套-->
+		<Item ItemId="70005" Count="1" />	<!--冒险者之盾-->
+		<Item ItemId="70006" Count="1" />	<!--冒险者长靴-->
+                <Item ItemId="99998" Count="5" />	<!--经验保护卷-->
+                <Item ItemId="99995" Count="300" />	<!--活动治愈药水-->
+	</TreasureBox>
+
+<!--其他-->
+	<!--黑暗安特的水果-->
+	<TreasureBox Type="SPECIFIC" ItemId="40411">
+		<Item ItemId="20299" Count="1" />	<!--死亡的誓约-->
+	</TreasureBox>
+
+	<!--魔族的卷轴-->
+	<TreasureBox Type="SPECIFIC" ItemId="49013">
+		<Item ItemId="49014" Count="1" />	<!--灵魂之球-->
+	</TreasureBox>
+
+	<!--占星术师的瓮-->
+	<TreasureBox Type="SPECIFIC" ItemId="41312">
+		<Item ItemId="41313" Count="1" />	<!--宠物战金牌-->
+	</TreasureBox>
+
+        <!--魔法娃娃的袋子-->
+	<TreasureBox Type="RANDOM" ItemId="41247">
+		<Item ItemId="41248" Count="1" Chance="25" />		<!--魔法娃娃：肥肥-->
+		<Item ItemId="41249" Count="1" Chance="13" />		<!--魔法娃娃：小思克巴-->
+		<Item ItemId="41250" Count="1" Chance="20" />		<!--魔法娃娃：野狼宝宝-->
+		<Item ItemId="60204" Count="1" Chance="5" />		<!--魔法娃娃：长者-->
+		<Item ItemId="60205" Count="1" Chance="12" />		<!--魔法娃娃：奎斯坦修-->
+		<Item ItemId="60206" Count="1" Chance="25" />		<!--魔法娃娃：石头高仑-->
+	</TreasureBox>
+
+        <!--神秘大礼包-->
+	<TreasureBox Type="RANDOM" ItemId="88882">
+                <Item ItemId="99998" Count="5" Chance="12" />		<!--经验保护卷-->
+		<Item ItemId="88889" Count="5" Chance="12" />		<!--地属性强化卷轴-->
+		<Item ItemId="88888" Count="5" Chance="12" />		<!--火属性强化卷轴-->
+                <Item ItemId="88887" Count="5" Chance="12" />		<!--水属性强化卷轴-->
+                <Item ItemId="88886" Count="5" Chance="12" />		<!--风属性强化卷轴-->
+                <Item ItemId="99998" Count="10" Chance="6" />		<!--经验保护卷-->
+		<Item ItemId="88889" Count="10" Chance="6" />		<!--地属性强化卷轴-->
+		<Item ItemId="88888" Count="10" Chance="6" />		<!--火属性强化卷轴-->
+                <Item ItemId="88887" Count="10" Chance="6" />		<!--水属性强化卷轴-->
+                <Item ItemId="88886" Count="10" Chance="6" />		<!--风属性强化卷轴-->
+                <Item ItemId="99998" Count="20" Chance="2" />		<!--经验保护卷-->
+		<Item ItemId="88889" Count="20" Chance="2" />		<!--地属性强化卷轴-->
+		<Item ItemId="88888" Count="20" Chance="2" />		<!--火属性强化卷轴-->
+                <Item ItemId="88887" Count="20" Chance="2" />		<!--水属性强化卷轴-->
+                <Item ItemId="88886" Count="20" Chance="2" />		<!--风属性强化卷轴-->
+
+	</TreasureBox>
+</TreasureBoxList>

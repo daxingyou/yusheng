@@ -1,0 +1,10 @@
+一月 02, 2017 7:06:40 上午 l1j.server.c load
+信息: loading gameserver config
+一月 02, 2017 7:06:42 上午 l1j.server.server.o <init>
+信息: 载入已用最大ID: 742114547
+一月 02, 2017 7:06:42 上午 l1j.server.server.s load
+信息: 载入已用最大邮件id编号: 1035(0ms)
+一月 02, 2017 7:06:47 上午 l1j.server.server.datatables.P load
+信息: 载入BOSS召唤资料数量: 97(15ms)
+一月 02, 2017 7:06:48 上午 l1j.server.server.datatables.M load
+信息: 载入人物变身资料数量: 244(0ms)
