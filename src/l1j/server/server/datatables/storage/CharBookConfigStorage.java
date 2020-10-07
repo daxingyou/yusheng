@@ -1,4 +1,4 @@
-﻿package l1j.server.server.datatables.storage;
+package l1j.server.server.datatables.storage;
 
 import l1j.server.server.templates.L1BookConfig;
 

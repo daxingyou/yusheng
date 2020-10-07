@@ -1,4 +1,4 @@
-﻿package l1j.server.server.datatables.lock;
+package l1j.server.server.datatables.lock;
 
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;

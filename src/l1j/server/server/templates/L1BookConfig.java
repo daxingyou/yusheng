@@ -1,4 +1,4 @@
-﻿package l1j.server.server.templates;
+package l1j.server.server.templates;
 
 /** 記憶座標 ,設置紀錄 */
 public class L1BookConfig {
