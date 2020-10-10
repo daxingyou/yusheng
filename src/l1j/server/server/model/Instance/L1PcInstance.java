@@ -1480,7 +1480,7 @@ public class L1PcInstance extends L1Character {
 					}
 				}
 				if (player.isKOGifd()) {
-					player.sendPackets(new S_SkillSound(player.getId(), 13724));
+					player.sendPackets(new S_SkillSound(player.getId(), 12111));
 				}
 			}
 

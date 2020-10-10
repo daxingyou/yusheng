@@ -1080,26 +1080,26 @@ public class L1Magic {
 						if (units == 0) {
 							units = 1;
 						}
-						units += 17000;
+						units += 12060;
 						_pc.sendPackets(new S_SkillSound(_target.getId(), units));
 					}
 					if (tens > 0 || hundreads > 0 || thousands > 0
 							|| tenthousands > 0) {
-						tens += 17010;
+						tens += 12070;
 						_pc.sendPackets(new S_SkillSound(_target.getId(), tens));
 					}
 					if (hundreads > 0 || thousands > 0 || tenthousands > 0) {
-						hundreads += 17020;
+						hundreads += 12080;
 						_pc.sendPackets(new S_SkillSound(_target.getId(),
 								hundreads));
 					}
 					if (thousands > 0 || tenthousands > 0) {
-						thousands += 17030;
+						thousands += 12090;
 						_pc.sendPackets(new S_SkillSound(_target.getId(),
 								thousands));
 					}
 					if (tenthousands > 0) {
-						tenthousands += 17040;
+						tenthousands += 12100;
 						_pc.sendPackets(new S_SkillSound(_target.getId(),
 								tenthousands));
 					}
