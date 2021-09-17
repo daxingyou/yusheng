@@ -808,4 +808,39 @@
 			<Material Amount="500000" ItemId="40308"/>	<!--金币-->
 		</MakeItem>
 	</Action>
+	<Action Name="cjzy" NpcId="10000">
+		<MakeItem>
+			<Item Amount="1" ItemId="40164"/>	<!--冲击之晕魔法书-->
+			<Material Amount="2000000" ItemId="40308"/>	<!--金币200万-->
+			<Material Amount="100" ItemId="58031"/>	<!--冲击之晕碎片-->
+		</MakeItem>
+	</Action>
+	<Action Name="htzh" NpcId="10000">
+		<MakeItem>
+			<Item Amount="1" ItemId="40238"/>	<!--混体转换水晶-->
+			<Material Amount="1000000" ItemId="40308"/>	<!--金币100万-->
+			<Material Amount="100" ItemId="58032"/>	<!--混体转换碎片-->
+		</MakeItem>
+	</Action>
+	<Action Name="ssjz" NpcId="10000">
+		<MakeItem>
+			<Item Amount="1" ItemId="40197"/>	<!--神圣疾走魔法书-->
+			<Material Amount="1000000" ItemId="40308"/>	<!--金币100万-->
+			<Material Amount="100" ItemId="58033"/>	<!--神圣疾走碎片-->
+		</MakeItem>
+	</Action>
+	<Action Name="scs" NpcId="10000">
+		<MakeItem>
+			<Item Amount="1" ItemId="40240"/>	<!--三重矢水晶-->
+			<Material Amount="2000000" ItemId="40308"/>	<!--金币100万-->
+			<Material Amount="100" ItemId="58034"/>	<!--三重矢碎片-->
+		</MakeItem>
+	</Action>
+	<Action Name="scph" NpcId="10000">
+		<MakeItem>
+			<Item Amount="1" ItemId="40275"/>	<!--双重破坏水晶-->
+			<Material Amount="2000000" ItemId="40308"/>	<!--金币100万-->
+			<Material Amount="100" ItemId="58035"/>	<!--双重破坏碎片-->
+		</MakeItem>
+	</Action>
 </NpcActionList>

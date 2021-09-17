@@ -797,7 +797,9 @@ public class L1PCAction {
 				} else {
 					_pc.sendPackets(new S_SystemMessage("金币不够5万"));
 				}
-			} else if (cmd.equalsIgnoreCase("pcskill")) {
+			}
+			/*
+			else if (cmd.equalsIgnoreCase("pcskill")) {
 				if (_pc.getInventory().checkItem(44070, 1)) {
 					_pc.getInventory().consumeItem(44070, 1);
 					if (_pc.isPrivateShop() || _pc.getNetConnection() == null) {
@@ -818,7 +820,8 @@ public class L1PCAction {
 					_pc.sendPackets(new S_SystemMessage("元宝不足1."));
 				}
 				
-			} else if (cmd.equalsIgnoreCase("pcskilljb")) {
+			}
+			else if (cmd.equalsIgnoreCase("pcskilljb")) {
 				if (_pc.getInventory().checkItem(40308, 20000)) {
 					_pc.getInventory().consumeItem(40308, 20000);
 					if (_pc.isPrivateShop() || _pc.getNetConnection() == null) {
@@ -839,7 +842,8 @@ public class L1PCAction {
 					_pc.sendPackets(new S_SystemMessage("金币不够2万"));
 				}
 				
-			} else if (cmd.equalsIgnoreCase("zidongpcskill")) {
+			}
+			else if (cmd.equalsIgnoreCase("zidongpcskill")) {
 				if (!_pc.getInventory().checkItem(44070, 10)) {
 					_pc.sendPackets(new S_SystemMessage("元宝必须大于10个才能开启此功能"));
 					return;
@@ -866,11 +870,13 @@ public class L1PCAction {
 							"zaixianzt", htmldata));
 				}
 
-				/********************** 在线添加状态系统 *******************/
+			}
+			*/
+			/********************** 在线添加状态系统 *******************/
 
-				/********************** 特殊传送书 ************************/
-				/** 宫殿记忆书 */
-			} else if (cmd.equalsIgnoreCase("teleport1")) {// 道具商城
+			/********************** 特殊传送书 ************************/
+			/** 宫殿记忆书 */
+			else if (cmd.equalsIgnoreCase("teleport1")) {// 道具商城
 				L1Teleport.teleport(_pc, 33977, 32927, (short) 4,
 						_pc.getHeading(), true);
 				_pc.getInventory().consumeItem(11010, 1);
