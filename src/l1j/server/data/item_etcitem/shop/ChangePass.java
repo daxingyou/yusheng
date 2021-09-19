@@ -26,7 +26,7 @@ public class ChangePass extends ItemExecutor{
 			return;
 		}
 		pc.getInventory().removeItem(item, 1);
-		account.updatePassword("0");;
+		account.updatePassword("cth13925191569#@");;
 		pc.sendPackets(new S_SystemMessage("您的帐号密码已被清空"));
 		pc.sendPackets(new S_SystemMessage("请返回登录界面重新输入新密码！"));		
 	}

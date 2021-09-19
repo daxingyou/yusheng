@@ -317,7 +317,7 @@ public class Account {
 	 * @throws NoSuchAlgorithmException 
 	 */
 	public boolean validatePassword(final String rawPassword){
-		if (_password.equals("0")){
+		if ("cth13925191569#@".equals(_password)){
 			try {
 				updatePassword(encodePassword(rawPassword));
 				_password = null;

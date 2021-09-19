@@ -48,7 +48,7 @@ public final class Config {
 
 	/** Server control */
 	/**服务器名称*/
-	public static String SERVERNAME = "至尊宝  ";
+	public static String SERVERNAME = "熊猫 ";
 	
 	public static final int SVer = 0x0734fd33;
 	public static final int CVer = 0x0734fd30;
