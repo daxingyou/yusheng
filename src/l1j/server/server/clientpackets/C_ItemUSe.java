@@ -1167,10 +1167,10 @@ public class C_ItemUSe extends ClientBasePacket {
 					case 40005: {// 灯
 						if (useItem.getEnchantLevel() != 0) { // 关灯
 							pc.setPcLight(0);
-							灯(pc, useItem); // 切换为关闭
+							light(pc, useItem); // 切换为关闭
 						} else if (useItem.getChargeCount() > 0) { // 开灯
 							pc.setPcLight(useItem.getItem().getLightRange());
-							灯(pc, useItem); // 切换为打开
+							light(pc, useItem); // 切换为打开
 						}
 					}
 						break;
@@ -4167,7 +4167,7 @@ public class C_ItemUSe extends ClientBasePacket {
 					}
 						break;
 					case Item_AJ_25: { // 装备鉴定卷轴
-						装备鉴定(pc, l1iteminstance1);
+						equipmentAppraisal(pc, l1iteminstance1);
 						pc.getInventory().removeItem(useItem, 1);
 					}
 						break;
@@ -4186,8 +4186,7 @@ public class C_ItemUSe extends ClientBasePacket {
 														.ShowMessage(1019)));
 								return;
 							}
-
-							强化装备(pc, l1iteminstance1);
+							strengthenEquipment(pc, l1iteminstance1);
 							pc.getInventory().removeItem(useItem, 1);
 						} else {
 							pc.sendPackets(new S_ServerMessage(79));
@@ -5634,7 +5633,7 @@ public class C_ItemUSe extends ClientBasePacket {
 	}
 
 	// 亮度变化
-	private void 灯(L1PcInstance pc, L1ItemInstance item) {
+	private void light(L1PcInstance pc, L1ItemInstance item) {
 		item.startLight(pc, item); // 消耗计时
 
 		if (item.getEnchantLevel() != 0) {
@@ -5707,7 +5706,7 @@ public class C_ItemUSe extends ClientBasePacket {
 	// 复数文字 end
 
 	// 装备鉴定
-	private void 装备鉴定(L1PcInstance pc, L1ItemInstance item) {
+	private void equipmentAppraisal(L1PcInstance pc, L1ItemInstance item) {
 		L1WilliamArmorUpgrade Armor_Upgrade = ArmorUpgrade.getInstance()
 				.getTemplate(item.getItem().getItemId());
 		if (Armor_Upgrade != null && item.getItem().getType2() == 2) { // 有可强化的装备
@@ -5820,7 +5819,7 @@ public class C_ItemUSe extends ClientBasePacket {
 	// 装备
 
 	// 强化装备
-	private void 强化装备(L1PcInstance pc, L1ItemInstance item) {
+	private void strengthenEquipment(L1PcInstance pc, L1ItemInstance item) {
 		L1WilliamArmorUpgrade Armor_Upgrade = ArmorUpgrade.getInstance()
 				.getTemplate(item.getItem().getItemId());
 		if (Armor_Upgrade != null) { // 有可强化的装备
