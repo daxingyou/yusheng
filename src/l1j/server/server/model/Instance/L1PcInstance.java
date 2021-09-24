@@ -4826,7 +4826,8 @@ public class L1PcInstance extends L1Character {
 			// 等待处理，，瞬移。。等等设置
 			//if (this.getMap().isTeleportable()) { // 地图可瞬移身上有白瞬卷
 				// hjx1000
-        if (_AItarget == null) { //如果目标等于空
+		Boolean isNoTarget = false;
+        if (_AItarget == null && isNoTarget) { //如果目标等于空
 				if (this.getInventory().consumeItem(40308, 50)) {
 					L1Teleport.randomTeleport(this, true);
 				this.sendPackets(new S_SystemMessage(

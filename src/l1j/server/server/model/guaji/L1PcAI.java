@@ -29,7 +29,7 @@ public class L1PcAI implements Runnable {
         try {
         	// 关闭自动状态
         	_pc.setskillAuto(false);
-        	int loop = 10;
+        	int loop = 0;//设置为0取消延迟等待
         	for (; loop > 0;loop--){
         		if (_pc.isActived()){
     				_pc.sendPackets(new S_SystemMessage(String.format("\\aD 自动挂机%d秒后正式开启。", loop)));

@@ -41,17 +41,9 @@ import l1j.server.server.datatables.lock.ShouBaoReading;
 import l1j.server.server.datatables.lock.ShouShaReading;
 import l1j.server.server.model.Instance.L1ItemInstance;
 import l1j.server.server.model.Instance.L1PcInstance;
+import l1j.server.server.model.skill.L1SkillId;
 import l1j.server.server.model.skill.L1SkillUse;
-import l1j.server.server.serverpackets.S_CloseList;
-import l1j.server.server.serverpackets.S_GreenMessage;
-import l1j.server.server.serverpackets.S_HowManyMake;
-import l1j.server.server.serverpackets.S_ItemName;
-import l1j.server.server.serverpackets.S_Message_YN;
-import l1j.server.server.serverpackets.S_NPCTalkReturn;
-import l1j.server.server.serverpackets.S_RetrieveList;
-import l1j.server.server.serverpackets.S_SkillSound;
-import l1j.server.server.serverpackets.S_SystemMessage;
-import l1j.server.server.serverpackets.S_War;
+import l1j.server.server.serverpackets.*;
 import l1j.server.server.storage.CharactersItemStorage;
 import l1j.server.server.templates.L1CharacterAdenaTrade;
 import l1j.server.server.templates.L1CharaterTrade;
@@ -517,12 +509,46 @@ public class L1PCAction {
 							topc.getHeading(), false);
 					loadTopcHtml(_pc.getPage());
 				}
-			} else if (cmd.startsWith("start")) {
+			} else if (cmd.equalsIgnoreCase("start")) {
+				//_pc.sendPackets(new S_CloseList(_pc.getId()));
+				this._pc.setHomeX(this._pc.getX());
+				this._pc.setHomeY(this._pc.getY());
+//				String mapids ="53,54,54,55,56";//地图坐标
+//				if (mapids.contains(String.valueOf(_pc.getMapId()))) {
+//					_pc.sendPackets(new S_SystemMessage("\\aD非挂机地图无法开启！"));
+//				}
 				if (!_pc.isAiRunning()) {
 					_pc.startAI();
+					_pc.sendPackets(new S_SystemMessage("\\aD 开始自動狩獵。"));
 					//_pc.setskillAuto_gj(true); // 开启挂机状态设置
+				}else{
+					_pc.setActived(false);
+					//pc.setskillAuto_gj(false); // 关闭挂机状态
+					_pc.sendPackets(new S_SystemMessage("\\aD 自動狩獵已停止。"));
+					_pc.removeSkillEffect(L1SkillId.STATUS_BRAVE);
 				}
-				_pc.sendPackets(new S_CloseList(_pc.getId()));
+//				_pc.sendPackets(new S_CloseList(_pc.getId()));
+				return;
+
+			}else if (cmd.startsWith("gjfw")) {
+				int r = this._pc.gethookrange();
+				String colour = "\\F2";
+				if(r < 70 && cmd.equalsIgnoreCase("gjfw0")){
+					this._pc.sethookrange(r + 5);
+				}else if(cmd.equalsIgnoreCase("gjfw5")){
+					if(r - 5 < 0){
+						_pc.sendPackets(new S_SystemMessage(colour+"当前范围是0，代表不限制范围"));
+						return;
+					}else{
+						this._pc.sethookrange(r - 5);
+					}
+				}else {
+					_pc.sendPackets(new S_SystemMessage(colour+"当前已是最大范围70"));
+					return;
+				}
+				String[] rangs = {String.valueOf(this._pc.gethookrange())};
+				_pc.sendPackets(new S_NPCTalkReturn(this._pc.getId(), "gjks",rangs));
+				_pc.sendPackets(new S_SystemMessage(colour +"设置范围为："+(_pc.gethookrange())));
 				return;
 			} else if (cmd.equalsIgnoreCase("adena_trade_up")) {
 				if (_pc.getPage() <= 0) {
