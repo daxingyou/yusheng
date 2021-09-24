@@ -5798,7 +5798,7 @@ public class L1PcInstance extends L1Character {
 	public void setskillAuto(final boolean setskillAuto) {
 		this._skillAuto = setskillAuto;
 		if (setskillAuto) {
-			AutoMagic.automagic(this, skillIds);
+			AutoMagic.automagic(this, null);
 		}
 	}
 

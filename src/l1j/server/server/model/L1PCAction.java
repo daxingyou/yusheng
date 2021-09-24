@@ -509,7 +509,32 @@ public class L1PCAction {
 							topc.getHeading(), false);
 					loadTopcHtml(_pc.getPage());
 				}
-			} else if (cmd.equalsIgnoreCase("start")) {
+			}else if (cmd.equalsIgnoreCase("kqlys")) {
+				if (!this._pc.isskill46()) {
+					this._pc.setskill46(true);
+					this._pc.sendPackets(new S_SystemMessage("\\aD开启自动烈炎术,结束挂机会自动关闭"));
+				}else{
+					this._pc.setskill46(false);
+					this._pc.sendPackets(new S_SystemMessage("\\aD关闭自动烈炎术"));
+				}
+			} else if (cmd.equalsIgnoreCase("kqtzz")) {
+				if (!this._pc.isskill187()) {
+					this._pc.setskill187(true);
+					this._pc.sendPackets(new S_SystemMessage("\\aD开启自动屠宰者,结束挂机会自动关闭"));
+				}else{
+					this._pc.setskill187(false);
+					this._pc.sendPackets(new S_SystemMessage("\\aD关闭自动屠宰者"));
+				}
+			} else if (cmd.equalsIgnoreCase("kqscs")) {
+				if (!this._pc.isskill132()) {
+					this._pc.setskill132(true);
+					this._pc.sendPackets(new S_SystemMessage("\\aD开启自动三重矢,结束挂机会自动关闭"));
+				}else{
+					this._pc.setskill132(false);
+					this._pc.sendPackets(new S_SystemMessage("\\aD关闭自动三重矢"));
+				}
+			}
+			else if (cmd.equalsIgnoreCase("start")) {
 				//_pc.sendPackets(new S_CloseList(_pc.getId()));
 				this._pc.setHomeX(this._pc.getX());
 				this._pc.setHomeY(this._pc.getY());

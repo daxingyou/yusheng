@@ -578,6 +578,40 @@ public class L1PcInstance extends L1Character {
 		sendVisualEffect();
 	}
 
+    private Boolean _skill187;//屠宰者判断false关闭-ture开启
+
+    public boolean isskill187() {
+        return this._skill187;
+    }
+
+    public void setskill187(boolean setskill187) {//设置屠宰者判断false关闭-ture开启
+        this._skill187 = setskill187;
+        if (setskill187 && isSkillMastery(187)) AutoMagic.automagic(this, 187);
+    }
+
+    private Boolean _skill132;//三重矢判断false关闭-ture开启
+
+    public boolean isskill132() {
+        return this._skill132;
+    }
+
+    public void setskill132(boolean setskill132) {
+        this._skill132 = setskill132;
+        if (setskill132 && isSkillMastery(132)) AutoMagic.automagic(this, 132);
+    }
+
+    private Boolean _skill46;//烈炎术判断false关闭-ture开启
+
+    public boolean isskill46() {
+        return this._skill46;
+    }
+
+    public void setskill46(boolean setskill46) {
+        this._skill46 = setskill46;
+        if (setskill46 && isSkillMastery(46)) AutoMagic.automagic(this, 46);
+    }
+
+
 	public L1PcInstance() {
 		_speed = new AcceleratorChecker(this);
 		_accessLevel = 0;
@@ -592,6 +626,9 @@ public class L1PcInstance extends L1Character {
 		_action = new L1PCAction(this);
 		_tradewindow = new L1Inventory();
 		_blessEnchant = new L1PcBlessEnchant(this);
+        this._skill46 = false;//判断烈焰书是否开启
+        this._skill132 = false;//判断三重矢是否开启
+        this._skill187 = false;//判断屠宰者是否开启
 	}
 
 	public L1PcBlessEnchant getBlessEnchant() {
@@ -807,7 +844,7 @@ public class L1PcInstance extends L1Character {
 	/**
 	 * 指定群通知
 	 * 
-	 * @param playersList
+	 * @param
 	 *            通知配列
 	 */
 	private void notifyPlayersLogout(final Collection<L1PcInstance> collection) {
@@ -4031,7 +4068,7 @@ public class L1PcInstance extends L1Character {
 	/**
 	 * 重設名稱
 	 * 
-	 * @param b
+	 * @param
 	 */
 	public void rename(final int item) {
 		_rname = item;
@@ -5568,7 +5605,7 @@ public class L1PcInstance extends L1Character {
 	/**
 	 * 生存呐喊时间
 	 * 
-	 * @param h_time
+	 * @param
 	 */
 	public void set_h_time(long time) {
 		_h_time = time;
@@ -5799,7 +5836,7 @@ public class L1PcInstance extends L1Character {
 	public void setskillAuto(final boolean setskillAuto) {
 		this._skillAuto = setskillAuto;
 		if (setskillAuto) {
-			AutoMagic.automagic(this, skillIds);
+			AutoMagic.automagic(this, null);
 		}
 	}
 
