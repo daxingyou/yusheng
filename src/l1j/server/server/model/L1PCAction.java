@@ -509,7 +509,7 @@ public class L1PCAction {
 							topc.getHeading(), false);
 					loadTopcHtml(_pc.getPage());
 				}
-			}else if (cmd.equalsIgnoreCase("kqlys")) {_pc.
+			}else if (cmd.equalsIgnoreCase("kqlys")) {
 				if (!this._pc.isskill46()) {
 					this._pc.setskill46(true);
 					this._pc.sendPackets(new S_SystemMessage("\\aD开启自动烈炎术,结束挂机会自动关闭"));

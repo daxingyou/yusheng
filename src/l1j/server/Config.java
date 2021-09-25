@@ -497,6 +497,8 @@ public final class Config {
 
 	public static boolean GM_CANCELLATION_ON = false;
 
+	public static Boolean HPBAR = true;//血条显示开关
+
 	public static void load() {
 		_log.info("loading gameserver config");
 		//TODO 伺服器捆绑
@@ -722,7 +724,9 @@ public final class Config {
 			InputStream is = new FileInputStream(new File(ALT_SETTINGS_FILE));
 			altSettings.load(is);
 			is.close();
-			
+
+			HPBAR = Boolean.parseBoolean(altSettings.getProperty("hpBar", "true"));
+
 			dollPower4Random = Integer.parseInt(altSettings.getProperty("dollPower4Random ","5"));
 			
 			dollPower3Random = Integer.parseInt(altSettings.getProperty("dollPower3Random ","20"));

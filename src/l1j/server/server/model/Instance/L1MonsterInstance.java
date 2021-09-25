@@ -19,13 +19,7 @@ import l1j.server.server.model.L1Inventory;
 import l1j.server.server.model.L1Location;
 import l1j.server.server.model.L1Teleport;
 import l1j.server.server.model.skill.L1SkillId;
-import l1j.server.server.serverpackets.S_BlueMessage;
-import l1j.server.server.serverpackets.S_ChatPacket;
-import l1j.server.server.serverpackets.S_DoActionGFX;
-import l1j.server.server.serverpackets.S_NPCPack;
-import l1j.server.server.serverpackets.S_RemoveObject;
-import l1j.server.server.serverpackets.S_SkillBrave;
-import l1j.server.server.serverpackets.S_SystemMessage;
+import l1j.server.server.serverpackets.*;
 import l1j.server.server.templates.L1Item;
 import l1j.server.server.templates.L1Npc;
 import l1j.server.server.templates.L1ShouShaTemp;
@@ -453,6 +447,12 @@ public class L1MonsterInstance extends L1NpcInstance {
 			}
 			if (newHp > 0) {
 				setCurrentHp(newHp);
+				if (Config.HPBAR) { // 如果开启显示血条
+					L1PcInstance atkpc = whoAttacker(attacker);
+					if (atkpc != null) {
+						atkpc.sendPackets(new S_HPMeter(this));
+					}
+				}
 				hide();
 			}
 		} else if (!isDead()) { // 念
@@ -464,7 +464,27 @@ public class L1MonsterInstance extends L1NpcInstance {
 			// Death(attacker);
 		}
 	}
-	
+
+
+	/**
+	 * 判断主要攻击者
+	 *
+	 * @param  attacker
+	 */
+	private L1PcInstance  whoAttacker(L1Character attacker){
+			// 判断主要攻击者
+			L1PcInstance atkpc = null;
+			if (attacker instanceof L1PcInstance) { // 攻击者是玩家
+				atkpc = (L1PcInstance) attacker;
+			} else if (attacker instanceof L1PetInstance) {// 攻击者是宠物传回主人
+				atkpc = (L1PcInstance) ((L1PetInstance) attacker)
+						.getMaster();
+			} else if (attacker instanceof L1SummonInstance) {// 攻击者是召唤兽传回主人
+				atkpc = (L1PcInstance) ((L1SummonInstance) attacker)
+						.getMaster();
+			}
+		return atkpc;
+	}
 	/**
 	 * 距离5以上离pc距离3～4位置引寄。
 	 * 
@@ -519,6 +539,12 @@ public class L1MonsterInstance extends L1NpcInstance {
 				return;
 			}
 			this.setDead(true);
+		}
+		if (Config.HPBAR) { // 如果开启显示血条
+			L1PcInstance atkpc = whoAttacker(lastAttacker);
+			if (atkpc != null) {
+				atkpc.sendPackets(new S_HPMeter(this.getId(),0xff));//关闭怪物血条
+			}
 		}
 		final Death death = new Death(lastAttacker);
 		GeneralThreadPool.getInstance().execute(death);
