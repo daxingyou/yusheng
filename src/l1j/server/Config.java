@@ -499,6 +499,8 @@ public final class Config {
 
 	public static Boolean HPBAR = true;//血条显示开关
 
+	public static Boolean damageDisplay=false;//攻击怪物或pc回传伤害开关
+
 	public static void load() {
 		_log.info("loading gameserver config");
 		//TODO 伺服器捆绑
@@ -724,6 +726,8 @@ public final class Config {
 			InputStream is = new FileInputStream(new File(ALT_SETTINGS_FILE));
 			altSettings.load(is);
 			is.close();
+
+			damageDisplay = Boolean.parseBoolean(altSettings.getProperty("damageDisplay", "true"));
 
 			HPBAR = Boolean.parseBoolean(altSettings.getProperty("hpBar", "true"));
 

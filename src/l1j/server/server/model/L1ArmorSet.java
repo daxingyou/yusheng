@@ -49,7 +49,7 @@ public abstract class L1ArmorSet {
 			final L1ArmorSetImpl impl = new L1ArmorSetImpl(getArray(
 					armorset.getSets(), ","));
 
-			if (armorset.getPolyId1() != -1) {
+			if (armorset.getPolyId1() != -2) {
 				impl.addEffect(new PolymorphEffect(armorset.getPolyId0(),
 						armorset.getPolyId1(), armorset.getPolyId2(), armorset
 								.getPolyId3(), armorset.getPolyId4()));

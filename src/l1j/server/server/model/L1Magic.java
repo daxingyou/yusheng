@@ -1141,7 +1141,7 @@ public class L1Magic {
 		}
 		msg3 = damage + " 伤害";
 
-		if (_calcType == PC_PC || _calcType == PC_NPC) { // ＰＣ场合
+		if (Config.damageDisplay && (_calcType == PC_PC || _calcType == PC_NPC)) { // ＰＣ场合
 			_pc.sendPackets(new S_ServerMessage(166, msg0, msg1, msg2, msg3,
 					msg4)); // \f1%0%4%1%3 %2
 		}
