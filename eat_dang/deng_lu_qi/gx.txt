@@ -1,0 +1,3 @@
+[Update]
+Version=1
+1=http://tt99.tech/text.zip

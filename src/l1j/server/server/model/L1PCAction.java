@@ -538,10 +538,11 @@ public class L1PCAction {
 				//_pc.sendPackets(new S_CloseList(_pc.getId()));
 				this._pc.setHomeX(this._pc.getX());
 				this._pc.setHomeY(this._pc.getY());
-//				String mapids ="53,54,54,55,56";//地图坐标
-//				if (mapids.contains(String.valueOf(_pc.getMapId()))) {
-//					_pc.sendPackets(new S_SystemMessage("\\aD非挂机地图无法开启！"));
-//				}
+				String mapids ="53,54,54,55,56";//地图坐标
+				if (mapids.contains(String.valueOf(_pc.getMapId())) && _pc.getMap().isSafetyZone(_pc.getLocation())) {
+					_pc.sendPackets(new S_SystemMessage("\\aD奇岩城内无法挂机！"));
+					return;
+				}
 				if (!_pc.isAiRunning()) {
 					_pc.startAI();
 					_pc.sendPackets(new S_SystemMessage("\\aD 开始自動狩獵。"));
@@ -555,6 +556,9 @@ public class L1PCAction {
 //				_pc.sendPackets(new S_CloseList(_pc.getId()));
 				return;
 
+			}else if (cmd.equalsIgnoreCase("gjks")){
+				String[] rangs = {String.valueOf(this._pc.gethookrange())};
+				_pc.sendPackets(new S_NPCTalkReturn(this._pc.getId(), "gjks",rangs));
 			}else if (cmd.startsWith("gjfw")) {
 				int r = this._pc.gethookrange();
 				String colour = "\\F2";
@@ -849,7 +853,7 @@ public class L1PCAction {
 					_pc.sendPackets(new S_SystemMessage("金币不够5万"));
 				}
 			}
-			/*
+
 			else if (cmd.equalsIgnoreCase("pcskill")) {
 				if (_pc.getInventory().checkItem(44070, 1)) {
 					_pc.getInventory().consumeItem(44070, 1);
@@ -922,7 +926,7 @@ public class L1PCAction {
 				}
 
 			}
-			*/
+
 			/********************** 在线添加状态系统 *******************/
 
 			/********************** 特殊传送书 ************************/
@@ -2545,7 +2549,7 @@ public class L1PCAction {
 
 	/**
 	 * 
-	 * @param type
+	 * @param
 	 */
 	private void adenaTrade(final String cmd, final long amount) {
 		final int type = Integer.parseInt(cmd.substring(12));

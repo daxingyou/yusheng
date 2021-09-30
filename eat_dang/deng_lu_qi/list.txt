@@ -1,0 +1,12 @@
+[Server1]
+ServerName=[神圣归来]内线
+ServerData=QB5+WVCo7rPZ8udGEkcxHhGon9eiiJgleCdeZD2Mi8TU0vx2FmosKxyc7pTAy/p4EGNmdkTf+ZPM0PViGn4iPWKLi/TMqe8BChkwWhDq/LqA6rtESEZoG1z/7+zbpvoNLBQQUik=
+[Server2]
+ServerName=[神圣归来]内线
+ServerData=QB5+WVCo7rPZ8udGEkcxHhGon9eiiJgleCdeZD2Mi8TU0vx2FmosKxyc7pTAy/p4EGNmdkTf+ZPM0PViGn4iPWKLi/TMqe8BChkwWhDq/LqA6rtESEZoG1z/7+zbpvoNLBQQUik=
+[Server3]
+ServerName=[神圣归来]海外
+ServerData=QB5+WVCo7rPZ8udGEkcxHhGon9eiiJgleCdeZD2Mi8TU0vx2FmosKxyc7pTAy/p4EGNmdkTf+ZPM0PViGn4iPWKLi/TMqe8BChkwWhDq/LqA6rtESEZoG1z/7+zbpvoNLBQQUik=
+[Server4]
+ServerName=[神圣归来]海外
+ServerData=QB5+WVCo7rPZ8udGEkcxHhGon9eiiJgleCdeZD2Mi8TU0vx2FmosKxyc7pTAy/p4EGNmdkTf+ZPM0PViGn4iPWKLi/TMqe8BChkwWhDq/LqA6rtESEZoG1z/7+zbpvoNLBQQUik=

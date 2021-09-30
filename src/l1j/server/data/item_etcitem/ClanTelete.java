@@ -45,7 +45,7 @@ public class ClanTelete extends ItemExecutor {
             	return;
 			}
             if (pc.getClanid() == 0 || pc.getClan() == null){
-            	pc.sendPackets(new S_SystemMessage("你还有血盟不能使用"));
+            	pc.sendPackets(new S_SystemMessage("你还没有血盟不能使用"));
             	return;
             }
             if (CallClanMapTable.get().IsNoMap(pc.getMapId())){

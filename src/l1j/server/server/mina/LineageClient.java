@@ -747,7 +747,9 @@ public class LineageClient {
 					try {
 						_handler.handlePacket(data, _activeChar);				
 						//System.out.println("发送封包1个");
-					} catch (Exception e) {}
+					} catch (Exception e) {
+						e.printStackTrace();
+					}
 				} else {
 					try {
 						Thread.sleep(10);

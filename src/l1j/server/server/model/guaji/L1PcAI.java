@@ -79,6 +79,7 @@ public class L1PcAI implements Runnable {
      */
     private boolean AIProcess() {
         try {
+
 //        	if (_pc.getMapId() != 53 && _pc.getMapId() != 54 && _pc.getMapId() != 55
 //    				&& _pc.getMapId() != 56) {
 //    			_pc.sendPackets(new S_SystemMessage("\\aD非挂机地图无法开启！"));
