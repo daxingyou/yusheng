@@ -2,8 +2,11 @@ package l1j.server.server.timecontroller.server;
 
 import l1j.server.server.GeneralThreadPool;
 import l1j.server.server.datatables.WorldExpBuffTable;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 
 public class WorldCalcExp {
+	private static final Log _log = LogFactory.getLog(WorldExpBuffTable.class);
 	private static WorldCalcExp _instance;
 	private boolean _isRuning = false;
 	private long _time = 0;
@@ -48,8 +51,9 @@ public class WorldCalcExp {
 					Thread.sleep(1000);
 				}
 				WorldExpBuffTable.get().update(_time);
-				_isRuning = false;
 			} catch (InterruptedException e) {
+				_log.error(e.getLocalizedMessage(), e);
+			}finally {
 				_isRuning = false;
 			}
 		}

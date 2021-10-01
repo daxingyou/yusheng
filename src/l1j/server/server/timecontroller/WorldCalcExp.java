@@ -2,12 +2,17 @@ package l1j.server.server.timecontroller;
 
 import l1j.server.server.GeneralThreadPool;
 import l1j.server.server.datatables.WorldExpBuffTable;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 
 public class WorldCalcExp {
 	private static WorldCalcExp _instance;
 	private boolean _isRuning = false;
 	private long _time = 0;
-	
+	private static final Log _log = LogFactory.getLog(WorldCalcExp.class);
+	/**
+	 * 获取 WorldCalcExp 的实例对象
+	 * */
 	public static WorldCalcExp get(){
 		if (_instance == null){
 			_instance = new WorldCalcExp();
@@ -20,7 +25,7 @@ public class WorldCalcExp {
 	}
 	
 	public void addTime(final long time){
-		_time += time;
+		_time = time;
 	}
 	
 	public long getTime(){
@@ -50,6 +55,8 @@ public class WorldCalcExp {
 				WorldExpBuffTable.get().update(_time);
 				_isRuning = false;
 			} catch (InterruptedException e) {
+				_log.error(e.getLocalizedMessage(), e);
+			}finally {
 				_isRuning = false;
 			}
 		}
