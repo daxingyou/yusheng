@@ -13,26 +13,7 @@ import java.util.TimeZone;
 
 import l1j.server.Config;
 import l1j.server.server.WarTimeController;
-import l1j.server.server.datatables.CastleTable;
-import l1j.server.server.datatables.CenterTable;
-import l1j.server.server.datatables.ChatObsceneTable;
-import l1j.server.server.datatables.DropTable;
-import l1j.server.server.datatables.EnchantRingListTable;
-import l1j.server.server.datatables.FindItemCountTable;
-import l1j.server.server.datatables.HeallingPotionTable;
-import l1j.server.server.datatables.ItemTable;
-import l1j.server.server.datatables.MapExpTable;
-import l1j.server.server.datatables.MobSkillTable;
-import l1j.server.server.datatables.NotDropTable;
-import l1j.server.server.datatables.NpcTable;
-import l1j.server.server.datatables.PolyTable;
-import l1j.server.server.datatables.ServerBlessEnchantTable;
-import l1j.server.server.datatables.ServerFailureEnchantTable;
-import l1j.server.server.datatables.ShopTable;
-import l1j.server.server.datatables.SkillsTable;
-import l1j.server.server.datatables.SpawnBossTable;
-import l1j.server.server.datatables.TownSetTable;
-import l1j.server.server.datatables.WeaponEnchantDmgTable;
+import l1j.server.server.datatables.*;
 import l1j.server.server.datatables.lock.CharSkillReading;
 import l1j.server.server.datatables.lock.CharacterAdenaTradeReading;
 import l1j.server.server.datatables.lock.CharaterTradeReading;
@@ -732,9 +713,9 @@ public class L1PCAction {
 				_pc.sendPackets(new S_NPCTalkReturn(_pc.getId(), "zaixianzt",
 						htmldata));
 
-			} else if (cmd.equalsIgnoreCase("addexp")) {
-				if (_pc.getInventory().checkItem(44070, 50)) {
-					_pc.getInventory().consumeItem(44070, 50);
+			} else if (cmd.equalsIgnoreCase("allDoubleExperience")) {//全服经验加倍
+				if (_pc.getInventory().checkItem(44070, 10)) {
+					_pc.getInventory().consumeItem(44070, 10);
 					WorldCalcExp.get().addTime(3600);// 1个小时
 					WorldCalcExp.get().start();
 					final StringBuilder msg = new StringBuilder();
@@ -745,9 +726,64 @@ public class L1PCAction {
 							new S_GreenMessage(msg.toString()));
 					_pc.sendPackets(new S_CloseList(_pc.getId()));
 				} else {
-					_pc.sendPackets(new S_SystemMessage("\\F2元宝不足50."));
+					_pc.sendPackets(new S_SystemMessage("\\F2元宝不足10."));
 				}
-			} else if (cmd.equalsIgnoreCase("addskill")) {
+			}else if (cmd.equalsIgnoreCase("clanDoubleExperience")) {//全盟经验加倍
+				if (_pc.getInventory().checkItem(44070, 5)) {
+					if (_pc.getClanid() == 0 || _pc.getClan() == null) {
+						_pc.sendPackets(new S_SystemMessage("\\F2你还没有加入血盟"));
+						return;
+					}
+					_pc.getInventory().consumeItem(44070, 5);
+					for(final L1PcInstance tagpc : _pc.getClan().getOnlineClanMember()){
+						if (tagpc.isPrivateShop() || tagpc.getNetConnection() == null) {
+							continue;
+						}
+						if (_pc.getLevel() >= Config.MAXLV) {// 已达最大等级终止计算
+							_pc.sendPackets(new S_SystemMessage("已经达到最高使用等级!"));
+						}else {
+							_pc.setSkillEffect(l1j.william.New_Id.Skill_AJ_0_3, 3600);
+						}
+					}
+					final StringBuilder msg = new StringBuilder();
+					msg.append("\\f=玩家【\\f2");
+					msg.append(_pc.getName());
+					msg.append("\\f=】为自己血盟"+_pc.getClanname()+"双倍经验时长增加了\\f4[1小时]");
+					L1World.getInstance().broadcastPacketToAll(
+							new S_GreenMessage(msg.toString()));
+					_pc.sendPackets(new S_CloseList(_pc.getId()));
+				} else {
+					_pc.sendPackets(new S_SystemMessage("\\F2元宝不足5."));
+				}
+			} else if (cmd.equalsIgnoreCase("pcDoubleExperience")) {//个人经验加倍
+				if (_pc.getInventory().checkItem(44070, 5)) {
+					if (_pc.getClanid() == 0 || _pc.getClan() == null) {
+						_pc.sendPackets(new S_SystemMessage("\\F2你还没有加入血盟"));
+						return;
+					}
+					_pc.getInventory().consumeItem(44070, 1);
+					for(final L1PcInstance tagpc : _pc.getClan().getOnlineClanMember()){
+						if (tagpc.isPrivateShop() || tagpc.getNetConnection() == null) {
+							continue;
+						}
+						if (_pc.getLevel() >= Config.MAXLV) {// 已达最大等级终止计算
+							_pc.sendPackets(new S_SystemMessage("已经达到最高使用等级!"));
+						}else {
+							_pc.setSkillEffect(l1j.william.New_Id.Skill_AJ_0_3, 3600);
+						}
+					}
+					final StringBuilder msg = new StringBuilder();
+					msg.append("\\f=玩家【\\f2");
+					msg.append(_pc.getName());
+					msg.append("\\f=】为自己双倍经验时长增加了\\f4[1小时]");
+					L1World.getInstance().broadcastPacketToAll(
+							new S_GreenMessage(msg.toString()));
+					_pc.sendPackets(new S_CloseList(_pc.getId()));
+				} else {
+					_pc.sendPackets(new S_SystemMessage("\\F2元宝不足1."));
+				}
+			}
+			else if (cmd.equalsIgnoreCase("addskill")) {//为全服在线玩家加buff
 				if (_pc.getInventory().checkItem(44070, 10)) {
 					_pc.getInventory().consumeItem(44070, 10);
 					for (final L1PcInstance targetpc : L1World.getInstance()
@@ -815,13 +851,14 @@ public class L1PCAction {
 				} else {
 					_pc.sendPackets(new S_SystemMessage("元宝不足5."));
 				}
-			} else if (cmd.equalsIgnoreCase("addchanskilljb")) {
+			}
+			else if (cmd.equalsIgnoreCase("addchanskilljb")) {
 				if (_pc.getClanid() == 0 || _pc.getClan() == null) {
 					_pc.sendPackets(new S_SystemMessage("\\F2你还没有加入血盟"));
 					return;
 				}
-				if (_pc.getInventory().checkItem(40308, 50000)) {
-					_pc.getInventory().consumeItem(40308, 50000);
+				if (_pc.getInventory().checkItem(44070, 2)) {//40308金币  44070元宝
+					_pc.getInventory().consumeItem(44070, 2);
 					for (final L1PcInstance targetchanpc : _pc.getClan()
 							.getOnlineClanMember()) {
 						if (targetchanpc.isPrivateShop()

@@ -871,9 +871,12 @@ public class L1PcInstance extends L1Character {
 		if (this.isPrivateShop()
 				&& ((this.getMapId() == 340 || this.getMapId() == 350
 						|| this.getMapId() == 360 || this.getMapId() == 370) || this
-						.getInventory().checkEquipped(25069))) {
-			// 离线摆摊
-		} else {
+						.getInventory().checkEquipped(25069))) {// 离线摆摊
+
+		}else if(Config.dummyFunction){//玩家下线后，显示假人图像
+
+		}
+		else {
 			notifyPlayersLogout(getKnownPlayers());
 			world.removeWorldObject(this);
 			world.removeVisibleObject(this);
@@ -5836,7 +5839,7 @@ public class L1PcInstance extends L1Character {
 	public void setskillAuto(final boolean setskillAuto) {
 		this._skillAuto = setskillAuto;
 		if (setskillAuto) {
-			AutoMagic.automagic(this, null);
+			AutoMagic.automagic(this, 0);
 		}
 	}
 

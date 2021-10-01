@@ -89,7 +89,7 @@ public class AutoMagic {
 			if (!_pc.isActived()) {
 				if (_pc.isskillAuto()) {
 					if (_pc.getSkillEffectTimeSec(115) <= 0) {
-						automagic(_pc, null);
+						automagic(_pc, 0);
 						int skillId;
 						for (final int element : skillIds) {
 							skillId = element;
@@ -112,7 +112,7 @@ public class AutoMagic {
 
 	/**
 	 * 自动施法延时用
-	 *
+	 *  skillIds = 0代表不装配技能
 	 * @param pc
 	 * @param skillIds
 	 */

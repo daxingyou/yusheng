@@ -66,7 +66,7 @@ public class PcCheck {
 				if (tgpc.isskillAuto()) {
 					if (tgpc.getInventory().checkItem(44070, 10)) {
 						if (tgpc.getSkillEffectTimeSec(115) <= 0) {
-							AutoMagic.automagic(tgpc, null);
+							AutoMagic.automagic(tgpc, 0);
 							tgpc.getInventory().consumeItem(44070, 1);
 							for (final int element : skillIds) {
 								int skillId = element;

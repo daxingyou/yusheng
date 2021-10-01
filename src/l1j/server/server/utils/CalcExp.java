@@ -369,7 +369,7 @@ public class CalcExp {
 			foodBonus += MapExpTable.get().get_exp(pc.getMapId()) - 1.0;
 		}
 		
-		if (WorldCalcExp.get().isRuning()){
+		if (WorldCalcExp.get().isRuning()){//全服经验加倍
 			foodBonus += 1;
 		}
 		

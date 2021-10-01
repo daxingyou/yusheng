@@ -414,7 +414,7 @@ public final class Config {
 
 	public static final String[] dollposs = new String[]{"■□□□□□□□□□","■■□□□□□□□□","■■■□□□□□□□","■■■■□□□□□□","■■■■■□□□□□","■■■■■■□□□□","■■■■■■■□□□","■■■■■■■■□□","■■■■■■■■■□","■■■■■■■■■■"};
 
-	public static boolean mobRandomName = true;
+	public static boolean mobRandomName = false;//是否开启怪物名称后面加随机数
 
 	public static boolean clanItemCheck = true;
 
@@ -500,6 +500,8 @@ public final class Config {
 	public static Boolean HPBAR = true;//血条显示开关
 
 	public static Boolean damageDisplay=false;//攻击怪物或pc回传伤害开关
+
+	public static Boolean dummyFunction;//假人功能，玩家下线后，人物不消失
 
 	public static void load() {
 		_log.info("loading gameserver config");
@@ -726,6 +728,10 @@ public final class Config {
 			InputStream is = new FileInputStream(new File(ALT_SETTINGS_FILE));
 			altSettings.load(is);
 			is.close();
+
+			mobRandomName = Boolean.parseBoolean(altSettings.getProperty("mobRandomName", "true"));//是否开启怪物名称后面加随机数
+
+			dummyFunction = Boolean.parseBoolean(altSettings.getProperty("dummyFunction", "false"));//假人功能开关
 
 			damageDisplay = Boolean.parseBoolean(altSettings.getProperty("damageDisplay", "true"));
 
