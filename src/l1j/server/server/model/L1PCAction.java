@@ -740,7 +740,7 @@ public class L1PCAction {
 							continue;
 						}
 						if (_pc.getLevel() >= Config.MAXLV) {// 已达最大等级终止计算
-							_pc.sendPackets(new S_SystemMessage("已经达到最高使用等级!"));
+							//_pc.sendPackets(new S_SystemMessage("已经达到最高使用等级!"));
 						}else {
 							_pc.setSkillEffect(l1j.william.New_Id.Skill_AJ_0_3, 3600);
 						}
@@ -756,31 +756,22 @@ public class L1PCAction {
 					_pc.sendPackets(new S_SystemMessage("\\F2元宝不足5."));
 				}
 			} else if (cmd.equalsIgnoreCase("pcDoubleExperience")) {//个人经验加倍
-				if (_pc.getInventory().checkItem(44070, 5)) {
-					if (_pc.getClanid() == 0 || _pc.getClan() == null) {
-						_pc.sendPackets(new S_SystemMessage("\\F2你还没有加入血盟"));
-						return;
+				int count = 1;
+				if (_pc.getInventory().checkItem(44070, count)) {
+					if (_pc.getLevel() >= Config.MAXLV) {// 已达最大等级终止计算
+						_pc.sendPackets(new S_SystemMessage("已经达到最高使用等级!"));
+					}else {
+						_pc.getInventory().consumeItem(44070, count);
+						final StringBuilder msg = new StringBuilder();
+						msg.append("\\f=玩家【\\f2");
+						msg.append(_pc.getName());
+						msg.append("\\f=】为自己双倍经验时长增加了\\f4[1小时]");
+						L1World.getInstance().broadcastPacketToAll(
+								new S_GreenMessage(msg.toString()));
+						_pc.sendPackets(new S_CloseList(_pc.getId()));
 					}
-					_pc.getInventory().consumeItem(44070, 1);
-					for(final L1PcInstance tagpc : _pc.getClan().getOnlineClanMember()){
-						if (tagpc.isPrivateShop() || tagpc.getNetConnection() == null) {
-							continue;
-						}
-						if (_pc.getLevel() >= Config.MAXLV) {// 已达最大等级终止计算
-							_pc.sendPackets(new S_SystemMessage("已经达到最高使用等级!"));
-						}else {
-							_pc.setSkillEffect(l1j.william.New_Id.Skill_AJ_0_3, 3600);
-						}
-					}
-					final StringBuilder msg = new StringBuilder();
-					msg.append("\\f=玩家【\\f2");
-					msg.append(_pc.getName());
-					msg.append("\\f=】为自己双倍经验时长增加了\\f4[1小时]");
-					L1World.getInstance().broadcastPacketToAll(
-							new S_GreenMessage(msg.toString()));
-					_pc.sendPackets(new S_CloseList(_pc.getId()));
 				} else {
-					_pc.sendPackets(new S_SystemMessage("\\F2元宝不足1."));
+					_pc.sendPackets(new S_SystemMessage("\\F2元宝不足"+count));
 				}
 			}
 			else if (cmd.equalsIgnoreCase("addskill")) {//为全服在线玩家加buff
@@ -857,12 +848,11 @@ public class L1PCAction {
 					_pc.sendPackets(new S_SystemMessage("\\F2你还没有加入血盟"));
 					return;
 				}
-				if (_pc.getInventory().checkItem(44070, 2)) {//40308金币  44070元宝
-					_pc.getInventory().consumeItem(44070, 2);
-					for (final L1PcInstance targetchanpc : _pc.getClan()
-							.getOnlineClanMember()) {
-						if (targetchanpc.isPrivateShop()
-								|| targetchanpc.getNetConnection() == null) {
+				int count = 2;
+				if (_pc.getInventory().checkItem(44070, count)) {//40308金币  44070元宝
+					_pc.getInventory().consumeItem(44070, count);
+					for (final L1PcInstance targetchanpc : _pc.getClan().getOnlineClanMember()) {
+						if (targetchanpc.isPrivateShop() || targetchanpc.getNetConnection() == null) {
 							continue;
 						}
 						for (final int element : skillIds) {
@@ -887,7 +877,7 @@ public class L1PCAction {
 					L1World.getInstance().broadcastPacketToAll(
 							new S_GreenMessage(msg.toString()));
 				} else {
-					_pc.sendPackets(new S_SystemMessage("金币不够5万"));
+					_pc.sendPackets(new S_SystemMessage(String.format("元宝不够 %d 个",count)));
 				}
 			}
 

@@ -4850,9 +4850,9 @@ public class C_ItemUSe extends ClientBasePacket {
 
 	private boolean usePolyScroll(L1PcInstance pc, int item_id, String s) {
 		int time = 0;
-		if (item_id == 40088 || item_id == 40096 || item_id == 40410) { // 变身、象牙塔变身、追加40410
+		if (item_id == 40088 || item_id == 40096 || item_id == 40410) { // 40088变形卷轴、40096象牙塔变身卷轴、40410黑暗安特的树皮
 			time = 1800;
-		} else if (item_id == 140088) { // 祝福变身
+		} else if (item_id == 140088) { // 祝福的变形卷轴
 			time = 2100;
 		}
 
@@ -4873,10 +4873,12 @@ public class C_ItemUSe extends ClientBasePacket {
 				pc.removeSkillEffect(SHAPE_CHANGE);
 				return true;
 			} else if (poly.getPolyId() >= 12000) {
-				if (pc.getInventory().consumeItem(40308, 10000)) {
+				int count = 1;
+				if (pc.getInventory().checkItem(44070, count)) {//40308金币 44070元宝
+					pc.getInventory().consumeItem(44070, count);
 					L1PolyMorph.doPoly(pc, poly.getPolyId(), time);
 				} else {
-					pc.sendPackets(new S_SystemMessage("金币不足1万呢..这么帅的变身要点代价哦"));
+					pc.sendPackets(new S_SystemMessage("元宝不足 "+count+" 个呢..这么帅的变身要点代价哦"));
 				}
 				return true;
 			} else if (poly.getMinLevel() <= pc.getLevel() || pc.isGm()) {

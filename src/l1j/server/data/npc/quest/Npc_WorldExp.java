@@ -69,7 +69,7 @@ public class Npc_WorldExp extends NpcExecutor {
 						continue;
 					}
 					if (pc.getLevel() >= Config.MAXLV) {// 已达最大等级终止计算
-						pc.sendPackets(new S_SystemMessage("已经达到最高使用等级!"));
+						pc.sendPackets(new S_SystemMessage("已经达到最高使用等级,无法开启双倍经验"));
 					}else {
 						pc.setSkillEffect(l1j.william.New_Id.Skill_AJ_0_3, 3600);
 					}
