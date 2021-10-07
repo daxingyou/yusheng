@@ -62,7 +62,7 @@ public final class Config {
 	
 	public static String GAME_SERVER_HOST_NAME;
 
-	/**伺服器端口*///服务器监听端口以"-"减号分隔 允许设置多个(允许设置一个)
+	/**伺服器端口  服务器监听端口以"-"减号分隔 允许设置多个(允许设置一个)*/
 	public static String GAME_SERVER_PORT;
 
 	public static String DB_DRIVER;
@@ -141,11 +141,13 @@ public final class Config {
 	
 	/**端口重置时间(单位:分钟)*/
 	public static int RESTART_LOGIN;
+	/**一键开区清空用户数据开关*/
+	public static Boolean DB_ClEAR_USER_DATA;
 
 	/** Rate control */
 	public static double RATE_XP;
-
-	public static double PET_RATE_XP;//宠物经验倍率
+	/**宠物经验倍率*/
+	public static double PET_RATE_XP;
 	
 	public static double RATE_LA;
 
@@ -532,7 +534,7 @@ public final class Config {
 			InputStream is = new FileInputStream(new File(SERVER_CONFIG_FILE));
 			serverSettings.load(is);
 			is.close();
-
+			DB_ClEAR_USER_DATA = Boolean.parseBoolean(serverSettings.getProperty("dbClearUserData", "false"));
 			GAME_SERVER_HOST_NAME = serverSettings.getProperty(
 					"GameserverHostname", "*");
 			GAME_SERVER_PORT = (serverSettings.getProperty(

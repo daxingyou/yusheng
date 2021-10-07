@@ -23,56 +23,7 @@ import java.util.ArrayList;
 
 import l1j.server.Config;
 import l1j.server.server.command.GMCommandsConfig;
-import l1j.server.server.datatables.ArmorSetTable;
-import l1j.server.server.datatables.CallClanMapTable;
-import l1j.server.server.datatables.CastleTable;
-import l1j.server.server.datatables.CenterTable;
-import l1j.server.server.datatables.CharacterTable;
-import l1j.server.server.datatables.ChatLogTable;
-import l1j.server.server.datatables.ChatObsceneTable;
-import l1j.server.server.datatables.ClanTable;
-import l1j.server.server.datatables.DollPowerTable;
-import l1j.server.server.datatables.DollXiLianTable;
-import l1j.server.server.datatables.DoorSpawnTable;
-import l1j.server.server.datatables.DropItemTable;
-import l1j.server.server.datatables.DropTable;
-import l1j.server.server.datatables.EnchantDmgReductionTable;
-import l1j.server.server.datatables.EnchantRingListTable;
-import l1j.server.server.datatables.EtcItemSkillTable;
-import l1j.server.server.datatables.FailureEnchantTable;
-import l1j.server.server.datatables.FurnitureSpawnTable;
-import l1j.server.server.datatables.GetBackRestartTable;
-import l1j.server.server.datatables.HeallingPotionTable;
-import l1j.server.server.datatables.IPCountTable;
-import l1j.server.server.datatables.IpTable;
-import l1j.server.server.datatables.ItemTable;
-import l1j.server.server.datatables.LoadZnoe;
-import l1j.server.server.datatables.MapExpTable;
-import l1j.server.server.datatables.MapsTable;
-import l1j.server.server.datatables.MobGroupTable;
-import l1j.server.server.datatables.NPCTalkDataTable;
-import l1j.server.server.datatables.NotDropTable;
-import l1j.server.server.datatables.NpcActionTable;
-import l1j.server.server.datatables.NpcSpawnTable;
-import l1j.server.server.datatables.NpcTable;
-import l1j.server.server.datatables.PcTable;
-import l1j.server.server.datatables.PetItemTable;
-import l1j.server.server.datatables.PetTable;
-import l1j.server.server.datatables.PetTypeTable;
-import l1j.server.server.datatables.PolyTable;
-import l1j.server.server.datatables.ScrollEnchantIdTable;
-import l1j.server.server.datatables.ServerBlessEnchantTable;
-import l1j.server.server.datatables.ServerFailureEnchantTable;
-import l1j.server.server.datatables.ShopTable;
-import l1j.server.server.datatables.SkillsTable;
-import l1j.server.server.datatables.SpawnTable;
-import l1j.server.server.datatables.SprTable;
-import l1j.server.server.datatables.TownSetTable;
-import l1j.server.server.datatables.UBSpawnItemTable;
-import l1j.server.server.datatables.UBSpawnTable;
-import l1j.server.server.datatables.WeaponEnchantDmgTable;
-import l1j.server.server.datatables.WeaponSkillTable;
-import l1j.server.server.datatables.WorldExpBuffTable;
+import l1j.server.server.datatables.*;
 import l1j.server.server.datatables.lock.CharBookConfigReading;
 import l1j.server.server.datatables.lock.CharBookReading;
 import l1j.server.server.datatables.lock.CharSkillReading;
@@ -201,6 +152,17 @@ public class GameServer{
 			_serverSocket = new ServerSocket(_port);
 			System.out.println("伺服器设定：伺服器启动");
 		}*/
+		DBClearAllUtil dBClearAllUtil = new DBClearAllUtil();
+		if(Config.DB_ClEAR_USER_DATA){
+			if(dBClearAllUtil.getDBClearAllState()){
+				System.out.println("一键开区，开始清空用户数据库表");
+				dBClearAllUtil.start();
+			}else {
+				System.out.println();
+				System.out.println("请在 newDistrictSet表 中id=1记录,state值更改为true,重启后即可删除用户全部数据");
+				System.out.println();
+			}
+		}
 
 		System.out.println("伺服器语系：" + Config.LANGUAGE);
 		System.out.println("-------------------------------------------------------------------");
