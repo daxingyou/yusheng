@@ -582,7 +582,8 @@ public class L1MonsterInstance extends L1NpcInstance {
 						.getMaster();
 			}
 			if (player != null) {
-				final L1ShouShaTemp shoushaTmp = ShouShaReading.get().getTemp(L1MonsterInstance.this.getNpcId());
+				//final L1ShouShaTemp shoushaTmp = ShouShaReading.get().getTemp(L1MonsterInstance.this.getNpcId());
+				final L1ShouShaTemp shoushaTmp = null;//去掉首杀功能
 				if (shoushaTmp != null){
 					if (shoushaTmp.getObjId() == 0){
 						if (ShouShaReading.get().update(shoushaTmp, player.getId(), player.getName())){

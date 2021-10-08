@@ -292,14 +292,14 @@ public class C_Chat extends ClientBasePacket {
 				pc.sendPackets(new S_Lock());
 			}
 			
-			}else if (chatText.startsWith("查物")) {
+		}else if (chatText.startsWith(".查询 ") || chatText.startsWith(".查詢 ")) {
 				String cmd = chatText.substring(2);
 				String text = chatText.substring(2);
 				execute(pc, text, cmd);
 				return;
 			
 			
-		}else if (chatText.startsWith(".查询 ") || chatText.startsWith(".查詢 ")) {
+		}else if (chatText.startsWith(".商店查询 ") || chatText.startsWith(".商店查詢 ")) {
 			if (!(pc.getMapId() == 340 || pc.getMapId() == 350 || pc.getMapId() == 360 || pc.getMapId() == 370 || (pc.getMapId() == 4 && pc.getMap().isSafetyZone(pc.getX(),pc.getY())))){
 				pc.sendPackets(new S_SystemMessage("\\F1商店村或者大陆安全区域才可使用此命令！"));
 				return;

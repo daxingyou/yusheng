@@ -1048,7 +1048,8 @@ public class DropTable {
 														.getLogName())); // \f1%0%1。
 									}
 								}
-								final L1ShouBaoTemp shoubaoTmp = ShouBaoReading.get().getTemp(item.getItem().getItemId());
+								//final L1ShouBaoTemp shoubaoTmp = ShouBaoReading.get().getTemp(item.getItem().getItemId());
+								final L1ShouBaoTemp shoubaoTmp = null;//去掉首爆功能
 								if(item.issbxz()) {
 									return;
 								}

@@ -140,6 +140,7 @@ import l1j.server.server.utils.CalcStat;
 //import l1j.william.L1WilliamPlayerSpeed;
 //import l1j.william.L1WilliamSystemMessage;
 import l1j.server.server.world.L1World;
+import l1j.william.L1WilliamJiaRen;
 import l1j.william.Reward;
 
 import org.apache.commons.logging.Log;
@@ -874,9 +875,10 @@ public class L1PcInstance extends L1Character {
 						.getInventory().checkEquipped(25069))) {// 离线摆摊
 
 		}else if(Config.dummyFunction){//玩家下线后，显示假人图像
-
-		}
-		else {
+			if (Config.dummyFunction && getZoneType() == 1) { // 这一段是离线假人命令.jsjs
+				L1WilliamJiaRen.getInstance().addlogout(this.getAccountName(), this);
+			}
+		}else {
 			notifyPlayersLogout(getKnownPlayers());
 			world.removeWorldObject(this);
 			world.removeVisibleObject(this);
