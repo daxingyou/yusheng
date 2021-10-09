@@ -756,7 +756,7 @@
 			<Material Amount="20000" ItemId="40308"/>	<!--金币-->
 		</MakeItem>
 	</Action>
-	<Action Name="pvpzz" NpcId="10000">
+	<Action Name="pvpzz" NpcId="10000"><!--pvp强化卷-->
 		<MakeItem>
 			<Item Amount="1" ItemId="11011"/>	<!--龙心-->
 			<Material Amount="1" ItemId="140074"/>	<!--遗忘装备-->
@@ -764,7 +764,7 @@
 			<Material Amount="888888" ItemId="40308"/>	<!--金币-->
 		</MakeItem>
 	</Action>
-	<Action Name="pvezz" NpcId="10000">
+	<Action Name="pvezz" NpcId="10000"><!--pve强化卷-->
 		<MakeItem>
 			<Item Amount="1" ItemId="11012"/>	<!--龙心-->
 			<Material Amount="3" ItemId="240074"/>	<!--遗忘装备-->
@@ -832,15 +832,72 @@
 	<Action Name="scs" NpcId="10000">
 		<MakeItem>
 			<Item Amount="1" ItemId="40240"/>	<!--三重矢水晶-->
-			<Material Amount="2000000" ItemId="40308"/>	<!--金币100万-->
+			<Material Amount="2000000" ItemId="40308"/>	<!--金币200万-->
 			<Material Amount="100" ItemId="58034"/>	<!--三重矢碎片-->
 		</MakeItem>
 	</Action>
 	<Action Name="scph" NpcId="10000">
 		<MakeItem>
 			<Item Amount="1" ItemId="40275"/>	<!--双重破坏水晶-->
-			<Material Amount="2000000" ItemId="40308"/>	<!--金币100万-->
+			<Material Amount="2000000" ItemId="40308"/>	<!--金币200万-->
 			<Material Amount="100" ItemId="58035"/>	<!--双重破坏碎片-->
 		</MakeItem>
 	</Action>
+
+	<Action Name="passwordRoll" NpcId="10000">
+		<MakeItem>
+			<Item Amount="1" ItemId="66670"/>	<!--密码更改卷轴-->
+			<Material Amount="100" ItemId="40088"/>	<!--变形卷100张-->
+			<Material Amount="50" ItemId="40053"/>	<!--高品质红宝石50-->
+			<Material Amount="50" ItemId="40055"/>	<!--高品质绿宝石50-->
+			<Material Amount="50" ItemId="40054"/>	<!--高品质蓝宝石50-->
+			<Material Amount="50" ItemId="40052"/>	<!--高品质钻宝石50-->
+			<Material Amount="500000" ItemId="40308"/>	<!--金币50万-->
+			<Material Amount="5" ItemId="44070"/>	<!--元宝5-->
+		</MakeItem>
+	</Action>
+
+	<Action Name="renameCard" NpcId="10000">
+		<MakeItem>
+			<Item Amount="1" ItemId="600006"/>	<!--更名卡-->
+			<Material Amount="100" ItemId="40088"/>	<!--变形卷100张-->
+			<Material Amount="50" ItemId="40053"/>	<!--高品质红宝石50-->
+			<Material Amount="50" ItemId="40055"/>	<!--高品质绿宝石50-->
+			<Material Amount="50" ItemId="40054"/>	<!--高品质蓝宝石50-->
+			<Material Amount="50" ItemId="40052"/>	<!--高品质钻宝石50-->
+			<Material Amount="500000" ItemId="40308"/>	<!--金币50万-->
+			<Material Amount="5" ItemId="44070"/>	<!--元宝5-->
+		</MakeItem>
+	</Action>
+
+	<Action Name="reminiscenceCandle" NpcId="10000">
+		<MakeItem>
+			<Item Amount="1" ItemId="600006"/>	<!--回忆蜡烛-->
+			<Material Amount="1" ItemId="40466"/>	<!--龙之心-->
+			<Material Amount="20" ItemId="40074"/>	<!--白防20-->
+			<Material Amount="20" ItemId="40087"/>	<!--白武20-->
+			<Material Amount="5" ItemId="240074"/>	<!--对盔甲施法的卷轴(诅咒)-->
+			<Material Amount="5" ItemId="240087"/>	<!--对武器施法的卷轴(诅咒)-->
+			<Material Amount="5" ItemId="140074"/>	<!--祝福防卷5-->
+			<Material Amount="5" ItemId="140087"/>	<!--祝福武卷5-->
+			<Material Amount="5000000" ItemId="40308"/>	<!--金币500万-->
+			<Material Amount="5" ItemId="44070"/>	<!--元宝5-->
+		</MakeItem>
+	</Action>
+
+	<Action Name="bloodWashPotion" NpcId="10000">
+		<MakeItem>
+			<Item Amount="1" ItemId="43000"/>	<!--洗血药水-->
+			<Material Amount="1" ItemId="40466"/>	<!--龙之心-->
+			<Material Amount="20" ItemId="40074"/>	<!--白防20-->
+			<Material Amount="20" ItemId="40087"/>	<!--白武20-->
+			<Material Amount="5" ItemId="240074"/>	<!--对盔甲施法的卷轴(诅咒)-->
+			<Material Amount="5" ItemId="240087"/>	<!--对武器施法的卷轴(诅咒)-->
+			<Material Amount="5" ItemId="140074"/>	<!--祝福防卷5-->
+			<Material Amount="5" ItemId="140087"/>	<!--祝福武卷5-->
+			<Material Amount="5000000" ItemId="40308"/>	<!--金币500万-->
+			<Material Amount="5" ItemId="44070"/>	<!--元宝5-->
+		</MakeItem>
+	</Action>
+
 </NpcActionList>

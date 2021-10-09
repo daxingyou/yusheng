@@ -416,8 +416,11 @@ public class C_LoginToServer extends ClientBasePacket {
 			WriteLogTxt.Recording("经验记录", "玩家:" + pc.getName() + "登录游戏时经验值为("
 					+ pc.getExp() + ")");
 			if (Config.AI_ONLIN) {
-				pc.setSkillEffect(L1SkillId.AI_ONLIN_SKILLID,
-						Config.AI_ONLIN_TIME * 60 * 1000);
+				if(pc.getLevel() > Config.AI_ONLIN_LEVEL){
+					pc.setSkillEffect(L1SkillId.AI_ONLIN_SKILLID,
+							Config.AI_ONLIN_TIME * 60 * 1000);
+				}
+
 			}
 			/*
 			 * if (pc.get_food() >= 225) {// LOLI 生存呐喊 final Calendar cal =

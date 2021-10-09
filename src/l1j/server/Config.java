@@ -473,6 +473,7 @@ public final class Config {
 	public static int AI_ONLIN_TIME;
 	public static int AI_ONLIN_ITEMID;
 	public static int AI_ONLIN_ITEMCOUNT;
+	public static int AI_ONLIN_LEVEL;
 
 	public static int HUODONGNEXTTIME;
 	public static short HUODONGMAPID;
@@ -864,7 +865,8 @@ public final class Config {
 			AI_ONLIN_TIME = Integer.parseInt(altSettings.getProperty("AI_Onlin_Time", "1"));
 			AI_ONLIN_ITEMID = Integer.parseInt(altSettings.getProperty("AI_Onlin_ItemId", "40308"));
 			AI_ONLIN_ITEMCOUNT = Integer.parseInt(altSettings.getProperty("AI_Onlin_ItemCount", "100"));
-			
+			AI_ONLIN_LEVEL = Integer.parseInt(altSettings.getProperty("AI_ONLIN_LEVEL", "44"));
+
 			HUODONGNEXTTIME = Integer.parseInt(altSettings.getProperty("HuoDongMap_Time", "60"));
 			HUODONGMAPID = Short.parseShort(altSettings.getProperty("HuoDongMap_MapId", "4"));
 			HUODONGLOCX = Integer.parseInt(altSettings.getProperty("HuoDongMap_Locx", "32704"));

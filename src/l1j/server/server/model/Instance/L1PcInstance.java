@@ -1577,7 +1577,7 @@ public class L1PcInstance extends L1Character {
 						L1PcInstance.this.sendPackets(new S_SystemMessage(
 								"天神的祝福，死亡并没有经验损失！"));
 						if (player != null) {
-							player.getInventory().storeItem(44070, 1);
+							player.getInventory().storeItem(44070, 2);
 							L1World.getInstance().broadcastServerMessage(
 									String.format("\\F4玩家(:" + getName()
 											+ ")不幸牺牲了[" + player.getName()

@@ -43,12 +43,50 @@
 		<MakeItem>
 			<Item Amount="1" ItemId="50003" />		<!--余生耳环Lv3-->
 			<Material Amount="1" ItemId="10056" />	<!--余生耳环Lv2-->
+			<Material Amount="400" ItemId="40408" />	<!--金属块-->
+			<Material Amount="400" ItemId="40496" />	<!--粗米-->
+			<Material Amount="100" ItemId="40524" />	<!--黑血-->
+			<Material Amount="50" ItemId="40048" />	<!--品质钻石-->
+			<Material Amount="50" ItemId="40049" />	<!--品质红宝石-->
+			<Material Amount="50" ItemId="40051" />	<!--品质绿宝石-->
+			<Material Amount="50" ItemId="40050" />	<!--品质蓝宝石-->
+			<Material Amount="3" ItemId="40513" />	<!--食人巨魔的血-->
+			<Material Amount="50" ItemId="40087" />	<!--武-->
+			<Material Amount="50" ItemId="40074" />	<!--防-->
+			<Material Amount="5000000" ItemId="40308" />	<!--金币500万-->
+			<Material Amount="3" ItemId="44070" />	<!--元宝3-->
 		</MakeItem>
 	</Action>
 	<Action Name="qzeh4">
 		<MakeItem>
 			<Item Amount="1" ItemId="50004" />		<!--余生耳环Lv4-->
-			<Material Amount="1" ItemId="10056" />	<!--余生耳环Lv2-->
+			<Material Amount="1" ItemId="50003" />	<!--余生耳环Lv3-->
+			<Material Amount="400" ItemId="40408" />	<!--金属块-->
+			<Material Amount="400" ItemId="40496" />	<!--粗米-->
+			<Material Amount="100" ItemId="40524" />	<!--黑血-->
+			<Material Amount="50" ItemId="40048" />	<!--品质钻石-->
+			<Material Amount="50" ItemId="40049" />	<!--品质红宝石-->
+			<Material Amount="50" ItemId="40051" />	<!--品质绿宝石-->
+			<Material Amount="50" ItemId="40050" />	<!--品质蓝宝石-->
+			<Material Amount="3" ItemId="40513" />	<!--食人巨魔的血-->
+			<Material Amount="50" ItemId="40087" />	<!--武-->
+			<Material Amount="50" ItemId="40074" />	<!--防-->
+			<Material Amount="5000000" ItemId="40308" />	<!--金币500万-->
+			<Material Amount="4" ItemId="44070" />	<!--元宝4-->
+		</MakeItem>
+	</Action>
+	<Action Name="mythicalNecklace">
+		<MakeItem>
+			<Item Amount="1" ItemId="31006"/>	<!--神话项链-->
+			<Material Amount="1" ItemId="40466"/>	<!--龙之心-->
+			<Material Amount="5" ItemId="20264"/>	<!--力量项链-->
+			<Material Amount="5" ItemId="20266"/>	<!--智力项链-->
+			<Material Amount="5" ItemId="20267"/>	<!--精神项链-->
+			<Material Amount="5" ItemId="20268"/>	<!--体质项链-->
+			<Material Amount="5" ItemId="20256"/>	<!--敏捷项链-->
+			<Material Amount="5" ItemId="20254"/>	<!--魅力项链-->
+			<Material Amount="1000000" ItemId="40308"/>	<!--金币100万-->
+			<Material Amount="10" ItemId="44070"/>	<!--元宝10-->
 		</MakeItem>
 	</Action>
 	<Action Name="sxt1">

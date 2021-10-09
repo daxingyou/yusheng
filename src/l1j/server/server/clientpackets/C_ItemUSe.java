@@ -4970,6 +4970,8 @@ public class C_ItemUSe extends ClientBasePacket {
 				activeChar
 						.sendPackets(new S_ServerMessage(126, "$226", "$225")); // \f1%1
 				return;
+			}else if(500050 == itemid){
+
 			}
 
 			cancelAbsoluteBarrier(activeChar); //  解除
@@ -4993,6 +4995,7 @@ public class C_ItemUSe extends ClientBasePacket {
 		} else {
 			activeChar.sendPackets(new S_ServerMessage(124)); // \f1何装备。
 		}
+
 		// 装备用HP、MP、MR更
 		activeChar.setCurrentHp(activeChar.getCurrentHp());
 		activeChar.setCurrentMp(activeChar.getCurrentMp());
