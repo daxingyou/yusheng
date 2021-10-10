@@ -2176,10 +2176,10 @@ public class L1PCAction {
 					return;
 				}
 				if (_pc.getTempObjects().get(tradeindex) instanceof L1CharaterTrade) {
-					final L1CharaterTrade selCharTrade = (L1CharaterTrade) _pc
-							.getTempObjects().get(tradeindex);
-					if (selCharTrade.getLevel() < 50) {
-						_pc.sendPackets(new S_SystemMessage("\\F2挂卖的角色不能低于50级"));
+					final L1CharaterTrade selCharTrade = (L1CharaterTrade) _pc.getTempObjects().get(tradeindex);
+					int level = 53;
+					if (selCharTrade.getLevel() < level) {
+						_pc.sendPackets(new S_SystemMessage("\\F2挂卖的角色不能低于"+level+"级"));
 						_pc.sendPackets(new S_CloseList(_pc.getId()));
 						return;
 					}
@@ -2211,15 +2211,14 @@ public class L1PCAction {
 					return;
 				}
 				if (_pc.getTempObjects().get(selIndex) instanceof L1CharaterTrade) {
-					final L1CharaterTrade selTmp = (L1CharaterTrade) _pc
-							.getTempObjects().get(selIndex);
-					if (selTmp.getLevel() < 50) {
-						_pc.sendPackets(new S_SystemMessage("\\F2挂卖的角色不能低于50级"));
+					final L1CharaterTrade selTmp = (L1CharaterTrade) _pc.getTempObjects().get(selIndex);
+					int level = 53;
+					if (selTmp.getLevel() < level) {
+						_pc.sendPackets(new S_SystemMessage("\\F2挂卖的角色不能低于"+level+"级"));
 						_pc.sendPackets(new S_CloseList(_pc.getId()));
 						return;
 					}
-					for (final L1CharaterTrade charaterTrade : CharaterTradeReading
-							.get().getAllCharaterTradeValues()) {
+					for (final L1CharaterTrade charaterTrade : CharaterTradeReading.get().getAllCharaterTradeValues()) {
 						if (charaterTrade.get_by_objId() == selTmp
 								.get_char_objId()
 								&& (charaterTrade.get_state() == 0 || charaterTrade
@@ -2581,14 +2580,14 @@ public class L1PCAction {
 	private void adenaTrade(final String cmd, final long amount) {
 		final int type = Integer.parseInt(cmd.substring(12));
 		if (type == 1) {// 输入金币数量
-			final L1ItemInstance adenaItem = _pc.getInventory().findItemId(
-					40308);
-			if (adenaItem == null || adenaItem.getCount() < 100000) {
-				_pc.sendPackets(new S_SystemMessage("\\aD金币不足10W"));
+			final L1ItemInstance adenaItem = _pc.getInventory().findItemId(40308);
+			int adenaCount = 1000000;
+			if (adenaItem == null || adenaItem.getCount() < adenaCount) {
+				_pc.sendPackets(new S_SystemMessage("\\aD金币不足"+(adenaCount/10000)+"万"));
 				_pc.sendPackets(new S_CloseList(_pc.getId()));
 				return;
 			}
-			_pc.sendPackets(new S_HowManyMake(_pc.getId(), 100000, adenaItem
+			_pc.sendPackets(new S_HowManyMake(_pc.getId(), adenaCount, adenaItem
 					.getCount(), "adena_trade_2", "adenatrade1"));
 		} else if (type == 2) {// 确认金币数量 输入元宝数量
 			if (amount <= 0) {

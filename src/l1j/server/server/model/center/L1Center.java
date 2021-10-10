@@ -149,7 +149,7 @@ public class L1Center {
 		if (!pc.getInventory().checkItem(L1ItemId.TIANBAO, price)) {
 			System.out.println(price);
 			// \f1アデナが不足しています。
-			pc.sendPackets(new S_SystemMessage("天宝 数量不足。"));
+			pc.sendPackets(new S_SystemMessage("元宝 数量不足。"));
 			return false;
 		}
 		// 重量チェック

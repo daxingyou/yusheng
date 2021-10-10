@@ -23,15 +23,16 @@ public class UserExp extends ItemExecutor{
 		if (item == null) {
 			return;
 		}
-		if (pc.hasSkillEffect(L1SkillId.EXPITEM)) {
-			int time = pc.getSkillEffectTimeSec(L1SkillId.EXPITEM);
+		int skill = L1SkillId.EXPITEM;
+		if (pc.hasSkillEffect(skill)) {
+			int time = pc.getSkillEffectTimeSec(skill);
 			pc.sendPackets(new S_SystemMessage("经验加倍时间还剩下"+time+"秒"));
 			return;
 		}
 		pc.getInventory().removeItem(item, 1);
-		pc.setSkillEffect(L1SkillId.EXPITEM, sec);
+		pc.setSkillEffect(skill, sec);
 		pc.setItemExp(exp);
-		
+		pc.sendPackets(new S_SystemMessage(String.format("\\F3效果:经验 %d倍 持续时间 %d秒",(int)exp,sec/1000)));
 	}
 	private int sec;
 	

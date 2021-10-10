@@ -111,7 +111,7 @@ public class ItemClass {
 		}
 		try {
 			// CLASS执行位置取回
-			final ItemExecutor exe = _classList.get(new Integer(item.getItemId()));
+				final ItemExecutor exe = _classList.get(new Integer(item.getItemId()));
 			if (exe != null) {
 				exe.execute(data, pc, item);
 			}

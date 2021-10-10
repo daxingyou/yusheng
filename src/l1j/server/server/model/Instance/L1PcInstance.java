@@ -691,11 +691,11 @@ public class L1PcInstance extends L1Character {
 		sendPackets(new S_MPUpdate(currentMp, getMaxMp()));
 	}
 
+
 	@Override
 	public L1PcInventory getInventory() {
 		return _inventory;
 	}
-
 	/*
 	 * public L1DwarfInventory getDwarfInventory() { return _dwarf; }
 	 */
@@ -1577,11 +1577,12 @@ public class L1PcInstance extends L1Character {
 						L1PcInstance.this.sendPackets(new S_SystemMessage(
 								"天神的祝福，死亡并没有经验损失！"));
 						if (player != null) {
-							player.getInventory().storeItem(44070, 2);
+							int count = 2;
+							player.getInventory().storeItem(44070, count);
 							L1World.getInstance().broadcastServerMessage(
 									String.format("\\F4玩家(:" + getName()
 											+ ")不幸牺牲了[" + player.getName()
-											+ "]成功掠夺了对方1元宝"));
+											+ "]成功掠夺了对方"+count+"元宝"));
 							// player.sendPackets(new S_SystemMessage("由于"
 							// + L1PcInstance.this.getName()
 							// + "玩家穿戴了【神力戒指】您获得10万金币奖励！"));
@@ -1622,18 +1623,18 @@ public class L1PcInstance extends L1Character {
 				int count = 0;
 				int lawful = L1PcInstance.this.getLawful();
 				if (lawful <= -32768 + lostRate) {// 小于-30000掉落1~5件
+					count = _random.nextInt(6) + 1;
+
+				} else if (lawful > -32768 && lawful <= -30000 + lostRate1) {// 小于-30000掉落1~5件
 					count = _random.nextInt(5) + 1;
 
-				} else if (lawful > -32768 && lawful <= -30000 + lostRate1) {// 小于-30000掉落1~3件
+				} else if (lawful > -30000 && lawful <= -20000 + lostRate2) {// 小于-20000掉落1~4件
 					count = _random.nextInt(4) + 1;
 
-				} else if (lawful > -30000 && lawful <= -20000 + lostRate2) {// 小于-20000掉落1~3件
+				} else if (lawful > -20000 && lawful <= -10000 + lostRate3) {// 小于-10000掉落1~3件
 					count = _random.nextInt(3) + 1;
 
-				} else if (lawful > -20000 && lawful <= -10000 + lostRate3) {// 小于-10000掉落1~2件
-					count = _random.nextInt(2) + 1;
-
-				} else if (lawful > -10000 && lawful <= -0 + lostRate4) {// 小于0掉落1件
+				} else if (lawful > -10000 && lawful <= -0 + lostRate4) {// 小于500掉落1件
 					count = _random.nextInt(1) + 1;
 
 				} else if (lawful > 1 && lawful <= 30000 + lostRate5) {// 小于0掉落1件

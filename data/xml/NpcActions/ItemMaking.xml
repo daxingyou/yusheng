@@ -9,7 +9,7 @@
 	</Action>
 	<Action Name="qzeh1">
 		<MakeItem>
-			<Item Amount="1" ItemId="50001" />		<!--余生耳环Lv1-->
+			<Item Amount="1" ItemId="50001" />		<!--神话耳环Lv1-->
 			<Material Amount="300" ItemId="40408" />	<!--金属块-->
 			<Material Amount="300" ItemId="40496" />	<!--粗米-->
 			<Material Amount="50" ItemId="40524" />	<!--黑血-->
@@ -24,8 +24,8 @@
 	</Action>
 	<Action Name="qzeh2">
 		<MakeItem>
-			<Item Amount="1" ItemId="50002" />		<!--余生耳环Lv2-->
-			<Material Amount="1" ItemId="50001" />	<!--余生耳环Lv1-->
+			<Item Amount="1" ItemId="50002" />		<!--神话耳环Lv2-->
+			<Material Amount="2" ItemId="50001" />	<!--余生耳环Lv1-->
 			<Material Amount="400" ItemId="40408" />	<!--金属块-->
 			<Material Amount="400" ItemId="40496" />	<!--粗米-->
 			<Material Amount="100" ItemId="40524" />	<!--黑血-->
@@ -36,13 +36,14 @@
 			<Material Amount="3" ItemId="40513" />	<!--食人巨魔的血-->
 			<Material Amount="50" ItemId="40087" />	<!--武-->
 			<Material Amount="50" ItemId="40074" />	<!--防-->
+			<Material Amount="2" ItemId="40076" />	<!--古卷-->
 			<Material Amount="5000000" ItemId="40308" />	<!--金币500万-->
 		</MakeItem>
 	</Action>
 	<Action Name="qzeh3">
 		<MakeItem>
-			<Item Amount="1" ItemId="50003" />		<!--余生耳环Lv3-->
-			<Material Amount="1" ItemId="10056" />	<!--余生耳环Lv2-->
+			<Item Amount="1" ItemId="50003" />		<!--神话耳环Lv3-->
+			<Material Amount="3" ItemId="10056" />	<!--神话耳环Lv2-->
 			<Material Amount="400" ItemId="40408" />	<!--金属块-->
 			<Material Amount="400" ItemId="40496" />	<!--粗米-->
 			<Material Amount="100" ItemId="40524" />	<!--黑血-->
@@ -53,14 +54,15 @@
 			<Material Amount="3" ItemId="40513" />	<!--食人巨魔的血-->
 			<Material Amount="50" ItemId="40087" />	<!--武-->
 			<Material Amount="50" ItemId="40074" />	<!--防-->
+			<Material Amount="3" ItemId="40076" />	<!--古卷-->
 			<Material Amount="5000000" ItemId="40308" />	<!--金币500万-->
-			<Material Amount="3" ItemId="44070" />	<!--元宝3-->
+			<Material Amount="5" ItemId="44070" />	<!--元宝-->
 		</MakeItem>
 	</Action>
 	<Action Name="qzeh4">
 		<MakeItem>
-			<Item Amount="1" ItemId="50004" />		<!--余生耳环Lv4-->
-			<Material Amount="1" ItemId="50003" />	<!--余生耳环Lv3-->
+			<Item Amount="1" ItemId="50004" />		<!--神话耳环Lv4-->
+			<Material Amount="4" ItemId="50003" />	<!--神话耳环Lv3-->
 			<Material Amount="400" ItemId="40408" />	<!--金属块-->
 			<Material Amount="400" ItemId="40496" />	<!--粗米-->
 			<Material Amount="100" ItemId="40524" />	<!--黑血-->
@@ -71,8 +73,9 @@
 			<Material Amount="3" ItemId="40513" />	<!--食人巨魔的血-->
 			<Material Amount="50" ItemId="40087" />	<!--武-->
 			<Material Amount="50" ItemId="40074" />	<!--防-->
+			<Material Amount="4" ItemId="40076" />	<!--古卷-->
 			<Material Amount="5000000" ItemId="40308" />	<!--金币500万-->
-			<Material Amount="4" ItemId="44070" />	<!--元宝4-->
+			<Material Amount="10" ItemId="44070" />	<!--元宝-->
 		</MakeItem>
 	</Action>
 	<Action Name="mythicalNecklace">

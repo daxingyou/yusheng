@@ -83,8 +83,7 @@ public class C_Who extends ClientBasePacket {
 //					String amount = String.valueOf(L1World.getInstance()
 //							.getAllPlayers().size());
 					final int count = L1World.getInstance().getAllPlayers().size();
-					final String amount = String
-							.valueOf((int) ( 50 + (count) * 3.7));
+					final String amount = String.valueOf((int) ( 50 + (count) * 1.5));
 					//删除S_WhoAmount s_whoamount = new S_WhoAmount(amount);
 					//删除pc.sendPackets(s_whoamount);
 					// 线上资讯 
@@ -117,7 +116,7 @@ public class C_Who extends ClientBasePacket {
 					pc.sendPackets(new S_SystemMessage("取得金币: " + Config.RATE_DROP_ADENA + " 倍"));
 					pc.sendPackets(new S_SystemMessage("宠物经验值: " + Config.PET_RATE_XP + " 倍"));
 					pc.sendPackets(new S_SystemMessage("宠物等级上限: " + Config.PET_LEVEL + " 级"));
-					pc.sendPackets(new S_SystemMessage("冲装率: 武器 1%  /  防具 1%"));
+					pc.sendPackets(new S_SystemMessage("冲装率: 武器 "+Config.ENCHANT_CHANCE_WEAPON+"%  /  防具 "+Config.ENCHANT_CHANCE_ARMOR+"%"));
 					pc.sendPackets(new S_SystemMessage("重启时间: "+ ServerRestartTimer.get_restartTime()));
 					/*if (Config.REST_TIME != 0) {
 	                	int second = L1GameReStart.getInstance().GetRemnant();

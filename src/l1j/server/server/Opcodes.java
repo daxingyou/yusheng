@@ -222,7 +222,7 @@ public class Opcodes {
     // 客户端点击 0000: e4 04 00 00
 
     // XXX 未知 unknown
-    /** 要求提取天宝. */
+    /** 要求提取元宝. */
     public static final int C_OPCODE_CNITEM = -1;
     /** 要求确认未知购物清单2. */
     public static final int C_OPCODE_SHOPX2 = -2;
