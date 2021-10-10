@@ -269,4 +269,14 @@ public class Dungeon {
 		}
 		return false;
 	}
+
+	/**获取飞往的新地图id*/
+	public int getNewMapId(int locX, int locY, int mapId, L1PcInstance pc) {
+		String key = new StringBuilder().append(mapId).append(locX)
+				.append(locY).toString();
+		if (_dungeonMap.containsKey(key)) {
+			return (int)_dungeonMap.get(key)._newMapId;
+		}
+		return 0;
+	}
 }

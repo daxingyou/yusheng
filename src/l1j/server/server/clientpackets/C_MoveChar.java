@@ -21,6 +21,7 @@ import static l1j.server.server.model.Instance.L1PcInstance.REGENSTATE_MOVE;
 import l1j.server.AcceleratorChecker;
 import l1j.server.Config;
 import l1j.server.server.WriteLogTxt;
+import l1j.server.server.datatables.MapsNotAllowedTable;
 import l1j.server.server.datatables.PolyTable;
 import l1j.server.server.mina.LineageClient;
 import l1j.server.server.model.Dungeon;
@@ -179,7 +180,20 @@ public class C_MoveChar extends ClientBasePacket {
 			
 			if (!pc.isGmInvis()) {
 				pc.getMap().setPassable(pc.getLocation(), true);
-			}	
+			}
+
+			int newMapId = Dungeon.getInstance().getNewMapId(newlocx, newlocy, pc.getMap().getId(), pc);//飞往新地图的mapid
+			if(0 != newMapId){//如果是禁止的地图，不允许进入
+				MapsNotAllowedTable mapInstance = MapsNotAllowedTable.getInstance();
+				int allowLevel = mapInstance.getMapAllowLevel(newMapId);//允许进入地图的等级
+				if(0 == mapInstance.getMapAllow(newMapId)){
+					pc.sendPackets(new S_SystemMessage("前往的地图暂未开放!"));
+					return;
+				}else if(pc.getLevel() < allowLevel){
+					pc.sendPackets(new S_SystemMessage("等级需达到"+allowLevel+"级才能进入此地图!"));
+					return;
+				}
+			}
 
 			if (Dungeon.getInstance().dg(newlocx, newlocy, pc.getMap().getId(), pc)) { // 场合
 				return;
@@ -188,6 +202,7 @@ public class C_MoveChar extends ClientBasePacket {
 					pc)) { // 先地
 				return;
 			}
+
 			
 			if (!pc.getPowerMap().isPassable2(newlocx, newlocy)) {
 				pc.sendPackets(new S_SystemMessage("客户端不匹配，请到官网下载专用客户端"));

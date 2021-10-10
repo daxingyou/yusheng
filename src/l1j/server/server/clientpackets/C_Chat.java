@@ -293,8 +293,8 @@ public class C_Chat extends ClientBasePacket {
 			}
 			
 		}else if (chatText.startsWith(".查询 ") || chatText.startsWith(".查詢 ")) {
-				String cmd = chatText.substring(2);
-				String text = chatText.substring(2);
+				String cmd = chatText.substring(3).trim();
+				String text = chatText.substring(3).trim();
 				execute(pc, text, cmd);
 				return;
 			

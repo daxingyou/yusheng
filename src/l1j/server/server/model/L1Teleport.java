@@ -26,6 +26,7 @@ import java.util.List;
 
 
 // 祭司、跟随者 
+import l1j.server.server.datatables.MapsNotAllowedTable;
 import l1j.server.server.model.Instance.L1BabyInstance;
 import l1j.server.server.model.Instance.L1DollInstance;
 import l1j.server.server.model.Instance.L1FollowInstance;
@@ -97,9 +98,19 @@ public class L1Teleport {
 			return;
 		}
 		
-		// 先不正元座标(GM除)
+		// 获取飞往的地图id
 		L1Map map = L1WorldMap.getInstance().getMap(mapId);
-		
+
+		MapsNotAllowedTable mapInstance = MapsNotAllowedTable.getInstance();
+		int allowLevel = mapInstance.getMapAllowLevel(mapId);//允许进入地图的等级
+		if(mapInstance.getMapAllow(mapId) == 0){//如果是禁止的地图，不允许进入
+			player.sendPackets(new S_SystemMessage("前往的地图暂未开放!"));
+			return;
+		}else if(player.getLevel() < allowLevel){
+			player.sendPackets(new S_SystemMessage("等级需达到"+allowLevel+"级才能进入此地图!"));
+			return;
+		}
+
 		if (player.getMapId() == 99) {
 			if (!player.isGm()) {
 				return;

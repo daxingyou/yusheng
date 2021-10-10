@@ -159,7 +159,7 @@ public class GameServer{
 				dBClearAllUtil.start();
 			}else {
 				System.out.println();
-				System.out.println("请在 newDistrictSet表 中id=1记录,state值更改为true,重启后即可删除用户全部数据");
+				System.out.println("请在 newDistrictSet表 中id=1记录,state值更改为true,重启后即可删除用户全部数据,一键开区专用");
 				System.out.println();
 			}
 		}
@@ -303,6 +303,7 @@ public class GameServer{
 		NpcSpawnTable.getInstance();
 		IpTable.getInstance();
 		MapsTable.getInstance();
+		MapsNotAllowedTable.getInstance();//加载禁止的地图
 		UBSpawnTable.getInstance();
 		PetTable.getInstance();
 		ClanTable.getInstance();

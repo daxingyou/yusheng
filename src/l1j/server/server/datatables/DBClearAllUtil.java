@@ -138,6 +138,16 @@ public class DBClearAllUtil {
 				ps.execute();
 				System.out.println("ok!");
 
+				System.out.print("隐藏测试商人.....");
+				//929121548测试[道具商人] 929121549测试[魔法技能]  929121550测试[武器装备]
+				int[] ids={929121548,929121549,929121550};
+				for(int id : ids){
+					ps = cn.prepareStatement("UPDATE spawnlist_npc SET count=? where id=? ");
+					ps.setInt(1, 0);
+					ps.setInt(2, id);
+					ps.execute();
+					System.out.println("ok!");
+				}
 
 			} catch (final SQLException e) {
 				_log.error(e.getLocalizedMessage(), e);
