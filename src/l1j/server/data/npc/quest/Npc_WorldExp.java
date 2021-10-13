@@ -14,7 +14,7 @@ import l1j.server.server.world.L1World;
 
 public class Npc_WorldExp extends NpcExecutor {
 
-	private static final int skillIds[] = new int[]{26,42,43,48,79,151,158,148,115,117};
+	private static final int skillIds[] = new int[]{26,42,43,48,151,158,148,115,117};
 	private Npc_WorldExp() {
 		// TODO Auto-generated constructor stub
 	}

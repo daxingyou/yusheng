@@ -101,31 +101,8 @@ import l1j.server.server.model.poison.L1Poison4;
 import l1j.server.server.model.poison.L1Poison6;
 import l1j.server.server.model.skill.L1SkillId;
 import l1j.server.server.model.skill.L1SkillUse;
-import l1j.server.server.serverpackets.S_CastleMaster;
-import l1j.server.server.serverpackets.S_ChangeShape;
+import l1j.server.server.serverpackets.*;
 //import l1j.server.server.serverpackets.S_Disconnect; // 加入断线功能
-import l1j.server.server.serverpackets.S_DoActionGFX;
-import l1j.server.server.serverpackets.S_DoActionShop;
-import l1j.server.server.serverpackets.S_Emblem;
-import l1j.server.server.serverpackets.S_Exp;
-import l1j.server.server.serverpackets.S_HPMeter;
-import l1j.server.server.serverpackets.S_HPUpdate;
-import l1j.server.server.serverpackets.S_Invis;
-import l1j.server.server.serverpackets.S_Lawful;
-import l1j.server.server.serverpackets.S_Liquor;
-import l1j.server.server.serverpackets.S_MPUpdate;
-import l1j.server.server.serverpackets.S_OtherCharPacks;
-import l1j.server.server.serverpackets.S_OwnCharStatus;
-import l1j.server.server.serverpackets.S_PacketBox;
-import l1j.server.server.serverpackets.S_PacketBoxDk;
-import l1j.server.server.serverpackets.S_PinkName;
-import l1j.server.server.serverpackets.S_Poison;
-import l1j.server.server.serverpackets.S_RemoveObject;
-import l1j.server.server.serverpackets.S_ServerMessage;
-import l1j.server.server.serverpackets.S_SkillSound;
-import l1j.server.server.serverpackets.S_SystemMessage;
-import l1j.server.server.serverpackets.S_bonusstats;
-import l1j.server.server.serverpackets.ServerBasePacket;
 import l1j.server.server.templates.L1CharacterAdenaTrade;
 import l1j.server.server.templates.L1FindShopSell;
 import l1j.server.server.templates.L1Item;
@@ -845,8 +822,7 @@ public class L1PcInstance extends L1Character {
 	/**
 	 * 指定群通知
 	 * 
-	 * @param
-	 *            通知配列
+	 * @param 通知配列
 	 */
 	private void notifyPlayersLogout(final Collection<L1PcInstance> collection) {
 		for (final L1PcInstance player : collection) {
@@ -875,7 +851,7 @@ public class L1PcInstance extends L1Character {
 						.getInventory().checkEquipped(25069))) {// 离线摆摊
 
 		}else if(Config.dummyFunction){//玩家下线后，显示假人图像
-			if (Config.dummyFunction && getZoneType() == 1) { // 这一段是离线假人命令.jsjs
+			if (Config.dummyFunction && getZoneType() == 1) {
 				L1WilliamJiaRen.getInstance().addlogout(this.getAccountName(), this);
 			}
 		}else {

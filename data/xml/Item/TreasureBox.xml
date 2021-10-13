@@ -1089,8 +1089,8 @@
 		<Item ItemId="44070" Count="1" Chance="50" />		<!--元宝-->
                 <Item ItemId="44070" Count="2" Chance="30" />		<!--元宝-->
 		<Item ItemId="44070" Count="3" Chance="10" />		<!--元宝-->
-                <Item ItemId="44070" Count="5" Chance="7" />		<!--元宝-->
-		<Item ItemId="44070" Count="10" Chance="3" />		<!--元宝-->
+                <Item ItemId="44070" Count="4" Chance="9" />		<!--元宝-->
+		<Item ItemId="44070" Count="5" Chance="1" />		<!--元宝-->
 		
 	</TreasureBox>
 

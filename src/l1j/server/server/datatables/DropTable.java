@@ -797,7 +797,6 @@ public class DropTable {
 				l1drop.setMin(rs.getInt("min"));
 				l1drop.setMax(rs.getInt("max"));
 				l1drop.setChance(rs.getInt("chance"));
-
 				ArrayList<L1Drop> dropList = _droplists.get(l1drop.getMobid());
 				if (dropList == null) {
 					dropList = new ArrayList<L1Drop>();

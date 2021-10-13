@@ -595,76 +595,96 @@
 	</Action>
 		<Action Name="a100" NpcId="10000">
 		<MakeItem>
-			<Item Amount="1" ItemId="10049"/>	<!--魔法娃娃碎片-->
+			<Item Amount="5" ItemId="10049"/>	<!--魔法娃娃碎片-->
 			<Material Amount="1" ItemId="41250"/>	<!--野狼娃娃-->
 		</MakeItem>
 	</Action>
 		<Action Name="a101" NpcId="10000">
 		<MakeItem>
-			<Item Amount="1" ItemId="10049"/>	<!--魔法娃娃碎片-->
+			<Item Amount="5" ItemId="10049"/>	<!--魔法娃娃碎片-->
 			<Material Amount="1" ItemId="60206"/>	<!--野狼娃娃-->
 		</MakeItem>
 	</Action>
 			<Action Name="a102" NpcId="10000">
 		<MakeItem>
-			<Item Amount="1" ItemId="10049"/>	<!--魔法娃娃碎片-->
+			<Item Amount="5" ItemId="10049"/>	<!--魔法娃娃碎片-->
 			<Material Amount="1" ItemId="41248"/>	<!--野狼娃娃-->
 		</MakeItem>
 	</Action>
 		<Action Name="a103" NpcId="10000">
 		<MakeItem>
-			<Item Amount="1" ItemId="10049"/>	<!--魔法娃娃碎片-->
+			<Item Amount="5" ItemId="10049"/>	<!--魔法娃娃碎片-->
 			<Material Amount="1" ItemId="41249"/>	<!--野狼娃娃-->
 		</MakeItem>
 	</Action>
 			<Action Name="a104" NpcId="10000">
 		<MakeItem>
-			<Item Amount="1" ItemId="10049"/>	<!--魔法娃娃碎片-->
+			<Item Amount="5" ItemId="10049"/>	<!--魔法娃娃碎片-->
 			<Material Amount="1" ItemId="60205"/>	<!--野狼娃娃-->
 		</MakeItem>
 	</Action>
 		<Action Name="a105" NpcId="10000">
 		<MakeItem>
-			<Item Amount="1" ItemId="10049"/>	<!--魔法娃娃碎片-->
+			<Item Amount="5" ItemId="10049"/>	<!--魔法娃娃碎片-->
 			<Material Amount="1" ItemId="60204"/>	<!--野狼娃娃-->
 		</MakeItem>
 	</Action>
-			<Action Name="a106" NpcId="10000">
+	<Action Name="hcww" NpcId="10000">
 		<MakeItem>
-			<Item Amount="1" ItemId="41250"/>	<!--魔法娃娃碎片-->
-			<Material Amount="2" ItemId="10049"/>	<!--野狼娃娃-->
+			<Item Amount="1" ItemId="41247"/>	<!--魔法娃娃的袋子-->
+			<Material Amount="10" ItemId="10049"/>	<!--魔法娃娃碎片-->
+			<Material Amount="200000" ItemId="40308"/><!--金币-->
+			<Material Amount="2" ItemId="44070"/><!--元宝-->
 		</MakeItem>
 	</Action>
-		<Action Name="a107" NpcId="10000">
-		<MakeItem>
-		<Item Amount="1" ItemId="60206"/>	<!--魔法娃娃碎片-->
-			<Material Amount="2" ItemId="10049"/>	<!--野狼娃娃-->
-		</MakeItem>
-	</Action>
-			<Action Name="a108" NpcId="10000">
-		<MakeItem>
-			<Item Amount="1" ItemId="41248"/>	<!--魔法娃娃碎片-->
-			<Material Amount="2" ItemId="10049"/>	<!--野狼娃娃-->
-		</MakeItem>
-	</Action>
-		<Action Name="a109" NpcId="10000">
-		<MakeItem>
-			<Item Amount="1" ItemId="41249"/>	<!--魔法娃娃碎片-->
-			<Material Amount="2" ItemId="10049"/>	<!--野狼娃娃-->
-		</MakeItem>
-	</Action>
-			<Action Name="a110" NpcId="10000">
-		<MakeItem>
-			<Item Amount="1" ItemId="60205"/>	<!--魔法娃娃碎片-->
-			<Material Amount="2" ItemId="10049"/>	<!--野狼娃娃-->
-		</MakeItem>
-	</Action>
-		<Action Name="a111" NpcId="10000">
-		<MakeItem>
-			<Item Amount="1" ItemId="60204"/>	<!--魔法娃娃碎片-->
-			<Material Amount="2" ItemId="10049"/>	<!--野狼娃娃-->
-		</MakeItem>
-	</Action>
+<!--	<Action Name="a106" NpcId="10000">-->
+<!--		<MakeItem>-->
+<!--			<Item Amount="1" ItemId="41250"/>	&lt;!&ndash;合成 近战娃娃：野狼宝宝&ndash;&gt;-->
+<!--			<Material Amount="10" ItemId="10049"/>	&lt;!&ndash;魔法娃娃碎片&ndash;&gt;-->
+<!--			<Material Amount="200000" ItemId="40308"/>&lt;!&ndash;金币&ndash;&gt;-->
+<!--			<Material Amount="2" ItemId="44070"/>&lt;!&ndash;元宝&ndash;&gt;-->
+<!--		</MakeItem>-->
+<!--	</Action>-->
+<!--		<Action Name="a107" NpcId="10000">-->
+<!--		<MakeItem>-->
+<!--			<Item Amount="1" ItemId="60206"/>	&lt;!&ndash;合成 减伤娃娃：石头高仑&ndash;&gt;-->
+<!--			<Material Amount="10" ItemId="10049"/>	&lt;!&ndash;魔法娃娃碎片&ndash;&gt;-->
+<!--			<Material Amount="200000" ItemId="40308"/>&lt;!&ndash;金币&ndash;&gt;-->
+<!--			<Material Amount="2" ItemId="44070"/>&lt;!&ndash;元宝&ndash;&gt;-->
+<!--		</MakeItem>-->
+<!--	</Action>-->
+<!--			<Action Name="a108" NpcId="10000">-->
+<!--		<MakeItem>-->
+<!--			<Item Amount="1" ItemId="41248"/>	&lt;!&ndash;合成 增加负重娃娃：肥肥&ndash;&gt;-->
+<!--			<Material Amount="10" ItemId="10049"/>	&lt;!&ndash;魔法娃娃碎片&ndash;&gt;-->
+<!--			<Material Amount="200000" ItemId="40308"/>&lt;!&ndash;金币&ndash;&gt;-->
+<!--			<Material Amount="2" ItemId="44070"/>&lt;!&ndash;元宝&ndash;&gt;-->
+<!--		</MakeItem>-->
+<!--	</Action>-->
+<!--		<Action Name="a109" NpcId="10000">-->
+<!--		<MakeItem>-->
+<!--			<Item Amount="1" ItemId="41249"/>	&lt;!&ndash;合成 回蓝娃娃：小思克巴&ndash;&gt;-->
+<!--			<Material Amount="10" ItemId="10049"/>	&lt;!&ndash;魔法娃娃碎片&ndash;&gt;-->
+<!--			<Material Amount="200000" ItemId="40308"/>&lt;!&ndash;金币&ndash;&gt;-->
+<!--			<Material Amount="2" ItemId="44070"/>&lt;!&ndash;元宝&ndash;&gt;-->
+<!--		</MakeItem>-->
+<!--	</Action>-->
+<!--			<Action Name="a110" NpcId="10000">-->
+<!--		<MakeItem>-->
+<!--			<Item Amount="1" ItemId="60205"/>	&lt;!&ndash;合成 弓手娃娃：奎斯坦修&ndash;&gt;-->
+<!--			<Material Amount="10" ItemId="10049"/>	&lt;!&ndash;魔法娃娃碎片&ndash;&gt;-->
+<!--			<Material Amount="200000" ItemId="40308"/>&lt;!&ndash;金币&ndash;&gt;-->
+<!--			<Material Amount="2" ItemId="44070"/>&lt;!&ndash;元宝&ndash;&gt;-->
+<!--		</MakeItem>-->
+<!--	</Action>-->
+<!--		<Action Name="a111" NpcId="10000">-->
+<!--		<MakeItem>-->
+<!--			<Item Amount="1" ItemId="60204"/>	&lt;!&ndash;合成 回蓝娃娃：长者&ndash;&gt;-->
+<!--			<Material Amount="10" ItemId="10049"/>	&lt;!&ndash;魔法娃娃碎片&ndash;&gt;-->
+<!--			<Material Amount="200000" ItemId="40308"/>&lt;!&ndash;金币&ndash;&gt;-->
+<!--			<Material Amount="2" ItemId="44070"/>&lt;!&ndash;元宝&ndash;&gt;-->
+<!--		</MakeItem>-->
+<!--	</Action>-->
 	<Action Name="a112" NpcId="10000">
 		<MakeItem>
 			<Item Amount="1" ItemId="11005"/>	<!--魔法娃娃碎片-->
@@ -774,38 +794,41 @@
 	</Action>
 	<Action Name="mgww" NpcId="10000">
 		<MakeItem>
-			<Item Amount="1" ItemId="11003"/>	<!--龙心-->
-			<Material Amount="1" ItemId="41250"/>	<!--遗忘装备-->
-			<Material Amount="1" ItemId="60206"/>	<!--遗忘装备-->
-			<Material Amount="1" ItemId="41248"/>	<!--遗忘装备-->
-			<Material Amount="1" ItemId="41249"/>	<!--遗忘装备-->
-			<Material Amount="1" ItemId="60205"/>	<!--遗忘装备-->
-			<Material Amount="1" ItemId="60204"/>	<!--遗忘装备-->
-			<Material Amount="500000" ItemId="40308"/>	<!--金币-->
+			<Item Amount="1" ItemId="11003"/>	<!--神话娃娃：魔攻宝宝-->
+			<Material Amount="1" ItemId="41250"/>	<!--魔法娃娃：野狼宝宝-->
+			<Material Amount="1" ItemId="60206"/>	<!--魔法娃娃：石头高仑-->
+			<Material Amount="1" ItemId="41248"/>	<!--魔法娃娃：肥肥-->
+			<Material Amount="1" ItemId="41249"/>	<!--魔法娃娃：小思克巴-->
+			<Material Amount="1" ItemId="60205"/>	<!--魔法娃娃：奎斯坦修-->
+			<Material Amount="1" ItemId="60204"/>	<!--魔法娃娃：长者-->
+			<Material Amount="1000000" ItemId="40308"/>	<!--金币-->
+			<Material Amount="20" ItemId="44070"/>	<!--元宝-->
 		</MakeItem>
 	</Action>
 	<Action Name="ycww" NpcId="10000">
 		<MakeItem>
-			<Item Amount="1" ItemId="11001"/>	<!--龙心-->
-			<Material Amount="1" ItemId="41250"/>	<!--遗忘装备-->
-			<Material Amount="1" ItemId="60206"/>	<!--遗忘装备-->
-			<Material Amount="1" ItemId="41248"/>	<!--遗忘装备-->
-			<Material Amount="1" ItemId="41249"/>	<!--遗忘装备-->
-			<Material Amount="1" ItemId="60205"/>	<!--遗忘装备-->
-			<Material Amount="1" ItemId="60204"/>	<!--遗忘装备-->
-			<Material Amount="500000" ItemId="40308"/>	<!--金币-->
+			<Item Amount="1" ItemId="11001"/>	<!--神话娃娃：远程宝宝-->
+			<Material Amount="1" ItemId="41250"/>	<!--魔法娃娃：野狼宝宝-->
+			<Material Amount="1" ItemId="60206"/>	<!--魔法娃娃：石头高仑-->
+			<Material Amount="1" ItemId="41248"/>	<!--魔法娃娃：肥肥-->
+			<Material Amount="1" ItemId="41249"/>	<!--魔法娃娃：小思克巴-->
+			<Material Amount="1" ItemId="60205"/>	<!--魔法娃娃：奎斯坦修-->
+			<Material Amount="1" ItemId="60204"/>	<!--魔法娃娃：长者-->
+			<Material Amount="1000000" ItemId="40308"/>	<!--金币-->
+			<Material Amount="20" ItemId="44070"/>	<!--元宝-->
 		</MakeItem>
 	</Action>
 	<Action Name="jzww" NpcId="10000">
 		<MakeItem>
-			<Item Amount="1" ItemId="11002"/>	<!--龙心-->
-			<Material Amount="1" ItemId="41250"/>	<!--遗忘装备-->
-			<Material Amount="1" ItemId="60206"/>	<!--遗忘装备-->
-			<Material Amount="1" ItemId="41248"/>	<!--遗忘装备-->
-			<Material Amount="1" ItemId="41249"/>	<!--遗忘装备-->
-			<Material Amount="1" ItemId="60205"/>	<!--遗忘装备-->
-			<Material Amount="1" ItemId="60204"/>	<!--遗忘装备-->
-			<Material Amount="500000" ItemId="40308"/>	<!--金币-->
+			<Item Amount="1" ItemId="11002"/>	<!--神话娃娃：近战宝宝-->
+			<Material Amount="1" ItemId="41250"/>	<!--魔法娃娃：野狼宝宝-->
+			<Material Amount="1" ItemId="60206"/>	<!--魔法娃娃：石头高仑-->
+			<Material Amount="1" ItemId="41248"/>	<!--魔法娃娃：肥肥-->
+			<Material Amount="1" ItemId="41249"/>	<!--魔法娃娃：小思克巴-->
+			<Material Amount="1" ItemId="60205"/>	<!--魔法娃娃：奎斯坦修-->
+			<Material Amount="1" ItemId="60204"/>	<!--魔法娃娃：长者-->
+			<Material Amount="1000000" ItemId="40308"/>	<!--金币-->
+			<Material Amount="20" ItemId="44070"/>	<!--元宝-->
 		</MakeItem>
 	</Action>
 	<Action Name="cjzy" NpcId="10000">
@@ -813,13 +836,15 @@
 			<Item Amount="1" ItemId="40164"/>	<!--冲击之晕魔法书-->
 			<Material Amount="2000000" ItemId="40308"/>	<!--金币200万-->
 			<Material Amount="100" ItemId="58031"/>	<!--冲击之晕碎片-->
+			<Material Amount="10" ItemId="44070"/>	<!--元宝-->
 		</MakeItem>
 	</Action>
 	<Action Name="htzh" NpcId="10000">
 		<MakeItem>
-			<Item Amount="1" ItemId="40238"/>	<!--混体转换水晶-->
+			<Item Amount="1" ItemId="40238"/>	<!--魂体转换水晶-->
 			<Material Amount="1000000" ItemId="40308"/>	<!--金币100万-->
-			<Material Amount="100" ItemId="58032"/>	<!--混体转换碎片-->
+			<Material Amount="100" ItemId="58032"/>	<!--魂体转换碎片-->
+			<Material Amount="10" ItemId="44070"/>	<!--元宝-->
 		</MakeItem>
 	</Action>
 	<Action Name="ssjz" NpcId="10000">
@@ -827,6 +852,7 @@
 			<Item Amount="1" ItemId="40197"/>	<!--神圣疾走魔法书-->
 			<Material Amount="1000000" ItemId="40308"/>	<!--金币100万-->
 			<Material Amount="100" ItemId="58033"/>	<!--神圣疾走碎片-->
+			<Material Amount="10" ItemId="44070"/>	<!--元宝-->
 		</MakeItem>
 	</Action>
 	<Action Name="scs" NpcId="10000">
@@ -834,6 +860,7 @@
 			<Item Amount="1" ItemId="40240"/>	<!--三重矢水晶-->
 			<Material Amount="2000000" ItemId="40308"/>	<!--金币200万-->
 			<Material Amount="100" ItemId="58034"/>	<!--三重矢碎片-->
+			<Material Amount="10" ItemId="44070"/>	<!--元宝-->
 		</MakeItem>
 	</Action>
 	<Action Name="scph" NpcId="10000">
@@ -841,6 +868,7 @@
 			<Item Amount="1" ItemId="40275"/>	<!--双重破坏水晶-->
 			<Material Amount="2000000" ItemId="40308"/>	<!--金币200万-->
 			<Material Amount="100" ItemId="58035"/>	<!--双重破坏碎片-->
+			<Material Amount="10" ItemId="44070"/>	<!--元宝-->
 		</MakeItem>
 	</Action>
 

@@ -106,10 +106,10 @@ public class L1ChangeDropAdena implements L1CommandExecutor {
 				} catch (Exception e) {
 					System.out.println(e);
 				}
-				L1World.getInstance().broadcastServerMessage("系统公告" + ": " + "金币倍率已调整为" + "【"+ Config.RATE_DROP_ADENA + " 】" + "倍" + "。");
-				pc.sendPackets(new S_SystemMessage("金币倍率已调整为" + "【"+ Config.RATE_DROP_ADENA + " 】" + "倍" + "。"));
+				L1World.getInstance().broadcastServerMessage("系统公告" + ": " + "金币倍率已调整为" + "【 2 】" + "倍" + "。");
+				pc.sendPackets(new S_SystemMessage("金币倍率已调整为" + "【 2 】" + "倍" + "。"));
 			} else {
-				pc.sendPackets(new S_SystemMessage("目前的金币倍率为" + "【"+ Config.RATE_DROP_ADENA + " 】" + "倍" + "。"));
+				pc.sendPackets(new S_SystemMessage("目前的金币倍率为" + "【 2 】" + "倍" + "。"));
 			}
 		} catch (Exception e) {
 			pc.sendPackets(new S_SystemMessage("请输入‘.金币倍率’。"));

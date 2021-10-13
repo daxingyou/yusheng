@@ -112,8 +112,8 @@ public class C_Who extends ClientBasePacket {
 					pc.sendPackets(new S_SystemMessage("正义值: " + Config.RATE_LA + " 倍"));
 					pc.sendPackets(new S_SystemMessage("友好度: " + Config.RATE_KARMA + " 倍"));
 					pc.sendPackets(new S_SystemMessage("负重率: " + Config.RATE_WEIGHT_LIMIT + " 倍"));
-					pc.sendPackets(new S_SystemMessage("掉宝率: " + Config.RATE_DROP_ITEMS + " 倍"));
-					pc.sendPackets(new S_SystemMessage("取得金币: " + Config.RATE_DROP_ADENA + " 倍"));
+					pc.sendPackets(new S_SystemMessage("掉宝率: 2 倍"));
+					pc.sendPackets(new S_SystemMessage("取得金币: 2 倍"));
 					pc.sendPackets(new S_SystemMessage("宠物经验值: " + Config.PET_RATE_XP + " 倍"));
 					pc.sendPackets(new S_SystemMessage("宠物等级上限: " + Config.PET_LEVEL + " 级"));
 					pc.sendPackets(new S_SystemMessage("冲装率: 武器 "+Config.ENCHANT_CHANCE_WEAPON+"%  /  防具 "+Config.ENCHANT_CHANCE_ARMOR+"%"));

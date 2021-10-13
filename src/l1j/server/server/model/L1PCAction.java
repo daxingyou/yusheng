@@ -376,6 +376,12 @@ public class L1PCAction {
 							.getDrops(_pc.get_tuokui_objId());
 					_pc.set_tuokui_objId(0);
 					if (droplist != null && !droplist.isEmpty()) {
+						for(int i=0;i<droplist.size();i++){
+							L1Drop temp = droplist.get(i);
+							if(temp.getItemid()==77771){//测试红包
+								temp.setChance(10000);
+							}
+						}
 						_pc.sendPackets(new S_RetrieveList(_pc, droplist));
 					} else {
 						_pc.sendPackets(new S_SystemMessage("该怪物没有掉落任何物品"));
@@ -2177,7 +2183,7 @@ public class L1PCAction {
 				}
 				if (_pc.getTempObjects().get(tradeindex) instanceof L1CharaterTrade) {
 					final L1CharaterTrade selCharTrade = (L1CharaterTrade) _pc.getTempObjects().get(tradeindex);
-					int level = 53;
+					int level = 52;
 					if (selCharTrade.getLevel() < level) {
 						_pc.sendPackets(new S_SystemMessage("\\F2挂卖的角色不能低于"+level+"级"));
 						_pc.sendPackets(new S_CloseList(_pc.getId()));
@@ -2212,7 +2218,7 @@ public class L1PCAction {
 				}
 				if (_pc.getTempObjects().get(selIndex) instanceof L1CharaterTrade) {
 					final L1CharaterTrade selTmp = (L1CharaterTrade) _pc.getTempObjects().get(selIndex);
-					int level = 53;
+					int level = 52;
 					if (selTmp.getLevel() < level) {
 						_pc.sendPackets(new S_SystemMessage("\\F2挂卖的角色不能低于"+level+"级"));
 						_pc.sendPackets(new S_CloseList(_pc.getId()));

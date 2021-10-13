@@ -106,10 +106,12 @@ public class ShopTable {
                     pstmI     = conI.prepareStatement("SELECT * FROM shop WHERE item_id='"+ itemId+"'");
                     rsI     = pstmI.executeQuery();
                     while (rsI.next()) {
-                        if (rsI.getInt("selling_price") >= 1 && purchasingPrice/packCount > rsI.getInt("selling_price")) {
-                            System.out.println("shop error NpcId="+rsI.getInt("npc_id")+", ItemID="+itemId+", PriceError!!!");
-                            purchasingPrice = 0;
-                        }
+						if(!"8910,8911,8912".contains(String.valueOf(rsI.getInt("npc_id")))){//8910,8911,8912²âÊÔÉÌÈËid
+							if (rsI.getInt("selling_price") >= 1 && purchasingPrice/packCount > rsI.getInt("selling_price")) {
+								System.out.println("shop error NpcId="+rsI.getInt("npc_id")+", ItemID="+itemId+", PriceError!!!");
+								purchasingPrice = 0;
+							}
+						}
                     }
                     rsI.close();
                 } catch (SQLException e) {
@@ -130,8 +132,7 @@ public class ShopTable {
 		ResultSet rs = null;
 		try {
 			con = L1DatabaseFactory.getInstance().getConnection();
-			pstm = con
-					.prepareStatement("SELECT * FROM shop WHERE npc_id=? ORDER BY order_id");
+			pstm = con.prepareStatement("SELECT * FROM shop WHERE npc_id=? ORDER BY order_id");
 			for (int npcId : enumNpcIds()) {
 				pstm.setInt(1, npcId);
 				rs = pstm.executeQuery();
